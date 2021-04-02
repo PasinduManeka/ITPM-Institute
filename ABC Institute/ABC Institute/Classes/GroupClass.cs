@@ -12,6 +12,7 @@ namespace ABC_Institute.Classes
     class GroupClass
     {
         //Getters and Setters
+        public int id{ get; set; }
         public string yearSemester { get; set; }
         public string programme { get; set; }
         public int groupchNumber { get; set; }
@@ -96,6 +97,56 @@ namespace ABC_Institute.Classes
             }
             return isSuccess;
         } 
+
+
+        //Update the existing data
+        public bool Update(GroupClass gc)
+        {
+            bool isSuccess = false;
+            SqlConnection con = new SqlConnection(myconnString);
+
+            try
+            {
+                //SQL to update in the database
+                String sql = "UPDATE student_groups SET academicyearsemester=@academicyearsemester, programme=@programme, groupNumber=@groupNumber, subGroupNumber=@subGroupNumber, subGroupId=@subGroupId, groupID=@groupID" +
+                    "WHERE id = @id";
+
+                SqlCommand cmd = new SqlCommand(sql, con);
+                cmd.Parameters.AddWithValue("@academicyearsemester", gc.yearSemester);
+                cmd.Parameters.AddWithValue("@programme", gc.programme);
+                cmd.Parameters.AddWithValue("@groupNumber", gc.groupchNumber);
+                cmd.Parameters.AddWithValue("@subGroupNumber", gc.subgroupNumber);
+                cmd.Parameters.AddWithValue("@subGroupId", gc.subGroupID);
+                cmd.Parameters.AddWithValue("@groupID", gc.groupID);
+                cmd.Parameters.AddWithValue("id", gc.id);
+
+                //Open Databse Connection
+
+                con.Open();
+                int rows = cmd.ExecuteNonQuery();
+
+                if (rows > 0)
+                {
+                    isSuccess = true;
+                }
+                else
+                {
+                    isSuccess = false;
+                }
+
+
+            }
+            catch(Exception e)
+            {
+
+            }
+            finally
+            {
+                con.Close();
+            }
+            return isSuccess;
+
+        }
 
 
     }
