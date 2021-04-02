@@ -15,7 +15,7 @@ namespace ABC_Institute.Classes
         public int id{ get; set; }
         public string yearSemester { get; set; }
         public string programme { get; set; }
-        public int groupchNumber { get; set; }
+        public int groupNumber { get; set; }
         public int subgroupNumber { get; set; }
         public string groupID { get; set; }
         public string subGroupID { get; set; }
@@ -68,7 +68,7 @@ namespace ABC_Institute.Classes
 
                 cmd.Parameters.AddWithValue("@academicyearsemester", gc.yearSemester);
                 cmd.Parameters.AddWithValue("@programme", gc.programme);
-                cmd.Parameters.AddWithValue("@groupNumber", gc.groupchNumber);
+                cmd.Parameters.AddWithValue("@groupNumber", gc.groupNumber);
                 cmd.Parameters.AddWithValue("@subGroupNumber", gc.subgroupNumber);
                 cmd.Parameters.AddWithValue("@subGroupId", gc.subGroupID);
                 cmd.Parameters.AddWithValue("@groupID", gc.groupID);
@@ -114,7 +114,7 @@ namespace ABC_Institute.Classes
                 SqlCommand cmd = new SqlCommand(sql, con);
                 cmd.Parameters.AddWithValue("@academicyearsemester", gc.yearSemester);
                 cmd.Parameters.AddWithValue("@programme", gc.programme);
-                cmd.Parameters.AddWithValue("@groupNumber", gc.groupchNumber);
+                cmd.Parameters.AddWithValue("@groupNumber", gc.groupNumber);
                 cmd.Parameters.AddWithValue("@subGroupNumber", gc.subgroupNumber);
                 cmd.Parameters.AddWithValue("@subGroupId", gc.subGroupID);
                 cmd.Parameters.AddWithValue("@groupID", gc.groupID);
@@ -154,25 +154,25 @@ namespace ABC_Institute.Classes
             bool isSuccess = false;
             SqlConnection con = new SqlConnection(myconnString);
 
-            String sql = "DELETE FROM tudent_groups WHERE id = @id ";
-
-            SqlCommand cmd = new SqlCommand(sql, con);
-            cmd.Parameters.AddWithValue("@id", gc.id);
-
-            int rows = cmd.ExecuteNonQuery();
-
-            if (rows > 0)
-            {
-                isSuccess = true;
-            }
-            else
-            {
-                isSuccess = false;
-            }
-
             try
             {
+                String sql = "DELETE FROM student_groups WHERE id = @id ";
 
+                SqlCommand cmd = new SqlCommand(sql, con);
+                cmd.Parameters.AddWithValue("@id", gc.id);
+
+                con.Open();
+
+                int rows = cmd.ExecuteNonQuery();
+
+                if (rows > 0)
+                {
+                    isSuccess = true;
+                }
+                else
+                {
+                    isSuccess = false;
+                }
             }
             catch (Exception e)
             {

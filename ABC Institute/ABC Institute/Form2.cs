@@ -26,5 +26,10 @@ namespace ABC_Institute
         {
 
         }
+
+        private void textGID2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

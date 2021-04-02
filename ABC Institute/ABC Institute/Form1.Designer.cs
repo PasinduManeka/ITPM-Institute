@@ -193,6 +193,7 @@ namespace ABC_Institute
             this.buttonSave.TabIndex = 15;
             this.buttonSave.Text = "Save";
             this.buttonSave.UseVisualStyleBackColor = false;
+            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
             // Form1
             // 

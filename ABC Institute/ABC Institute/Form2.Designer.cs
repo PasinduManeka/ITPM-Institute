@@ -49,6 +49,8 @@ namespace ABC_Institute
             this.buttonUpdate2 = new System.Windows.Forms.Button();
             this.buttonDelete2 = new System.Windows.Forms.Button();
             this.dataGridViewGroups = new System.Windows.Forms.DataGridView();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpGNumber2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericSGNumber2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGroups)).BeginInit();
@@ -73,7 +75,7 @@ namespace ABC_Institute
             // 
             // numericUpGNumber2
             // 
-            this.numericUpGNumber2.Location = new System.Drawing.Point(790, 129);
+            this.numericUpGNumber2.Location = new System.Drawing.Point(786, 110);
             this.numericUpGNumber2.Name = "numericUpGNumber2";
             this.numericUpGNumber2.Size = new System.Drawing.Size(184, 22);
             this.numericUpGNumber2.TabIndex = 2;
@@ -100,7 +102,7 @@ namespace ABC_Institute
             "Y3 S2",
             "Y4 S1",
             "Y4 S2"});
-            this.comboYearSemester2.Location = new System.Drawing.Point(327, 128);
+            this.comboYearSemester2.Location = new System.Drawing.Point(324, 153);
             this.comboYearSemester2.Name = "comboYearSemester2";
             this.comboYearSemester2.Size = new System.Drawing.Size(184, 24);
             this.comboYearSemester2.TabIndex = 4;
@@ -110,7 +112,7 @@ namespace ABC_Institute
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(99, 128);
+            this.label2.Location = new System.Drawing.Point(96, 153);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(152, 20);
             this.label2.TabIndex = 5;
@@ -119,10 +121,11 @@ namespace ABC_Institute
             // 
             // textGID2
             // 
-            this.textGID2.Location = new System.Drawing.Point(242, 226);
+            this.textGID2.Location = new System.Drawing.Point(255, 256);
             this.textGID2.Name = "textGID2";
             this.textGID2.Size = new System.Drawing.Size(184, 22);
             this.textGID2.TabIndex = 6;
+            this.textGID2.TextChanged += new System.EventHandler(this.textGID2_TextChanged);
             // 
             // comboProgrammer2
             // 
@@ -134,21 +137,21 @@ namespace ABC_Institute
             "SE(WE)",
             "DS(WD)",
             "DS(WE)"});
-            this.comboProgrammer2.Location = new System.Drawing.Point(327, 176);
+            this.comboProgrammer2.Location = new System.Drawing.Point(324, 201);
             this.comboProgrammer2.Name = "comboProgrammer2";
             this.comboProgrammer2.Size = new System.Drawing.Size(184, 24);
             this.comboProgrammer2.TabIndex = 7;
             // 
             // numericSGNumber2
             // 
-            this.numericSGNumber2.Location = new System.Drawing.Point(790, 177);
+            this.numericSGNumber2.Location = new System.Drawing.Point(786, 158);
             this.numericSGNumber2.Name = "numericSGNumber2";
             this.numericSGNumber2.Size = new System.Drawing.Size(184, 22);
             this.numericSGNumber2.TabIndex = 8;
             // 
             // textSGID2
             // 
-            this.textSGID2.Location = new System.Drawing.Point(684, 226);
+            this.textSGID2.Location = new System.Drawing.Point(697, 256);
             this.textSGID2.Name = "textSGID2";
             this.textSGID2.Size = new System.Drawing.Size(184, 22);
             this.textSGID2.TabIndex = 9;
@@ -157,7 +160,7 @@ namespace ABC_Institute
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(586, 129);
+            this.label3.Location = new System.Drawing.Point(582, 110);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(119, 20);
             this.label3.TabIndex = 10;
@@ -167,7 +170,7 @@ namespace ABC_Institute
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(586, 176);
+            this.label4.Location = new System.Drawing.Point(582, 157);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(153, 20);
             this.label4.TabIndex = 11;
@@ -177,7 +180,7 @@ namespace ABC_Institute
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(99, 176);
+            this.label5.Location = new System.Drawing.Point(96, 201);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(102, 20);
             this.label5.TabIndex = 12;
@@ -187,7 +190,7 @@ namespace ABC_Institute
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(81, 226);
+            this.label6.Location = new System.Drawing.Point(94, 256);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(77, 20);
             this.label6.TabIndex = 13;
@@ -197,7 +200,7 @@ namespace ABC_Institute
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(524, 228);
+            this.label7.Location = new System.Drawing.Point(537, 258);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(111, 20);
             this.label7.TabIndex = 14;
@@ -206,7 +209,7 @@ namespace ABC_Institute
             // buttonGenerate2
             // 
             this.buttonGenerate2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.buttonGenerate2.Location = new System.Drawing.Point(937, 216);
+            this.buttonGenerate2.Location = new System.Drawing.Point(950, 246);
             this.buttonGenerate2.Name = "buttonGenerate2";
             this.buttonGenerate2.Size = new System.Drawing.Size(108, 39);
             this.buttonGenerate2.TabIndex = 15;
@@ -216,7 +219,7 @@ namespace ABC_Institute
             // buttonClear2
             // 
             this.buttonClear2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.buttonClear2.Location = new System.Drawing.Point(166, 283);
+            this.buttonClear2.Location = new System.Drawing.Point(167, 299);
             this.buttonClear2.Name = "buttonClear2";
             this.buttonClear2.Size = new System.Drawing.Size(138, 39);
             this.buttonClear2.TabIndex = 16;
@@ -226,7 +229,7 @@ namespace ABC_Institute
             // buttonUpdate2
             // 
             this.buttonUpdate2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.buttonUpdate2.Location = new System.Drawing.Point(541, 283);
+            this.buttonUpdate2.Location = new System.Drawing.Point(542, 299);
             this.buttonUpdate2.Name = "buttonUpdate2";
             this.buttonUpdate2.Size = new System.Drawing.Size(138, 39);
             this.buttonUpdate2.TabIndex = 17;
@@ -236,7 +239,7 @@ namespace ABC_Institute
             // buttonDelete2
             // 
             this.buttonDelete2.BackColor = System.Drawing.Color.Red;
-            this.buttonDelete2.Location = new System.Drawing.Point(870, 283);
+            this.buttonDelete2.Location = new System.Drawing.Point(871, 299);
             this.buttonDelete2.Name = "buttonDelete2";
             this.buttonDelete2.Size = new System.Drawing.Size(138, 39);
             this.buttonDelete2.TabIndex = 18;
@@ -246,18 +249,38 @@ namespace ABC_Institute
             // dataGridViewGroups
             // 
             this.dataGridViewGroups.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewGroups.Location = new System.Drawing.Point(50, 337);
+            this.dataGridViewGroups.Location = new System.Drawing.Point(49, 344);
             this.dataGridViewGroups.Name = "dataGridViewGroups";
             this.dataGridViewGroups.RowHeadersWidth = 51;
             this.dataGridViewGroups.RowTemplate.Height = 24;
             this.dataGridViewGroups.Size = new System.Drawing.Size(1049, 269);
             this.dataGridViewGroups.TabIndex = 19;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(96, 109);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(26, 20);
+            this.label8.TabIndex = 20;
+            this.label8.Text = "ID";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(324, 109);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(184, 22);
+            this.textBox1.TabIndex = 21;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1159, 625);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.dataGridViewGroups);
             this.Controls.Add(this.buttonDelete2);
             this.Controls.Add(this.buttonUpdate2);
@@ -310,5 +333,7 @@ namespace ABC_Institute
         private System.Windows.Forms.Button buttonUpdate2;
         private System.Windows.Forms.Button buttonDelete2;
         private System.Windows.Forms.DataGridView dataGridViewGroups;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
