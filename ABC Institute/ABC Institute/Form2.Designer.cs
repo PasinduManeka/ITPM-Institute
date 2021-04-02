@@ -50,7 +50,7 @@ namespace ABC_Institute
             this.buttonDelete2 = new System.Windows.Forms.Button();
             this.dataGridViewGroups = new System.Windows.Forms.DataGridView();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textID = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpGNumber2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericSGNumber2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGroups)).BeginInit();
@@ -89,6 +89,7 @@ namespace ABC_Institute
             this.button1.TabIndex = 3;
             this.button1.Text = "Search";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // comboYearSemester2
             // 
@@ -235,6 +236,7 @@ namespace ABC_Institute
             this.buttonUpdate2.TabIndex = 17;
             this.buttonUpdate2.Text = "Update";
             this.buttonUpdate2.UseVisualStyleBackColor = false;
+            this.buttonUpdate2.Click += new System.EventHandler(this.buttonUpdate2_Click);
             // 
             // buttonDelete2
             // 
@@ -266,20 +268,20 @@ namespace ABC_Institute
             this.label8.TabIndex = 20;
             this.label8.Text = "ID";
             // 
-            // textBox1
+            // textID
             // 
-            this.textBox1.Location = new System.Drawing.Point(324, 109);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(184, 22);
-            this.textBox1.TabIndex = 21;
+            this.textID.Location = new System.Drawing.Point(324, 109);
+            this.textID.Name = "textID";
+            this.textID.ReadOnly = true;
+            this.textID.Size = new System.Drawing.Size(184, 22);
+            this.textID.TabIndex = 21;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1159, 625);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textID);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.dataGridViewGroups);
             this.Controls.Add(this.buttonDelete2);
@@ -335,6 +337,6 @@ namespace ABC_Institute
         private System.Windows.Forms.Button buttonDelete2;
         private System.Windows.Forms.DataGridView dataGridViewGroups;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textID;
     }
 }

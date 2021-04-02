@@ -61,7 +61,7 @@ namespace ABC_Institute
             textSGID .Text = yearsemester + programme + groupNumber +"."+ subgroubNumber;
 
 
-
+            
 
 
 
