@@ -148,6 +148,44 @@ namespace ABC_Institute.Classes
 
         }
 
+        //Delete the existing data
+        public bool DeleteGroups(GroupClass gc)
+        {
+            bool isSuccess = false;
+            SqlConnection con = new SqlConnection(myconnString);
+
+            String sql = "DELETE FROM tudent_groups WHERE id = @id ";
+
+            SqlCommand cmd = new SqlCommand(sql, con);
+            cmd.Parameters.AddWithValue("@id", gc.id);
+
+            int rows = cmd.ExecuteNonQuery();
+
+            if (rows > 0)
+            {
+                isSuccess = true;
+            }
+            else
+            {
+                isSuccess = false;
+            }
+
+            try
+            {
+
+            }
+            catch (Exception e)
+            {
+
+            }
+            finally
+            {
+                con.Close();
+            }
+
+            return isSuccess;
+        }
+
 
     }
 }
