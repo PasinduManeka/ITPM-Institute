@@ -30,76 +30,76 @@ namespace ABC_Institute
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.textGID = new System.Windows.Forms.TextBox();
+            this.textSGID = new System.Windows.Forms.TextBox();
+            this.numericGNum = new System.Windows.Forms.NumericUpDown();
+            this.numericSGNum = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboYearSemester = new System.Windows.Forms.ComboBox();
+            this.comboProgramme = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            this.buttonClear = new System.Windows.Forms.Button();
+            this.buttonGenerate = new System.Windows.Forms.Button();
+            this.buttonSave = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.numericGNum)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericSGNum)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(368, 9);
+            this.label1.Location = new System.Drawing.Point(430, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(272, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Add Student Groups";
             // 
-            // textBox1
+            // textGID
             // 
-            this.textBox1.Location = new System.Drawing.Point(290, 228);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(165, 22);
-            this.textBox1.TabIndex = 1;
+            this.textGID.Location = new System.Drawing.Point(290, 228);
+            this.textGID.Name = "textGID";
+            this.textGID.Size = new System.Drawing.Size(165, 22);
+            this.textGID.TabIndex = 1;
             // 
-            // textBox2
+            // textSGID
             // 
-            this.textBox2.Location = new System.Drawing.Point(706, 228);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(165, 22);
-            this.textBox2.TabIndex = 2;
+            this.textSGID.Location = new System.Drawing.Point(706, 228);
+            this.textSGID.Name = "textSGID";
+            this.textSGID.Size = new System.Drawing.Size(165, 22);
+            this.textSGID.TabIndex = 2;
             // 
-            // numericUpDown1
+            // numericGNum
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(850, 71);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(165, 22);
-            this.numericUpDown1.TabIndex = 3;
+            this.numericGNum.Location = new System.Drawing.Point(905, 71);
+            this.numericGNum.Name = "numericGNum";
+            this.numericGNum.Size = new System.Drawing.Size(165, 22);
+            this.numericGNum.TabIndex = 3;
             // 
-            // numericUpDown2
+            // numericSGNum
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(850, 136);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(165, 22);
-            this.numericUpDown2.TabIndex = 4;
+            this.numericSGNum.Location = new System.Drawing.Point(905, 136);
+            this.numericSGNum.Name = "numericSGNum";
+            this.numericSGNum.Size = new System.Drawing.Size(165, 22);
+            this.numericSGNum.TabIndex = 4;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(60, 76);
+            this.label2.Location = new System.Drawing.Point(115, 76);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(130, 17);
             this.label2.TabIndex = 6;
             this.label2.Text = "Year and Semester";
             // 
-            // comboBox1
+            // comboYearSemester
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboYearSemester.FormattingEnabled = true;
+            this.comboYearSemester.Items.AddRange(new object[] {
             "Y1 S1",
             "Y1 S2",
             "Y2 S1",
@@ -108,15 +108,15 @@ namespace ABC_Institute
             "Y3 S2",
             "Y4 S1",
             "Y4 S2"});
-            this.comboBox1.Location = new System.Drawing.Point(263, 71);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(165, 24);
-            this.comboBox1.TabIndex = 7;
+            this.comboYearSemester.Location = new System.Drawing.Point(318, 71);
+            this.comboYearSemester.Name = "comboYearSemester";
+            this.comboYearSemester.Size = new System.Drawing.Size(165, 24);
+            this.comboYearSemester.TabIndex = 7;
             // 
-            // comboBox2
+            // comboProgramme
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.comboProgramme.FormattingEnabled = true;
+            this.comboProgramme.Items.AddRange(new object[] {
             "IT (WD)",
             "IT (WE)",
             "SE (WD)",
@@ -127,15 +127,15 @@ namespace ABC_Institute
             "DS (WE)",
             "IM (WD)",
             "IM (WE)"});
-            this.comboBox2.Location = new System.Drawing.Point(263, 136);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(165, 24);
-            this.comboBox2.TabIndex = 8;
+            this.comboProgramme.Location = new System.Drawing.Point(318, 136);
+            this.comboProgramme.Name = "comboProgramme";
+            this.comboProgramme.Size = new System.Drawing.Size(165, 24);
+            this.comboProgramme.TabIndex = 8;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(597, 73);
+            this.label3.Location = new System.Drawing.Point(652, 73);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(102, 17);
             this.label3.TabIndex = 9;
@@ -144,7 +144,7 @@ namespace ABC_Institute
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(60, 136);
+            this.label4.Location = new System.Drawing.Point(115, 136);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 17);
             this.label4.TabIndex = 10;
@@ -153,7 +153,7 @@ namespace ABC_Institute
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(597, 140);
+            this.label5.Location = new System.Drawing.Point(652, 140);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(131, 17);
             this.label5.TabIndex = 11;
@@ -178,61 +178,61 @@ namespace ABC_Institute
             this.label7.TabIndex = 15;
             this.label7.Text = "Group ID";
             // 
-            // button2
+            // buttonClear
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.button2.Location = new System.Drawing.Point(284, 317);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(165, 43);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "Clear";
-            this.button2.UseVisualStyleBackColor = false;
+            this.buttonClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.buttonClear.Location = new System.Drawing.Point(284, 317);
+            this.buttonClear.Name = "buttonClear";
+            this.buttonClear.Size = new System.Drawing.Size(165, 43);
+            this.buttonClear.TabIndex = 16;
+            this.buttonClear.Text = "Clear";
+            this.buttonClear.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // buttonGenerate
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button3.Location = new System.Drawing.Point(946, 222);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(141, 34);
-            this.button3.TabIndex = 17;
-            this.button3.Text = "Generate IDs";
-            this.button3.UseVisualStyleBackColor = false;
+            this.buttonGenerate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.buttonGenerate.Location = new System.Drawing.Point(946, 222);
+            this.buttonGenerate.Name = "buttonGenerate";
+            this.buttonGenerate.Size = new System.Drawing.Size(141, 34);
+            this.buttonGenerate.TabIndex = 17;
+            this.buttonGenerate.Text = "Generate IDs";
+            this.buttonGenerate.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // buttonSave
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button1.Location = new System.Drawing.Point(635, 317);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(179, 43);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = false;
+            this.buttonSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.buttonSave.Location = new System.Drawing.Point(635, 317);
+            this.buttonSave.Name = "buttonSave";
+            this.buttonSave.Size = new System.Drawing.Size(179, 43);
+            this.buttonSave.TabIndex = 18;
+            this.buttonSave.Text = "Save";
+            this.buttonSave.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1166, 472);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.buttonSave);
+            this.Controls.Add(this.buttonGenerate);
+            this.Controls.Add(this.buttonClear);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.comboProgramme);
+            this.Controls.Add(this.comboYearSemester);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.numericUpDown2);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.numericSGNum);
+            this.Controls.Add(this.numericGNum);
+            this.Controls.Add(this.textSGID);
+            this.Controls.Add(this.textGID);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Student Groups";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericGNum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericSGNum)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -241,21 +241,21 @@ namespace ABC_Institute
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.TextBox textGID;
+        private System.Windows.Forms.TextBox textSGID;
+        private System.Windows.Forms.NumericUpDown numericGNum;
+        private System.Windows.Forms.NumericUpDown numericSGNum;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboYearSemester;
+        private System.Windows.Forms.ComboBox comboProgramme;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonClear;
+        private System.Windows.Forms.Button buttonGenerate;
+        private System.Windows.Forms.Button buttonSave;
     }
 }
 
