@@ -216,6 +216,7 @@ namespace ABC_Institute
             this.buttonGenerate2.TabIndex = 15;
             this.buttonGenerate2.Text = "Geneate IDs";
             this.buttonGenerate2.UseVisualStyleBackColor = false;
+            this.buttonGenerate2.Click += new System.EventHandler(this.buttonGenerate2_Click);
             // 
             // buttonClear2
             // 

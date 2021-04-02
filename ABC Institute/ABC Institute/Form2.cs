@@ -91,8 +91,8 @@ namespace ABC_Institute
                         comboProgrammer2.Text = (read["programme"].ToString());
                         numericUpGNumber2.Value = Convert.ToInt32((read["groupNumber"].ToString()));
                         numericSGNumber2.Value = Convert.ToInt32((read["subGroupNumber"].ToString()));
-                        textGID2.Text = (read["subGroupId"].ToString());
-                        textSGID2.Text = (read["groupID"].ToString());
+                        textGID2.Text = (read["groupID"].ToString());
+                        textSGID2.Text = (read["subGroupId"].ToString());
                     }
                     read.Close();
                 }
@@ -104,6 +104,17 @@ namespace ABC_Institute
             }
 
             
+        }
+
+        private void buttonGenerate2_Click(object sender, EventArgs e)
+        {
+            String yearsemester = comboYearSemester2.Text;
+            String programmer = comboProgrammer2.Text;
+            int groupNumber = Convert.ToInt32(numericUpGNumber2.Value);
+            int subGroupNum = Convert.ToInt32(numericSGNumber2.Value);
+
+            textGID2.Text = yearsemester + programmer + groupNumber;
+            textSGID2.Text = yearsemester + programmer + groupNumber + "." + subGroupNum;
         }
     }
 }
