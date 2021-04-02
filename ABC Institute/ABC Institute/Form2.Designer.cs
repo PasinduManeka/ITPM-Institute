@@ -80,12 +80,13 @@ namespace ABC_Institute
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.button1.Location = new System.Drawing.Point(649, 54);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(89, 42);
             this.button1.TabIndex = 3;
             this.button1.Text = "Search";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // comboYearSemester2
             // 
@@ -204,39 +205,43 @@ namespace ABC_Institute
             // 
             // buttonGenerate2
             // 
+            this.buttonGenerate2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.buttonGenerate2.Location = new System.Drawing.Point(937, 216);
             this.buttonGenerate2.Name = "buttonGenerate2";
             this.buttonGenerate2.Size = new System.Drawing.Size(108, 39);
             this.buttonGenerate2.TabIndex = 15;
             this.buttonGenerate2.Text = "Geneate IDs";
-            this.buttonGenerate2.UseVisualStyleBackColor = true;
+            this.buttonGenerate2.UseVisualStyleBackColor = false;
             // 
             // buttonClear2
             // 
+            this.buttonClear2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.buttonClear2.Location = new System.Drawing.Point(166, 283);
             this.buttonClear2.Name = "buttonClear2";
             this.buttonClear2.Size = new System.Drawing.Size(138, 39);
             this.buttonClear2.TabIndex = 16;
             this.buttonClear2.Text = "Clear ";
-            this.buttonClear2.UseVisualStyleBackColor = true;
+            this.buttonClear2.UseVisualStyleBackColor = false;
             // 
             // buttonUpdate2
             // 
+            this.buttonUpdate2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.buttonUpdate2.Location = new System.Drawing.Point(541, 283);
             this.buttonUpdate2.Name = "buttonUpdate2";
             this.buttonUpdate2.Size = new System.Drawing.Size(138, 39);
             this.buttonUpdate2.TabIndex = 17;
             this.buttonUpdate2.Text = "Update";
-            this.buttonUpdate2.UseVisualStyleBackColor = true;
+            this.buttonUpdate2.UseVisualStyleBackColor = false;
             // 
             // buttonDelete2
             // 
+            this.buttonDelete2.BackColor = System.Drawing.Color.Red;
             this.buttonDelete2.Location = new System.Drawing.Point(870, 283);
             this.buttonDelete2.Name = "buttonDelete2";
             this.buttonDelete2.Size = new System.Drawing.Size(138, 39);
             this.buttonDelete2.TabIndex = 18;
             this.buttonDelete2.Text = "Delete";
-            this.buttonDelete2.UseVisualStyleBackColor = true;
+            this.buttonDelete2.UseVisualStyleBackColor = false;
             // 
             // dataGridViewGroups
             // 
