@@ -54,7 +54,7 @@ namespace ABC_Institute
             string yearsemester = comboYearSemester.Text;
             string programme = comboProgramme.Text;
             int groupNumber = Convert.ToInt32(numericBatchNumber.Value);
-            int subgroubNumber = Convert.ToInt32(numericGroupNumber.DecimalPlaces);
+            int subgroubNumber = Convert.ToInt32(numericGroupNumber.Value);
 
 
             textGID.Text = yearsemester + programme + groupNumber;
