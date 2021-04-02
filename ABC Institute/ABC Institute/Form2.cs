@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ABC_Institute.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +18,8 @@ namespace ABC_Institute
             InitializeComponent();
         }
 
+        GroupClass c = new GroupClass();
+
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -30,6 +33,12 @@ namespace ABC_Institute
         private void textGID2_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            DataTable dt = c.Select();
+            dataGridViewGroups.DataSource = dt;
         }
     }
 }

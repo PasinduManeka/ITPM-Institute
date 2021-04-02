@@ -303,6 +303,7 @@ namespace ABC_Institute
             this.Controls.Add(this.label1);
             this.Name = "Form2";
             this.Text = "Student Groups";
+            this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpGNumber2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericSGNumber2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGroups)).EndInit();
