@@ -46,7 +46,29 @@ namespace ABC_Institute
 
         private void buttonUpdate2_Click(object sender, EventArgs e)
         {
-            //
+            c.id = Convert.ToInt32(textSearch.Text);
+            c.yearSemester = comboYearSemester2.Text;
+            c.programme = comboProgrammer2.Text;
+            c.groupNumber = Convert.ToInt32(numericUpGNumber2.Value);
+            c.subgroupNumber = Convert.ToInt32(numericSGNumber2.Value);
+            c.groupID = textGID2.Text;
+            c.subGroupID = textSGID2.Text;
+
+            bool success = c.Update(c);
+
+            if (success == true)
+            {
+                MessageBox.Show("Updated.........");
+            }
+            else
+            {
+                MessageBox.Show("Failed to update...");
+            }
+
+            DataTable dt = c.Select();
+            dataGridViewGroups.DataSource = dt;
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -81,6 +103,7 @@ namespace ABC_Institute
 
             }
 
+            
         }
     }
 }
