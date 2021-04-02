@@ -58,11 +58,13 @@ namespace ABC_Institute
             this.buttonGID.TabIndex = 0;
             this.buttonGID.Text = "Generate IDs";
             this.buttonGID.UseVisualStyleBackColor = false;
+            this.buttonGID.Click += new System.EventHandler(this.buttonGID_Click);
             // 
             // textGID
             // 
             this.textGID.Location = new System.Drawing.Point(210, 239);
             this.textGID.Name = "textGID";
+            this.textGID.ReadOnly = true;
             this.textGID.Size = new System.Drawing.Size(182, 22);
             this.textGID.TabIndex = 1;
             // 
@@ -76,6 +78,15 @@ namespace ABC_Institute
             // comboYearSemester
             // 
             this.comboYearSemester.FormattingEnabled = true;
+            this.comboYearSemester.Items.AddRange(new object[] {
+            "Y1S1",
+            "Y1S2",
+            "Y2S1",
+            "Y2S2",
+            "Y3S1",
+            "Y3S2",
+            "Y4S1",
+            "Y4S2"});
             this.comboYearSemester.Location = new System.Drawing.Point(308, 82);
             this.comboYearSemester.Name = "comboYearSemester";
             this.comboYearSemester.Size = new System.Drawing.Size(182, 24);
@@ -105,6 +116,13 @@ namespace ABC_Institute
             // comboProgramme
             // 
             this.comboProgramme.FormattingEnabled = true;
+            this.comboProgramme.Items.AddRange(new object[] {
+            "IT(WD)",
+            "IT(WE)",
+            "SE(WD)",
+            "SE(WE)",
+            "DS(WD)",
+            "DS(WD)"});
             this.comboProgramme.Location = new System.Drawing.Point(308, 139);
             this.comboProgramme.Name = "comboProgramme";
             this.comboProgramme.Size = new System.Drawing.Size(182, 24);
@@ -171,6 +189,7 @@ namespace ABC_Institute
             // 
             this.textSGID.Location = new System.Drawing.Point(614, 239);
             this.textSGID.Name = "textSGID";
+            this.textSGID.ReadOnly = true;
             this.textSGID.Size = new System.Drawing.Size(182, 22);
             this.textSGID.TabIndex = 12;
             // 
@@ -183,6 +202,7 @@ namespace ABC_Institute
             this.buttonClear.TabIndex = 14;
             this.buttonClear.Text = "Clear";
             this.buttonClear.UseVisualStyleBackColor = false;
+            this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
             // 
             // buttonSave
             // 

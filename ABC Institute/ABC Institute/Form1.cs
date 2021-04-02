@@ -30,10 +30,10 @@ namespace ABC_Institute
             c.yearSemester = comboYearSemester.Text;
             c.programme = comboProgramme.Text;
             c.groupNumber = Convert.ToInt32(numericBatchNumber.Value);
-            c.subgroupNumber = Convert.ToInt32(numericGroupNumber.DecimalPlaces);
+            c.subgroupNumber = Convert.ToInt32(numericGroupNumber.Value);
 
-            c.groupID = c.yearSemester + c.programme + c.groupNumber;
-            c.subGroupID = c.groupID + c.subgroupNumber;
+            c.groupID = textGID.Text;
+            c.subGroupID = textSGID.Text;
 
 
             bool success = c.Insert(c);
@@ -45,6 +45,36 @@ namespace ABC_Institute
             {
                 MessageBox.Show("Faild to create new group. ");
             }
+
+
+        }
+
+        private void buttonGID_Click(object sender, EventArgs e)
+        {
+            string yearsemester = comboYearSemester.Text;
+            string programme = comboProgramme.Text;
+            int groupNumber = Convert.ToInt32(numericBatchNumber.Value);
+            int subgroubNumber = Convert.ToInt32(numericGroupNumber.DecimalPlaces);
+
+
+            textGID.Text = yearsemester + programme + groupNumber;
+            textSGID .Text = yearsemester + programme + groupNumber +"."+ subgroubNumber;
+
+
+
+
+
+
+        }
+
+        private void buttonClear_Click(object sender, EventArgs e)
+        {
+            comboYearSemester.Text = string.Empty;
+            comboProgramme.Text = string.Empty;
+            numericBatchNumber.Value = 0;
+            numericGroupNumber.Value = 0;
+            textGID.Text = string.Empty;
+            textSGID.Text = string.Empty;
 
 
         }
