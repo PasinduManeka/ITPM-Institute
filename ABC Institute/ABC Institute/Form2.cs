@@ -65,8 +65,8 @@ namespace ABC_Institute
                     while (read.Read())
                     {
                         textID.Text = (read["id"].ToString());
-                        comboYearSemester2.SelectedValue = (read["academicyearsemester"].ToString());
-                        comboProgrammer2.SelectedValue = (read["programme"].ToString());
+                        comboYearSemester2.Text = (read["academicyearsemester"].ToString());
+                        comboProgrammer2.Text = (read["programme"].ToString());
                         numericUpGNumber2.Value = Convert.ToInt32((read["groupNumber"].ToString()));
                         numericSGNumber2.Value = Convert.ToInt32((read["subGroupNumber"].ToString()));
                         textGID2.Text = (read["subGroupId"].ToString());
