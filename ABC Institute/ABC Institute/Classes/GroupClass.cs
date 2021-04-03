@@ -108,7 +108,7 @@ namespace ABC_Institute.Classes
             try
             {
                 //SQL to update in the database
-                String sql = "UPDATE student_groups SET academicyearsemester=@academicyearsemester, programme=@programme, groupNumber=@groupNumber, subGroupNumber=@subGroupNumber, subGroupId=@subGroupId, groupID=@groupID" +
+                String sql = "UPDATE student_groups SET academicyearsemester=@academicyearsemester, programme=@programme, groupNumber=@groupNumber, subGroupNumber=@subGroupNumber, subGroupId=@subGroupId, groupID=@groupID " +
                     "WHERE id = @id";
 
                 SqlCommand cmd = new SqlCommand(sql, con);
