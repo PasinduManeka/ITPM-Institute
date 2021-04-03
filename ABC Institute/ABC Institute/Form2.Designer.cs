@@ -249,6 +249,7 @@ namespace ABC_Institute
             this.buttonDelete2.TabIndex = 18;
             this.buttonDelete2.Text = "Delete";
             this.buttonDelete2.UseVisualStyleBackColor = false;
+            this.buttonDelete2.Click += new System.EventHandler(this.buttonDelete2_Click);
             // 
             // dataGridViewGroups
             // 

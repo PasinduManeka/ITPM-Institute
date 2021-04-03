@@ -74,6 +74,10 @@ namespace ABC_Institute
         private void button1_Click(object sender, EventArgs e)
         {
             c.id= Convert.ToInt32(textSearch.Text);
+            /*if (textSearch.Text = "")
+            {
+
+            }*/
             SqlConnection con = new SqlConnection(myconnString);
             string selectSql = "select* from student_groups WHERE id=@id";
             SqlCommand com = new SqlCommand(selectSql, con);
@@ -119,12 +123,31 @@ namespace ABC_Institute
 
         private void buttonClear2_Click(object sender, EventArgs e)
         {
+            textSearch.Text = string.Empty;
+            textID.Text = string.Empty;
             comboYearSemester2.Text = string.Empty;
             comboProgrammer2.Text = string.Empty;
             numericUpGNumber2.Value = 0;
             numericSGNumber2.Value = 0;
             textGID2.Text = string.Empty;
             textSGID2.Text = string.Empty;
+        }
+
+        private void buttonDelete2_Click(object sender, EventArgs e)
+        {
+            c.id = int.Parse(textSearch.Text);
+            bool success = c.DeleteGroups(c);
+
+            if (success = true)
+            {
+                MessageBox.Show("Record Deleted.....");
+            }
+            else if(success = false)
+            {
+                MessageBox.Show("Record is not deleted.....");
+            }
+            DataTable dt = c.Select();
+            dataGridViewGroups.DataSource = dt;
         }
     }
 }
