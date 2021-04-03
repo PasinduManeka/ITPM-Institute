@@ -46,7 +46,7 @@ namespace ABC_Institute
 
         private void buttonUpdate2_Click(object sender, EventArgs e)
         {
-            c.id = Convert.ToInt32(textSearch.Text);
+            c.id = int.Parse(textSearch.Text);
             c.yearSemester = comboYearSemester2.Text;
             c.programme = comboProgrammer2.Text;
             c.groupNumber = Convert.ToInt32(numericUpGNumber2.Value);
@@ -62,7 +62,7 @@ namespace ABC_Institute
             }
             else
             {
-                MessageBox.Show("Failed to update...");
+                MessageBox.Show("Failed to update. Try Again...");
             }
 
             DataTable dt = c.Select();
@@ -115,6 +115,16 @@ namespace ABC_Institute
 
             textGID2.Text = yearsemester + programmer + groupNumber;
             textSGID2.Text = yearsemester + programmer + groupNumber + "." + subGroupNum;
+        }
+
+        private void buttonClear2_Click(object sender, EventArgs e)
+        {
+            comboYearSemester2.Text = string.Empty;
+            comboProgrammer2.Text = string.Empty;
+            numericUpGNumber2.Value = 0;
+            numericSGNumber2.Value = 0;
+            textGID2.Text = string.Empty;
+            textSGID2.Text = string.Empty;
         }
     }
 }

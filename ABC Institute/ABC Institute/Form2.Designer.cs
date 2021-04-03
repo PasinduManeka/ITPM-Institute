@@ -227,6 +227,7 @@ namespace ABC_Institute
             this.buttonClear2.TabIndex = 16;
             this.buttonClear2.Text = "Clear ";
             this.buttonClear2.UseVisualStyleBackColor = false;
+            this.buttonClear2.Click += new System.EventHandler(this.buttonClear2_Click);
             // 
             // buttonUpdate2
             // 

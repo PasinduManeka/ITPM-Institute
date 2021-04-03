@@ -112,18 +112,24 @@ namespace ABC_Institute.Classes
                     "WHERE id = @id";
 
                 SqlCommand cmd = new SqlCommand(sql, con);
+
+                // Console.WriteLine(gc.id);
+                Console.WriteLine(gc.yearSemester);
+                Console.WriteLine(gc.programme);
+                Console.WriteLine(gc.groupNumber);
+
                 cmd.Parameters.AddWithValue("@academicyearsemester", gc.yearSemester);
                 cmd.Parameters.AddWithValue("@programme", gc.programme);
                 cmd.Parameters.AddWithValue("@groupNumber", gc.groupNumber);
                 cmd.Parameters.AddWithValue("@subGroupNumber", gc.subgroupNumber);
                 cmd.Parameters.AddWithValue("@subGroupId", gc.subGroupID);
                 cmd.Parameters.AddWithValue("@groupID", gc.groupID);
-                cmd.Parameters.AddWithValue("id", gc.id);
+                cmd.Parameters.AddWithValue("@id", gc.id);
 
                 //Open Databse Connection
-
                 con.Open();
                 int rows = cmd.ExecuteNonQuery();
+                    
 
                 if (rows > 0)
                 {
@@ -138,7 +144,7 @@ namespace ABC_Institute.Classes
             }
             catch(Exception e)
             {
-
+                Console.WriteLine(e);
             }
             finally
             {
