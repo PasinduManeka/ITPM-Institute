@@ -59,6 +59,8 @@ namespace ABC_Institute
             textSubjectCode.Text = string.Empty;
             textTagCode.Text = string.Empty;
             comboRTag.Text = string.Empty;
+
+            
         }
     }
 }

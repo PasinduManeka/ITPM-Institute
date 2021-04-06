@@ -190,6 +190,7 @@ namespace ABC_Institute
             this.buttonUpdate.TabIndex = 35;
             this.buttonUpdate.Text = "Update";
             this.buttonUpdate.UseVisualStyleBackColor = false;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // textBoxTagID
             // 

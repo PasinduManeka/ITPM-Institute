@@ -75,5 +75,26 @@ namespace ABC_Institute
             textTagCode.Text = string.Empty;
 
         }
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+            tg.tagID = Convert.ToInt32( textBoxTagID.Text);
+            tg.subjectName = textSubjectName.Text;
+            tg.tagCode = textTagCode.Text;
+            tg.subjectCode = textSubjectCode.Text;
+            tg.rTag = comboRTags.Text;
+
+            bool success = tg.Update(tg);
+
+            if (success == true)
+            {
+                MessageBox.Show("Record is Updated....");
+            }
+            else
+            {
+                MessageBox.Show("Record has not updated. Try again")
+            }
+
+        }
     }
 }
