@@ -65,5 +65,15 @@ namespace ABC_Institute
             DataTable dt = tg.select();
             dataGridViewTags.DataSource = dt;
         }
+
+        private void buttonClear_Click(object sender, EventArgs e)
+        {
+            textSubjectName.Text = string.Empty;
+            textSubjectCode.Text = string.Empty;
+            textBoxSearch.Text = string.Empty;
+            textBoxTagID.Text = string.Empty;
+            textTagCode.Text = string.Empty;
+
+        }
     }
 }

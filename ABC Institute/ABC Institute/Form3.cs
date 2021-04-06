@@ -36,7 +36,7 @@ namespace ABC_Institute
 
             if (success == true)
             {
-                if(MessageBox.Show("Do You want to move Manage Tags?", "Tag is ceated...", MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.Yes)
+                if(MessageBox.Show("Do You want to move \'Manage Tags\'?", "Tag is ceated...", MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.Yes)
                 {
                     Form4 f4 = new Form4();
                     f4.Show();

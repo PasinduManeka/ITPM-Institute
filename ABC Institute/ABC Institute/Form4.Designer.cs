@@ -58,6 +58,7 @@ namespace ABC_Institute
             this.buttonClear.TabIndex = 34;
             this.buttonClear.Text = "Clear";
             this.buttonClear.UseVisualStyleBackColor = false;
+            this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
             // 
             // textSubjectCode
             // 
