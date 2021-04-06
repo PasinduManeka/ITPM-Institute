@@ -36,11 +36,20 @@ namespace ABC_Institute
 
             if (success == true)
             {
-                MessageBox.Show("Tag is created.....");
+                if(MessageBox.Show("Do You want to move Manage Tags?", "Tag is ceated...", MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.Yes)
+                {
+                    Form4 f4 = new Form4();
+                    f4.Show();
+                }
+                else
+                {
+
+                }
+                //MessageBox.Show("Tag is created.....");
             }
             else
             {
-                MessageBox.Show("Tag has not created. Try agein..........");
+                MessageBox.Show("Tag has not created. Try again..........");
             }
         }
 

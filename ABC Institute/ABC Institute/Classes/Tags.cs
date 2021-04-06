@@ -56,8 +56,15 @@ namespace ABC_Institute.Classes
 
             try
             {
-                string sql = "INSERT INTO tags(subjectName, tagCode, subjectCode, relatedCode) " +
-                    "VALUES(@subjectName, @tagCode, @subjectCode, @relatedCode)";
+
+                //Console.WriteLine(tg.tagID);
+                Console.WriteLine(tg.subjectName);
+                Console.WriteLine(tg.tagCode);
+                Console.WriteLine(tg.subjectCode);
+
+
+                string sql = "INSERT INTO tags (subjectName, tagCode, subjectCode, relatedTag) VALUES (@subjectName, @tagCode, " +
+                    "@subjectCode, @relatedCode)";
 
                 SqlCommand cmd = new SqlCommand(sql, con);
 
@@ -105,7 +112,7 @@ namespace ABC_Institute.Classes
 
                 SqlCommand cmd = new SqlCommand(sql, con);
 
-                // Console.WriteLine(tg.tagID);
+                //Console.WriteLine(tg.tagID);
                 //Console.WriteLine(tg.subjectName);
                 //Console.WriteLine(tg.tagCode);
                 //Console.WriteLine(tg.subjectCode);

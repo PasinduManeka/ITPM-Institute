@@ -36,21 +36,23 @@ namespace ABC_Institute
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboProgramme = new System.Windows.Forms.ComboBox();
+            this.comboRTags = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxSearch = new System.Windows.Forms.TextBox();
             this.buttonSearch = new System.Windows.Forms.Button();
             this.dataGridViewTags = new System.Windows.Forms.DataGridView();
             this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonUpdate = new System.Windows.Forms.Button();
+            this.textBoxTagID = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTags)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonClear
             // 
             this.buttonClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.buttonClear.Location = new System.Drawing.Point(121, 209);
+            this.buttonClear.Location = new System.Drawing.Point(125, 258);
             this.buttonClear.Name = "buttonClear";
             this.buttonClear.Size = new System.Drawing.Size(161, 50);
             this.buttonClear.TabIndex = 34;
@@ -66,14 +68,14 @@ namespace ABC_Institute
             // 
             // textTagCode
             // 
-            this.textTagCode.Location = new System.Drawing.Point(335, 160);
+            this.textTagCode.Location = new System.Drawing.Point(347, 214);
             this.textTagCode.Name = "textTagCode";
             this.textTagCode.Size = new System.Drawing.Size(196, 22);
             this.textTagCode.TabIndex = 32;
             // 
             // textSubjectName
             // 
-            this.textSubjectName.Location = new System.Drawing.Point(335, 108);
+            this.textSubjectName.Location = new System.Drawing.Point(347, 162);
             this.textSubjectName.Name = "textSubjectName";
             this.textSubjectName.Size = new System.Drawing.Size(196, 22);
             this.textSubjectName.TabIndex = 31;
@@ -102,29 +104,29 @@ namespace ABC_Institute
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(168, 162);
+            this.label3.Location = new System.Drawing.Point(180, 216);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(81, 20);
             this.label3.TabIndex = 28;
             this.label3.Text = "Tag Code";
             // 
-            // comboProgramme
+            // comboRTags
             // 
-            this.comboProgramme.FormattingEnabled = true;
-            this.comboProgramme.Items.AddRange(new object[] {
+            this.comboRTags.FormattingEnabled = true;
+            this.comboRTags.Items.AddRange(new object[] {
             "Lecture",
             "Lab",
             "Tutorial"});
-            this.comboProgramme.Location = new System.Drawing.Point(784, 162);
-            this.comboProgramme.Name = "comboProgramme";
-            this.comboProgramme.Size = new System.Drawing.Size(196, 24);
-            this.comboProgramme.TabIndex = 27;
+            this.comboRTags.Location = new System.Drawing.Point(784, 162);
+            this.comboRTags.Name = "comboRTags";
+            this.comboRTags.Size = new System.Drawing.Size(196, 24);
+            this.comboRTags.TabIndex = 27;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(168, 107);
+            this.label2.Location = new System.Drawing.Point(180, 161);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(114, 20);
             this.label2.TabIndex = 26;
@@ -140,12 +142,12 @@ namespace ABC_Institute
             this.label1.TabIndex = 25;
             this.label1.Text = "Manage Tags";
             // 
-            // textBox1
+            // textBoxSearch
             // 
-            this.textBox1.Location = new System.Drawing.Point(428, 59);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(196, 22);
-            this.textBox1.TabIndex = 36;
+            this.textBoxSearch.Location = new System.Drawing.Point(428, 59);
+            this.textBoxSearch.Name = "textBoxSearch";
+            this.textBoxSearch.Size = new System.Drawing.Size(196, 22);
+            this.textBoxSearch.TabIndex = 36;
             // 
             // buttonSearch
             // 
@@ -156,21 +158,22 @@ namespace ABC_Institute
             this.buttonSearch.TabIndex = 37;
             this.buttonSearch.Text = "Search";
             this.buttonSearch.UseVisualStyleBackColor = false;
+            this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
             // 
             // dataGridViewTags
             // 
             this.dataGridViewTags.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewTags.Location = new System.Drawing.Point(94, 294);
+            this.dataGridViewTags.Location = new System.Drawing.Point(94, 324);
             this.dataGridViewTags.Name = "dataGridViewTags";
             this.dataGridViewTags.RowHeadersWidth = 51;
             this.dataGridViewTags.RowTemplate.Height = 24;
-            this.dataGridViewTags.Size = new System.Drawing.Size(1010, 237);
+            this.dataGridViewTags.Size = new System.Drawing.Size(1010, 207);
             this.dataGridViewTags.TabIndex = 39;
             // 
             // buttonDelete
             // 
             this.buttonDelete.BackColor = System.Drawing.Color.Red;
-            this.buttonDelete.Location = new System.Drawing.Point(871, 209);
+            this.buttonDelete.Location = new System.Drawing.Point(875, 258);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(212, 50);
             this.buttonDelete.TabIndex = 38;
@@ -180,22 +183,42 @@ namespace ABC_Institute
             // buttonUpdate
             // 
             this.buttonUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.buttonUpdate.Location = new System.Drawing.Point(477, 209);
+            this.buttonUpdate.Location = new System.Drawing.Point(481, 258);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(212, 50);
             this.buttonUpdate.TabIndex = 35;
             this.buttonUpdate.Text = "Update";
             this.buttonUpdate.UseVisualStyleBackColor = false;
             // 
+            // textBoxTagID
+            // 
+            this.textBoxTagID.Location = new System.Drawing.Point(347, 108);
+            this.textBoxTagID.Name = "textBoxTagID";
+            this.textBoxTagID.ReadOnly = true;
+            this.textBoxTagID.Size = new System.Drawing.Size(196, 22);
+            this.textBoxTagID.TabIndex = 40;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(180, 108);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(26, 20);
+            this.label6.TabIndex = 41;
+            this.label6.Text = "ID";
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1198, 543);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.textBoxTagID);
             this.Controls.Add(this.dataGridViewTags);
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.buttonSearch);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxSearch);
             this.Controls.Add(this.buttonUpdate);
             this.Controls.Add(this.buttonClear);
             this.Controls.Add(this.textSubjectCode);
@@ -204,11 +227,12 @@ namespace ABC_Institute
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboProgramme);
+            this.Controls.Add(this.comboRTags);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form4";
             this.Text = "Tags";
+            this.Load += new System.EventHandler(this.Form4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTags)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -223,13 +247,15 @@ namespace ABC_Institute
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboProgramme;
+        private System.Windows.Forms.ComboBox comboRTags;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxSearch;
         private System.Windows.Forms.Button buttonSearch;
         private System.Windows.Forms.DataGridView dataGridViewTags;
         private System.Windows.Forms.Button buttonDelete;
         private System.Windows.Forms.Button buttonUpdate;
+        private System.Windows.Forms.TextBox textBoxTagID;
+        private System.Windows.Forms.Label label6;
     }
 }
