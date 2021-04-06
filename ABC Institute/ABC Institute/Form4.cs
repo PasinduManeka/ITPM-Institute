@@ -92,8 +92,30 @@ namespace ABC_Institute
             }
             else
             {
-                MessageBox.Show("Record has not updated. Try again")
+                MessageBox.Show("Record has not updated. Try again");
             }
+
+            DataTable dt = tg.select();
+            dataGridViewTags.DataSource = dt;
+        }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+            tg.tagID = Convert.ToInt32(textBoxTagID.Text);
+
+            bool success = tg.DeleteTags(tg);
+
+            if (success == true)
+            {
+                MessageBox.Show("Record is Deleted");
+            }
+            else
+            {
+                MessageBox.Show("Record has not deleted. Try Again.....");
+            }
+
+            DataTable dt = tg.select();
+            dataGridViewTags.DataSource = dt;
 
         }
     }
