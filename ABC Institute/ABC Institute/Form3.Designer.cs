@@ -38,7 +38,7 @@ namespace ABC_Institute
             this.textSubjectName = new System.Windows.Forms.TextBox();
             this.textTagCode = new System.Windows.Forms.TextBox();
             this.textSubjectCode = new System.Windows.Forms.TextBox();
-            this.buttonClear = new System.Windows.Forms.Button();
+            this.buttonClear3 = new System.Windows.Forms.Button();
             this.buttonSave = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -86,11 +86,11 @@ namespace ABC_Institute
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(343, 35);
+            this.label1.Location = new System.Drawing.Point(421, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(272, 32);
+            this.label1.Size = new System.Drawing.Size(136, 32);
             this.label1.TabIndex = 13;
-            this.label1.Text = "Add Student Groups";
+            this.label1.Text = "Add Tags";
             // 
             // comboProgramme
             // 
@@ -126,15 +126,15 @@ namespace ABC_Institute
             this.textSubjectCode.TabIndex = 22;
             this.textSubjectCode.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
-            // buttonClear
+            // buttonClear3
             // 
-            this.buttonClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.buttonClear.Location = new System.Drawing.Point(210, 333);
-            this.buttonClear.Name = "buttonClear";
-            this.buttonClear.Size = new System.Drawing.Size(212, 50);
-            this.buttonClear.TabIndex = 23;
-            this.buttonClear.Text = "Clear";
-            this.buttonClear.UseVisualStyleBackColor = false;
+            this.buttonClear3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.buttonClear3.Location = new System.Drawing.Point(210, 333);
+            this.buttonClear3.Name = "buttonClear3";
+            this.buttonClear3.Size = new System.Drawing.Size(212, 50);
+            this.buttonClear3.TabIndex = 23;
+            this.buttonClear3.Text = "Clear";
+            this.buttonClear3.UseVisualStyleBackColor = false;
             // 
             // buttonSave
             // 
@@ -150,9 +150,9 @@ namespace ABC_Institute
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1044, 503);
+            this.ClientSize = new System.Drawing.Size(1006, 476);
             this.Controls.Add(this.buttonSave);
-            this.Controls.Add(this.buttonClear);
+            this.Controls.Add(this.buttonClear3);
             this.Controls.Add(this.textSubjectCode);
             this.Controls.Add(this.textTagCode);
             this.Controls.Add(this.textSubjectName);
@@ -180,7 +180,7 @@ namespace ABC_Institute
         private System.Windows.Forms.TextBox textSubjectName;
         private System.Windows.Forms.TextBox textTagCode;
         private System.Windows.Forms.TextBox textSubjectCode;
-        private System.Windows.Forms.Button buttonClear;
+        private System.Windows.Forms.Button buttonClear3;
         private System.Windows.Forms.Button buttonSave;
     }
 }

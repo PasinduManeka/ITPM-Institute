@@ -10,3 +10,4 @@ D:\VisualStudio Workspace\ABC Institute\ABC Institute\obj\Debug\ABC Institute.cs
 D:\VisualStudio Workspace\ABC Institute\ABC Institute\obj\Debug\ABC Institute.exe
 D:\VisualStudio Workspace\ABC Institute\ABC Institute\obj\Debug\ABC Institute.pdb
 D:\VisualStudio Workspace\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.Form3.resources
+D:\VisualStudio Workspace\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.Form4.resources
