@@ -107,7 +107,7 @@ namespace ABC_Institute.Classes
             try
             {
                 //SQL to update in the database
-                String sql = "UPDATE tags SET  subjectName = @subjectName, tagCode = @tagCode, subjectCode = @subjectCode, relatedCode = @relatedCode "+
+                String sql = "UPDATE tags SET  subjectName = @subjectName, tagCode = @tagCode, subjectCode = @subjectCode, relatedTag = @relatedTag " +
                     "WHERE id = @id";
 
                 SqlCommand cmd = new SqlCommand(sql, con);
@@ -120,7 +120,7 @@ namespace ABC_Institute.Classes
                 cmd.Parameters.AddWithValue("@subjectName", tg.subjectName);
                 cmd.Parameters.AddWithValue("@tagCode", tg.tagCode);
                 cmd.Parameters.AddWithValue("@subjectCode", tg.subjectCode);
-                cmd.Parameters.AddWithValue("@relatedCode", tg.rTag);
+                cmd.Parameters.AddWithValue("@relatedTag", tg.rTag);
                 cmd.Parameters.AddWithValue("@id", tg.tagID);
 
                 //Open Databse Connection
