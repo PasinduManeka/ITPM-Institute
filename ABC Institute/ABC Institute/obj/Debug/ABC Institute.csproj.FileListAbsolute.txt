@@ -9,3 +9,4 @@ D:\VisualStudio Workspace\ABC Institute\ABC Institute\obj\Debug\ABC Institute.cs
 D:\VisualStudio Workspace\ABC Institute\ABC Institute\obj\Debug\ABC Institute.csproj.CoreCompileInputs.cache
 D:\VisualStudio Workspace\ABC Institute\ABC Institute\obj\Debug\ABC Institute.exe
 D:\VisualStudio Workspace\ABC Institute\ABC Institute\obj\Debug\ABC Institute.pdb
+D:\VisualStudio Workspace\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.Form3.resources

@@ -124,6 +124,7 @@ namespace ABC_Institute
             // 
             this.textGID2.Location = new System.Drawing.Point(255, 256);
             this.textGID2.Name = "textGID2";
+            this.textGID2.ReadOnly = true;
             this.textGID2.Size = new System.Drawing.Size(184, 22);
             this.textGID2.TabIndex = 6;
             this.textGID2.TextChanged += new System.EventHandler(this.textGID2_TextChanged);
@@ -154,6 +155,7 @@ namespace ABC_Institute
             // 
             this.textSGID2.Location = new System.Drawing.Point(697, 256);
             this.textSGID2.Name = "textSGID2";
+            this.textSGID2.ReadOnly = true;
             this.textSGID2.Size = new System.Drawing.Size(184, 22);
             this.textSGID2.TabIndex = 9;
             // 

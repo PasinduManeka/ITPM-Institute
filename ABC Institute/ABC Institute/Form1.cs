@@ -58,7 +58,7 @@ namespace ABC_Institute
 
 
             textGID.Text = yearsemester + programme + groupNumber;
-            textSGID .Text = yearsemester + programme + groupNumber +"."+ subgroubNumber;
+            textSGID .Text = yearsemester +"."+ programme + groupNumber +"."+ subgroubNumber;
 
 
             
@@ -75,7 +75,6 @@ namespace ABC_Institute
             numericGroupNumber.Value = 0;
             textGID.Text = string.Empty;
             textSGID.Text = string.Empty;
-
 
         }
     }

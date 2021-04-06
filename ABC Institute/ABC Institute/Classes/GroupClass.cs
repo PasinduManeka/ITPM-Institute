@@ -61,7 +61,8 @@ namespace ABC_Institute.Classes
             try
             {
                 //SQL query to data insert
-                String sql = "INSERT INTO student_groups (academicyearsemester, programme, groupNumber, subGroupNumber, subGroupId, groupID) VALUES (@academicyearsemester, @programme, @groupNumber, @subGroupNumber, @subGroupId, @groupID)";
+                String sql = "INSERT INTO student_groups (academicyearsemester, programme, groupNumber, subGroupNumber, subGroupId, groupID) VALUES (@academicyearsemester, @programme, " +
+                    "@groupNumber, @subGroupNumber, @subGroupId, @groupID)";
 
                 //Creating SQL Command using sql and conn
                 SqlCommand cmd = new SqlCommand(sql, con);
