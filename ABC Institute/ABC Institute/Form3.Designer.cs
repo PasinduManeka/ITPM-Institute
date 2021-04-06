@@ -34,7 +34,7 @@ namespace ABC_Institute
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboProgramme = new System.Windows.Forms.ComboBox();
+            this.comboRTag = new System.Windows.Forms.ComboBox();
             this.textSubjectName = new System.Windows.Forms.TextBox();
             this.textTagCode = new System.Windows.Forms.TextBox();
             this.textSubjectCode = new System.Windows.Forms.TextBox();
@@ -92,17 +92,17 @@ namespace ABC_Institute
             this.label1.TabIndex = 13;
             this.label1.Text = "Add Tags";
             // 
-            // comboProgramme
+            // comboRTag
             // 
-            this.comboProgramme.FormattingEnabled = true;
-            this.comboProgramme.Items.AddRange(new object[] {
+            this.comboRTag.FormattingEnabled = true;
+            this.comboRTag.Items.AddRange(new object[] {
             "Lecture",
             "Lab",
             "Tutorial"});
-            this.comboProgramme.Location = new System.Drawing.Point(700, 224);
-            this.comboProgramme.Name = "comboProgramme";
-            this.comboProgramme.Size = new System.Drawing.Size(196, 24);
-            this.comboProgramme.TabIndex = 15;
+            this.comboRTag.Location = new System.Drawing.Point(700, 224);
+            this.comboRTag.Name = "comboRTag";
+            this.comboRTag.Size = new System.Drawing.Size(196, 24);
+            this.comboRTag.TabIndex = 15;
             // 
             // textSubjectName
             // 
@@ -135,6 +135,7 @@ namespace ABC_Institute
             this.buttonClear3.TabIndex = 23;
             this.buttonClear3.Text = "Clear";
             this.buttonClear3.UseVisualStyleBackColor = false;
+            this.buttonClear3.Click += new System.EventHandler(this.buttonClear3_Click);
             // 
             // buttonSave
             // 
@@ -145,6 +146,7 @@ namespace ABC_Institute
             this.buttonSave.TabIndex = 24;
             this.buttonSave.Text = "Save";
             this.buttonSave.UseVisualStyleBackColor = false;
+            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
             // Form3
             // 
@@ -159,7 +161,7 @@ namespace ABC_Institute
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboProgramme);
+            this.Controls.Add(this.comboRTag);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form3";
@@ -176,7 +178,7 @@ namespace ABC_Institute
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboProgramme;
+        private System.Windows.Forms.ComboBox comboRTag;
         private System.Windows.Forms.TextBox textSubjectName;
         private System.Windows.Forms.TextBox textTagCode;
         private System.Windows.Forms.TextBox textSubjectCode;
