@@ -170,6 +170,7 @@ namespace ABC_Institute
             this.dataGridViewTags.RowTemplate.Height = 24;
             this.dataGridViewTags.Size = new System.Drawing.Size(1010, 207);
             this.dataGridViewTags.TabIndex = 39;
+            this.dataGridViewTags.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewTags_RowHeaderMouseClick);
             // 
             // buttonDelete
             // 

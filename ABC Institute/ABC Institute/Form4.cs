@@ -118,5 +118,17 @@ namespace ABC_Institute
             dataGridViewTags.DataSource = dt;
 
         }
+
+        //get the data fro data grid
+        private void dataGridViewTags_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            int rowIndex = e.RowIndex;
+
+            textBoxTagID.Text = dataGridViewTags.Rows[rowIndex].Cells[0].Value.ToString();
+            textSubjectName.Text = dataGridViewTags.Rows[rowIndex].Cells[1].Value.ToString();
+            textTagCode.Text = dataGridViewTags.Rows[rowIndex].Cells[2].Value.ToString();
+            textSubjectCode.Text = dataGridViewTags.Rows[rowIndex].Cells[3].Value.ToString();
+            comboRTags.Text = dataGridViewTags.Rows[rowIndex].Cells[4].Value.ToString();
+        }
     }
 }
