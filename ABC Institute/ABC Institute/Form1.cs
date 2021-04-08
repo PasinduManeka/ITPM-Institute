@@ -39,7 +39,17 @@ namespace ABC_Institute
             bool success = c.Insert(c);
             if (success == true)
             {
-                MessageBox.Show("New Group Successfully Created.");
+                if (MessageBox.Show("Do You want to move \'Manage Student Groups\'?", "Tag is ceated...", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    Form2 f2 = new Form2();
+                    f2.Show();
+                }
+                else
+                {
+
+                }
+
+                // MessageBox.Show("New Group Successfully Created.");
             }
             else
             {
@@ -57,8 +67,8 @@ namespace ABC_Institute
             int subgroubNumber = Convert.ToInt32(numericGroupNumber.Value);
 
 
-            textGID.Text = yearsemester + programme + groupNumber;
-            textSGID .Text = yearsemester +"."+ programme + groupNumber +"."+ subgroubNumber;
+            textGID.Text = yearsemester +"."+ programme +"."+ groupNumber;
+            textSGID .Text = yearsemester +"."+ programme +"."+ groupNumber +"."+ subgroubNumber;
 
 
             

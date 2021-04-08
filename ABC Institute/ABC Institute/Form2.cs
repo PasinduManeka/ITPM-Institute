@@ -149,5 +149,17 @@ namespace ABC_Institute
             DataTable dt = c.Select();
             dataGridViewGroups.DataSource = dt;
         }
+
+        private void dataGridViewGroups_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            int rowIndex = e.RowIndex;
+            textID.Text = dataGridViewGroups.Rows[rowIndex].Cells[0].Value.ToString();
+            comboYearSemester2.Text = dataGridViewGroups.Rows[rowIndex].Cells[1].Value.ToString();
+            comboProgrammer2.Text = dataGridViewGroups.Rows[rowIndex].Cells[2].Value.ToString();
+            numericUpGNumber2.Value = Convert.ToInt32(dataGridViewGroups.Rows[rowIndex].Cells[3].Value.ToString());
+            numericSGNumber2.Value = Convert.ToInt32(dataGridViewGroups.Rows[rowIndex].Cells[4].Value.ToString());
+            textSGID2.Text = dataGridViewGroups.Rows[rowIndex].Cells[5].Value.ToString();
+            textGID2.Text = dataGridViewGroups.Rows[rowIndex].Cells[6].Value.ToString();
+        }
     }
 }

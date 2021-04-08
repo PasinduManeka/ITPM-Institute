@@ -115,9 +115,9 @@ namespace ABC_Institute.Classes
                 SqlCommand cmd = new SqlCommand(sql, con);
 
                 // Console.WriteLine(gc.id);
-                Console.WriteLine(gc.yearSemester);
-                Console.WriteLine(gc.programme);
-                Console.WriteLine(gc.groupNumber);
+                //onsole.WriteLine(gc.yearSemester);
+                //Console.WriteLine(gc.programme);
+                //Console.WriteLine(gc.groupNumber);
 
                 cmd.Parameters.AddWithValue("@academicyearsemester", gc.yearSemester);
                 cmd.Parameters.AddWithValue("@programme", gc.programme);
