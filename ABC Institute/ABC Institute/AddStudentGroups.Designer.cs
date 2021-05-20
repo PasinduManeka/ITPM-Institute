@@ -52,9 +52,9 @@ namespace ABC_Institute
             // buttonGID
             // 
             this.buttonGID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.buttonGID.Location = new System.Drawing.Point(842, 229);
+            this.buttonGID.Location = new System.Drawing.Point(842, 239);
             this.buttonGID.Name = "buttonGID";
-            this.buttonGID.Size = new System.Drawing.Size(140, 42);
+            this.buttonGID.Size = new System.Drawing.Size(140, 65);
             this.buttonGID.TabIndex = 0;
             this.buttonGID.Text = "Generate IDs";
             this.buttonGID.UseVisualStyleBackColor = false;
@@ -62,18 +62,20 @@ namespace ABC_Institute
             // 
             // textGID
             // 
-            this.textGID.Location = new System.Drawing.Point(210, 239);
+            this.textGID.Location = new System.Drawing.Point(210, 249);
             this.textGID.Name = "textGID";
             this.textGID.ReadOnly = true;
             this.textGID.Size = new System.Drawing.Size(182, 22);
             this.textGID.TabIndex = 1;
+            this.textGID.TextChanged += new System.EventHandler(this.textGID_TextChanged);
             // 
             // numericBatchNumber
             // 
-            this.numericBatchNumber.Location = new System.Drawing.Point(740, 84);
+            this.numericBatchNumber.Location = new System.Drawing.Point(740, 129);
             this.numericBatchNumber.Name = "numericBatchNumber";
             this.numericBatchNumber.Size = new System.Drawing.Size(182, 22);
             this.numericBatchNumber.TabIndex = 2;
+            this.numericBatchNumber.ValueChanged += new System.EventHandler(this.numericBatchNumber_ValueChanged);
             // 
             // comboYearSemester
             // 
@@ -87,16 +89,17 @@ namespace ABC_Institute
             "Y3S2",
             "Y4S1",
             "Y4S2"});
-            this.comboYearSemester.Location = new System.Drawing.Point(308, 82);
+            this.comboYearSemester.Location = new System.Drawing.Point(308, 127);
             this.comboYearSemester.Name = "comboYearSemester";
             this.comboYearSemester.Size = new System.Drawing.Size(182, 24);
             this.comboYearSemester.TabIndex = 3;
+            this.comboYearSemester.SelectedIndexChanged += new System.EventHandler(this.comboYearSemester_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(366, 9);
+            this.label1.Location = new System.Drawing.Point(366, 54);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(272, 32);
             this.label1.TabIndex = 4;
@@ -107,11 +110,12 @@ namespace ABC_Institute
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(95, 82);
+            this.label2.Location = new System.Drawing.Point(95, 127);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(148, 20);
             this.label2.TabIndex = 5;
             this.label2.Text = "Year and  Semster";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // comboProgramme
             // 
@@ -123,82 +127,90 @@ namespace ABC_Institute
             "SE(WE)",
             "DS(WD)",
             "DS(WD)"});
-            this.comboProgramme.Location = new System.Drawing.Point(308, 139);
+            this.comboProgramme.Location = new System.Drawing.Point(308, 184);
             this.comboProgramme.Name = "comboProgramme";
             this.comboProgramme.Size = new System.Drawing.Size(182, 24);
             this.comboProgramme.TabIndex = 6;
+            this.comboProgramme.SelectedIndexChanged += new System.EventHandler(this.comboProgramme_SelectedIndexChanged);
             // 
             // numericGroupNumber
             // 
-            this.numericGroupNumber.Location = new System.Drawing.Point(740, 139);
+            this.numericGroupNumber.Location = new System.Drawing.Point(740, 184);
             this.numericGroupNumber.Name = "numericGroupNumber";
             this.numericGroupNumber.Size = new System.Drawing.Size(182, 22);
             this.numericGroupNumber.TabIndex = 7;
+            this.numericGroupNumber.ValueChanged += new System.EventHandler(this.numericGroupNumber_ValueChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(95, 138);
+            this.label3.Location = new System.Drawing.Point(95, 183);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(96, 20);
             this.label3.TabIndex = 8;
             this.label3.Text = "Programme";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(566, 138);
+            this.label4.Location = new System.Drawing.Point(566, 183);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(119, 20);
             this.label4.TabIndex = 9;
             this.label4.Text = "Group Number";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(566, 83);
+            this.label5.Location = new System.Drawing.Point(566, 128);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(117, 20);
             this.label5.TabIndex = 10;
             this.label5.Text = "Batch Number";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(53, 239);
+            this.label6.Location = new System.Drawing.Point(53, 249);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(77, 20);
             this.label6.TabIndex = 11;
             this.label6.Text = "Group ID";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(457, 239);
+            this.label7.Location = new System.Drawing.Point(457, 249);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(111, 20);
             this.label7.TabIndex = 13;
             this.label7.Text = "Sub Group ID";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // textSGID
             // 
-            this.textSGID.Location = new System.Drawing.Point(614, 239);
+            this.textSGID.Location = new System.Drawing.Point(614, 249);
             this.textSGID.Name = "textSGID";
             this.textSGID.ReadOnly = true;
             this.textSGID.Size = new System.Drawing.Size(182, 22);
             this.textSGID.TabIndex = 12;
+            this.textSGID.TextChanged += new System.EventHandler(this.textSGID_TextChanged);
             // 
             // buttonClear
             // 
             this.buttonClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.buttonClear.Location = new System.Drawing.Point(266, 327);
+            this.buttonClear.Location = new System.Drawing.Point(266, 337);
             this.buttonClear.Name = "buttonClear";
-            this.buttonClear.Size = new System.Drawing.Size(144, 42);
+            this.buttonClear.Size = new System.Drawing.Size(144, 65);
             this.buttonClear.TabIndex = 14;
             this.buttonClear.Text = "Clear";
             this.buttonClear.UseVisualStyleBackColor = false;
@@ -207,9 +219,9 @@ namespace ABC_Institute
             // buttonSave
             // 
             this.buttonSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.buttonSave.Location = new System.Drawing.Point(580, 327);
+            this.buttonSave.Location = new System.Drawing.Point(580, 337);
             this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(144, 42);
+            this.buttonSave.Size = new System.Drawing.Size(144, 65);
             this.buttonSave.TabIndex = 15;
             this.buttonSave.Text = "Save";
             this.buttonSave.UseVisualStyleBackColor = false;
