@@ -26,3 +26,8 @@ D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC I
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.sessionManage.resources
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.AddSession.resources
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.ManageSession.resources
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.AddLecturers.resources
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC Institute.csprojAssemblyReference.cache
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.ManageLecturers.resources
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.AddSubjects.resources
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.ManageSubjects.resources

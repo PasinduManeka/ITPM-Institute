@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ITPM.Classes
+namespace ABC_Institute.Classes
 {
     class Subject
     {

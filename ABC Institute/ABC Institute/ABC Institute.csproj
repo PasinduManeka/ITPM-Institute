@@ -60,11 +60,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddLecturers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddLecturers.designer.cs">
+      <DependentUpon>AddLecturers.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddSession.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AddSession.designer.cs">
       <DependentUpon>AddSession.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSubjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSubjects.designer.cs">
+      <DependentUpon>AddSubjects.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\ConnectionManager.cs" />
     <Compile Include="Classes\GroupClass.cs" />
@@ -102,16 +114,40 @@
     <Compile Include="Form5.Designer.cs">
       <DependentUpon>Form5.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManageLecturers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageLecturers.designer.cs">
+      <DependentUpon>ManageLecturers.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManageSession.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ManageSession.designer.cs">
       <DependentUpon>ManageSession.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManageSubjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageSubjects.designer.cs">
+      <DependentUpon>ManageSubjects.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View.designer.cs">
+      <DependentUpon>View.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddLecturers.resx">
+      <DependentUpon>AddLecturers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddSession.resx">
       <DependentUpon>AddSession.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSubjects.resx">
+      <DependentUpon>AddSubjects.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -128,8 +164,14 @@
     <EmbeddedResource Include="Form5.resx">
       <DependentUpon>Form5.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ManageLecturers.resx">
+      <DependentUpon>ManageLecturers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ManageSession.resx">
       <DependentUpon>ManageSession.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageSubjects.resx">
+      <DependentUpon>ManageSubjects.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -140,6 +182,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View.resx">
+      <DependentUpon>View.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
