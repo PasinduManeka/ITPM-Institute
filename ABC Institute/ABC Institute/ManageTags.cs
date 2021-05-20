@@ -13,9 +13,9 @@ using System.Windows.Forms;
 
 namespace ABC_Institute
 {
-    public partial class Form4 : Form
+    public partial class ManageTags : Form
     {
-        public Form4()
+        public ManageTags()
         {
             InitializeComponent();
         }

@@ -1,7 +1,7 @@
 ﻿
 namespace ABC_Institute
 {
-    partial class Form2
+    partial class ManageStudentGroups
     {
         /// <summary>
         /// Required designer variable.

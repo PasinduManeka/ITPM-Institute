@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace ABC_Institute
 {
-    public partial class Form3 : Form
+    public partial class AddTags : Form
     {
-        public Form3()
+        public AddTags()
         {
             InitializeComponent();
         }
@@ -38,7 +38,7 @@ namespace ABC_Institute
             {
                 if(MessageBox.Show("Do You want to move \'Manage Tags\'?", "Tag is ceated...", MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.Yes)
                 {
-                    Form4 f4 = new Form4();
+                    ManageTags f4 = new ManageTags();
                     f4.Show();
                 }
                 else

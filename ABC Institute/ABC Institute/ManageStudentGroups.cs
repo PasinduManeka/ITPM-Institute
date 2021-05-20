@@ -13,9 +13,9 @@ using System.Data.SqlClient;
 
 namespace ABC_Institute
 {
-    public partial class Form2 : Form
+    public partial class ManageStudentGroups : Form
     {
-        public Form2()
+        public ManageStudentGroups()
         {
             InitializeComponent();
         }

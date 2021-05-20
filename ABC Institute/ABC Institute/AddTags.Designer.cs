@@ -1,7 +1,7 @@
 ﻿
 namespace ABC_Institute
 {
-    partial class Form3
+    partial class AddTags
     {
         /// <summary>
         /// Required designer variable.
@@ -148,7 +148,7 @@ namespace ABC_Institute
             this.buttonSave.UseVisualStyleBackColor = false;
             this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
-            // Form3
+            // AddTags
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -164,7 +164,7 @@ namespace ABC_Institute
             this.Controls.Add(this.comboRTag);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form3";
+            this.Name = "AddTags";
             this.Text = "Tags";
             this.ResumeLayout(false);
             this.PerformLayout();

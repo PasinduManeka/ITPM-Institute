@@ -1,7 +1,7 @@
 ﻿
 namespace ABC_Institute
 {
-    partial class Form4
+    partial class ManageTags
     {
         /// <summary>
         /// Required designer variable.

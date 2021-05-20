@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace ABC_Institute
 {
-    public partial class Form1 : Form
+    public partial class AddStudentGroups : Form
     {
-        public Form1()
+        public AddStudentGroups()
         {
             InitializeComponent();
         }
@@ -41,7 +41,7 @@ namespace ABC_Institute
             {
                 if (MessageBox.Show("Do You want to move \'Manage Student Groups\'?", "Tag is ceated...", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    Form2 f2 = new Form2();
+                    ManageStudentGroups f2 = new ManageStudentGroups();
                     f2.Show();
                 }
                 else
@@ -85,6 +85,11 @@ namespace ABC_Institute
             numericGroupNumber.Value = 0;
             textGID.Text = string.Empty;
             textSGID.Text = string.Empty;
+
+        }
+
+        private void AddStudentGroups_Load(object sender, EventArgs e)
+        {
 
         }
     }

@@ -1,5 +1,4 @@
-﻿using ABC_Institute.Classes;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,24 +10,21 @@ using System.Windows.Forms;
 
 namespace ABC_Institute
 {
-    public partial class sessionManage : Form
+    public partial class SANA : Form
     {
-        public sessionManage()
+        public SANA()
         {
             InitializeComponent();
         }
 
-        GroupClass c = new GroupClass();
-        //Session s = new Session();
-
-       
-
-        private void Form5_Load_1(object sender, EventArgs e)
+        private void label11_Click(object sender, EventArgs e)
         {
-            
 
         }
 
-       
+        private void tabPage3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

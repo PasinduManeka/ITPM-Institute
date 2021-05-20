@@ -14,16 +14,11 @@ D:\VisualStudio Workspace\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.Fo
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\bin\Debug\ABC Institute.exe.config
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\bin\Debug\ABC Institute.exe
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\bin\Debug\ABC Institute.pdb
-D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.Form1.resources
-D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.Form2.resources
-D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.Form3.resources
-D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.Form4.resources
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.Properties.Resources.resources
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC Institute.csproj.GenerateResource.cache
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC Institute.csproj.CoreCompileInputs.cache
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC Institute.exe
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC Institute.pdb
-D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.sessionManage.resources
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.AddSession.resources
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.ManageSession.resources
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.AddLecturers.resources
@@ -32,3 +27,8 @@ D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_I
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.AddSubjects.resources
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.ManageSubjects.resources
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.View.resources
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.AddStudentGroups.resources
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.ManageStudentGroups.resources
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.AddTags.resources
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.ManageTags.resources
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.SANA.resources

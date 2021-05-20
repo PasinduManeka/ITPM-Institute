@@ -1,7 +1,7 @@
 ﻿
 namespace ABC_Institute
 {
-    partial class Form1
+    partial class AddStudentGroups
     {
         /// <summary>
         /// Required designer variable.
@@ -215,7 +215,7 @@ namespace ABC_Institute
             this.buttonSave.UseVisualStyleBackColor = false;
             this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
-            // Form1
+            // AddStudentGroups
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -236,8 +236,9 @@ namespace ABC_Institute
             this.Controls.Add(this.numericBatchNumber);
             this.Controls.Add(this.textGID);
             this.Controls.Add(this.buttonGID);
-            this.Name = "Form1";
+            this.Name = "AddStudentGroups";
             this.Text = "Student Groups";
+            this.Load += new System.EventHandler(this.AddStudentGroups_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericBatchNumber)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericGroupNumber)).EndInit();
             this.ResumeLayout(false);
