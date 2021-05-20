@@ -16,7 +16,7 @@ namespace ABC_Institute
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ManageSubjects());
+            Application.Run(new ManageSession());
         }
     }
 }

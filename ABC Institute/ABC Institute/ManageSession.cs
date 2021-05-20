@@ -27,7 +27,7 @@ namespace ABC_Institute
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             AddSession f6 = new AddSession();
             f6.Show();
         }
@@ -35,8 +35,8 @@ namespace ABC_Institute
       
         private void btn5View_Click(object sender, EventArgs e)
         {
-            //View v1 = new View();
-            //v1.Show();
+            View v1 = new View();
+            v1.Show();
 
             
         }

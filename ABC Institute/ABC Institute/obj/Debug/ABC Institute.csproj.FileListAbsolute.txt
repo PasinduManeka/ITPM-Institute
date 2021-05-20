@@ -31,3 +31,4 @@ D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC I
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.ManageLecturers.resources
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.AddSubjects.resources
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.ManageSubjects.resources
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.View.resources
