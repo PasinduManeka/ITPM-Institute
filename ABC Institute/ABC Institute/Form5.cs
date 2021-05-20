@@ -19,16 +19,54 @@ namespace ABC_Institute
         }
 
         GroupClass c = new GroupClass();
+       
 
         private void Form5_Load(object sender, EventArgs e)
         {
-            //DataTable dt = c.Select();
-            //dataGridView1.DataSource = dt;
+            AddHeaderCheckBox();
+            HeaderCheckBox.MouseClick += new MouseEventHandler(HeaderCheckBox_MouseClick);
+
+            
+            DataTable dt = c.Select();
+            dataGridView1.DataSource = dt;
+        }
+
+        //header check
+        CheckBox HeaderCheckBox = new CheckBox();
+        bool IsHeaderCheckBox = false;
+
+        private void AddHeaderCheckBox()
+        {
+            HeaderCheckBox.Size = new Size(15, 15);
+            this.dataGridView1.Controls.Add(HeaderCheckBox);
+        }
+        
+        //header check click event
+        private void HeaderCheckBoxClick(CheckBox HcheckBox)
+        {
+            IsHeaderCheckBox = true;
+            foreach(DataGridViewRow Row in dataGridView1.Rows)
+            {
+                ((DataGridViewCheckBoxCell)Row.Cells["chk"]).Value = HcheckBox.Checked;
+            }
+            dataGridView1.RefreshEdit();
+            IsHeaderCheckBox = false;
+        }
+
+        //mouseclick event 
+        private void HeaderCheckBox_MouseClick(Object sender , MouseEventArgs e)
+        {
+            HeaderCheckBoxClick((CheckBox)sender);
         }
 
         private void tabPage1_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void btnSaveConsecutive_Click(object sender, EventArgs e)
+        {
+            //details get from selected check boxes.
         }
     }
 }
