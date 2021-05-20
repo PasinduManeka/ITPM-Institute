@@ -60,8 +60,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddSession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSession.designer.cs">
+      <DependentUpon>AddSession.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\ConnectionManager.cs" />
     <Compile Include="Classes\GroupClass.cs" />
+    <Compile Include="Classes\Lecturer.cs" />
     <Compile Include="Classes\Session.cs" />
+    <Compile Include="Classes\Subject.cs" />
     <Compile Include="Classes\Tags.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -93,8 +102,17 @@
     <Compile Include="Form5.Designer.cs">
       <DependentUpon>Form5.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManageSession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageSession.designer.cs">
+      <DependentUpon>ManageSession.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddSession.resx">
+      <DependentUpon>AddSession.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -109,6 +127,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form5.resx">
       <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageSession.resx">
+      <DependentUpon>ManageSession.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

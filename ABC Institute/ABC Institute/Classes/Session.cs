@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,46 +8,39 @@ namespace ABC_Institute.Classes
 {
     class Session
     {
-        public int id { get; set; }
-        public string Slec1 { get; set; }
-        public string Slec2 { get; set; }
-        public string Tag { get; set; }
-        public string Sgroup { get; set; }
-        public string Ssubj { get; set; }
-        public string Sscode { get; set; }
-        public string OnOfStudent { get; set; }
-        public string Duration { get; set; }
+        private String slec1;
+        private String slec2;
+        private String tag;
+        private String sgroup;
+        private String ssubj;
+        private String scode;
+        private String noofstudent;
+        private String duration;
+        private String msession;
+        private int id;
 
-        static string myconnString = ConfigurationManager.ConnectionStrings["connection"].ConnectionString;
+        public String Slec1 { get => slec1; set => slec1 = value; }
 
-        //retrive data
-        public DataTable select()
-        {
-            //Database Connection
-            SqlConnection conn = new SqlConnection(myconnString);
-            DataTable dt = new DataTable();
-            try
-            {
-                //sql query for table connection
-                string sql = "SELECT* FROM Session_Details";
+        public String Slec2 { get => slec2; set => slec2 = value; }
 
-                //create connection
-                SqlCommand cmd = new SqlCommand(sql,conn);
-                SqlDataAdapter sd = new SqlDataAdapter(cmd);
-                conn.Open();
-                sd.Fill(dt);
-            }
-            catch(Exception e)
-            {
-                Console.WriteLine("This is the error:" + e.ToString());
-            }
-            finally
-            {
-                conn.Close();
-            }
+        public String Tag { get => tag; set => tag = value; }
 
-            return dt;
-        }
+        public String Sgroup { get => sgroup; set => sgroup = value; }
+
+        public String Ssubj { get => ssubj; set => ssubj = value; }
+
+        public String Scode { get => scode; set => scode = value; }
+
+        public String OnOfStudent { get => noofstudent; set => noofstudent = value; }
+
+        public String Duration { get => duration; set => duration = value; }
+
+        public String Msession { get => msession; set => msession = value; }
+
+        public int ID { get => id; set => id = value; }
+
+
+
 
     }
 }

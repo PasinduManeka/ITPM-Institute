@@ -5,9 +5,11 @@ D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Release\ABC
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Release\ABC_Institute.Form2.resources
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Release\ABC_Institute.Form3.resources
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Release\ABC_Institute.Form4.resources
-D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Release\ABC_Institute.Form5.resources
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Release\ABC_Institute.Properties.Resources.resources
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Release\ABC Institute.csproj.GenerateResource.cache
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Release\ABC Institute.csproj.CoreCompileInputs.cache
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Release\ABC Institute.exe
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Release\ABC Institute.pdb
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Release\ITPM.AddSession.resources
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Release\ABC_Institute.sessionManage.resources
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Release\ITPM.ManageSession.resources

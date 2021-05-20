@@ -19,7 +19,7 @@ namespace ABC_Institute
         }
 
         GroupClass c = new GroupClass();
-        Session s = new Session();
+        //Session s = new Session();
 
        
 
