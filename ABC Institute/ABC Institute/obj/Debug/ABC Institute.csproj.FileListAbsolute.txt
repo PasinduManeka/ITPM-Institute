@@ -24,3 +24,4 @@ D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC I
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC Institute.csproj.CoreCompileInputs.cache
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC Institute.exe
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC Institute.pdb
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC Institute.csprojAssemblyReference.cache
