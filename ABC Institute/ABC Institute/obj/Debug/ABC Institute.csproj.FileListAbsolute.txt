@@ -11,3 +11,16 @@ D:\VisualStudio Workspace\ABC Institute\ABC Institute\obj\Debug\ABC Institute.ex
 D:\VisualStudio Workspace\ABC Institute\ABC Institute\obj\Debug\ABC Institute.pdb
 D:\VisualStudio Workspace\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.Form3.resources
 D:\VisualStudio Workspace\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.Form4.resources
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\bin\Debug\ABC Institute.exe.config
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\bin\Debug\ABC Institute.exe
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\bin\Debug\ABC Institute.pdb
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.Form1.resources
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.Form2.resources
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.Form3.resources
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.Form4.resources
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.Properties.Resources.resources
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC Institute.csproj.GenerateResource.cache
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC Institute.csproj.CoreCompileInputs.cache
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC Institute.exe
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC Institute.pdb
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.Form5.resources

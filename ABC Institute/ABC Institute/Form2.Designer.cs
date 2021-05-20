@@ -255,6 +255,7 @@ namespace ABC_Institute
             // 
             // dataGridViewGroups
             // 
+            this.dataGridViewGroups.AccessibleRole = System.Windows.Forms.AccessibleRole.IpAddress;
             this.dataGridViewGroups.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewGroups.Location = new System.Drawing.Point(49, 344);
             this.dataGridViewGroups.Name = "dataGridViewGroups";
