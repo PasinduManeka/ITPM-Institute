@@ -19,6 +19,7 @@ namespace ABC_Institute
         }
 
         GroupClass c = new GroupClass();
+        Session s = new Session();
        
 
         private void Form5_Load(object sender, EventArgs e)
@@ -26,8 +27,8 @@ namespace ABC_Institute
             AddHeaderCheckBox();
             HeaderCheckBox.MouseClick += new MouseEventHandler(HeaderCheckBox_MouseClick);
 
-            
-            DataTable dt = c.Select();
+
+            DataTable dt = s.select();
             dataGridView1.DataSource = dt;
         }
 
@@ -67,6 +68,9 @@ namespace ABC_Institute
         private void btnSaveConsecutive_Click(object sender, EventArgs e)
         {
             //details get from selected check boxes.
+
+
+
         }
     }
 }
