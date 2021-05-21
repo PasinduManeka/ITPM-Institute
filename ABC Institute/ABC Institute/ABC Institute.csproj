@@ -85,10 +85,13 @@
     <Compile Include="AddSubjects.designer.cs">
       <DependentUpon>AddSubjects.cs</DependentUpon>
     </Compile>
+    <Compile Include="Classes\adding.cs" />
     <Compile Include="Classes\advancedSessions.cs" />
     <Compile Include="Classes\ConnectionManager.cs" />
     <Compile Include="Classes\GroupClass.cs" />
     <Compile Include="Classes\Lecturer.cs" />
+    <Compile Include="Classes\Lecturer2.cs" />
+    <Compile Include="Classes\location.cs" />
     <Compile Include="Classes\Session.cs" />
     <Compile Include="Classes\SQL.cs" />
     <Compile Include="Classes\Subject.cs" />
@@ -98,6 +101,24 @@
     </Compile>
     <Compile Include="AddStudentGroups.Designer.cs">
       <DependentUpon>AddStudentGroups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
     <Compile Include="ManageLocations.cs">
       <SubType>Form</SubType>
@@ -197,9 +218,7 @@
     <Compile Include="Statics.Designer.cs">
       <DependentUpon>Statics.cs</DependentUpon>
     </Compile>
-    <Compile Include="T_and_Sub.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="T_and_Sub.cs" />
     <Compile Include="T_and_Sub.designer.cs">
       <DependentUpon>T_and_Sub.cs</DependentUpon>
     </Compile>
@@ -223,6 +242,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddStudentGroups.resx">
       <DependentUpon>AddStudentGroups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManageLocations.resx">
       <DependentUpon>ManageLocations.cs</DependentUpon>
