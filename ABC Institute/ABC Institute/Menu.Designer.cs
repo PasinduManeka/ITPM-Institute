@@ -29,6 +29,7 @@ namespace ABC_Institute
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.studentGroupsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addGroupsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -52,11 +53,15 @@ namespace ABC_Institute
             this.advancedSessionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.workingDaysAndHoursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addWorkingDayAndHoursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.studentGroupsToolStripMenuItem,
@@ -68,7 +73,7 @@ namespace ABC_Institute
             this.workingDaysAndHoursToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1104, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1104, 31);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -78,20 +83,20 @@ namespace ABC_Institute
             this.addGroupsToolStripMenuItem,
             this.mAnageGroupsToolStripMenuItem});
             this.studentGroupsToolStripMenuItem.Name = "studentGroupsToolStripMenuItem";
-            this.studentGroupsToolStripMenuItem.Size = new System.Drawing.Size(125, 24);
+            this.studentGroupsToolStripMenuItem.Size = new System.Drawing.Size(150, 27);
             this.studentGroupsToolStripMenuItem.Text = "Student Groups";
             // 
             // addGroupsToolStripMenuItem
             // 
             this.addGroupsToolStripMenuItem.Name = "addGroupsToolStripMenuItem";
-            this.addGroupsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.addGroupsToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.addGroupsToolStripMenuItem.Text = "Add Groups";
             this.addGroupsToolStripMenuItem.Click += new System.EventHandler(this.addGroupsToolStripMenuItem_Click);
             // 
             // mAnageGroupsToolStripMenuItem
             // 
             this.mAnageGroupsToolStripMenuItem.Name = "mAnageGroupsToolStripMenuItem";
-            this.mAnageGroupsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.mAnageGroupsToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.mAnageGroupsToolStripMenuItem.Text = "Manage Groups";
             this.mAnageGroupsToolStripMenuItem.Click += new System.EventHandler(this.mAnageGroupsToolStripMenuItem_Click);
             // 
@@ -101,20 +106,20 @@ namespace ABC_Institute
             this.addLecturerToolStripMenuItem,
             this.manageLecturerToolStripMenuItem});
             this.lectureToolStripMenuItem.Name = "lectureToolStripMenuItem";
-            this.lectureToolStripMenuItem.Size = new System.Drawing.Size(71, 24);
+            this.lectureToolStripMenuItem.Size = new System.Drawing.Size(83, 27);
             this.lectureToolStripMenuItem.Text = "Lecture";
             // 
             // addLecturerToolStripMenuItem
             // 
             this.addLecturerToolStripMenuItem.Name = "addLecturerToolStripMenuItem";
-            this.addLecturerToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.addLecturerToolStripMenuItem.Size = new System.Drawing.Size(229, 28);
             this.addLecturerToolStripMenuItem.Text = "Add Lecturer";
             this.addLecturerToolStripMenuItem.Click += new System.EventHandler(this.addLecturerToolStripMenuItem_Click);
             // 
             // manageLecturerToolStripMenuItem
             // 
             this.manageLecturerToolStripMenuItem.Name = "manageLecturerToolStripMenuItem";
-            this.manageLecturerToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.manageLecturerToolStripMenuItem.Size = new System.Drawing.Size(229, 28);
             this.manageLecturerToolStripMenuItem.Text = "Manage Lecturer";
             this.manageLecturerToolStripMenuItem.Click += new System.EventHandler(this.manageLecturerToolStripMenuItem_Click);
             // 
@@ -124,20 +129,20 @@ namespace ABC_Institute
             this.addSubjectsToolStripMenuItem,
             this.manageSubjectsToolStripMenuItem});
             this.subjectsToolStripMenuItem.Name = "subjectsToolStripMenuItem";
-            this.subjectsToolStripMenuItem.Size = new System.Drawing.Size(78, 24);
+            this.subjectsToolStripMenuItem.Size = new System.Drawing.Size(91, 27);
             this.subjectsToolStripMenuItem.Text = "Subjects";
             // 
             // addSubjectsToolStripMenuItem
             // 
             this.addSubjectsToolStripMenuItem.Name = "addSubjectsToolStripMenuItem";
-            this.addSubjectsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.addSubjectsToolStripMenuItem.Size = new System.Drawing.Size(230, 28);
             this.addSubjectsToolStripMenuItem.Text = "Add Subjects";
             this.addSubjectsToolStripMenuItem.Click += new System.EventHandler(this.addSubjectsToolStripMenuItem_Click);
             // 
             // manageSubjectsToolStripMenuItem
             // 
             this.manageSubjectsToolStripMenuItem.Name = "manageSubjectsToolStripMenuItem";
-            this.manageSubjectsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.manageSubjectsToolStripMenuItem.Size = new System.Drawing.Size(230, 28);
             this.manageSubjectsToolStripMenuItem.Text = "Manage Subjects";
             this.manageSubjectsToolStripMenuItem.Click += new System.EventHandler(this.manageSubjectsToolStripMenuItem_Click);
             // 
@@ -148,27 +153,27 @@ namespace ABC_Institute
             this.manageTagsToolStripMenuItem,
             this.roomTagsToolStripMenuItem});
             this.tagsToolStripMenuItem.Name = "tagsToolStripMenuItem";
-            this.tagsToolStripMenuItem.Size = new System.Drawing.Size(52, 24);
+            this.tagsToolStripMenuItem.Size = new System.Drawing.Size(60, 27);
             this.tagsToolStripMenuItem.Text = "Tags";
             // 
             // addTagsToolStripMenuItem
             // 
             this.addTagsToolStripMenuItem.Name = "addTagsToolStripMenuItem";
-            this.addTagsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.addTagsToolStripMenuItem.Size = new System.Drawing.Size(199, 28);
             this.addTagsToolStripMenuItem.Text = "Add Tags";
             this.addTagsToolStripMenuItem.Click += new System.EventHandler(this.addTagsToolStripMenuItem_Click);
             // 
             // manageTagsToolStripMenuItem
             // 
             this.manageTagsToolStripMenuItem.Name = "manageTagsToolStripMenuItem";
-            this.manageTagsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.manageTagsToolStripMenuItem.Size = new System.Drawing.Size(199, 28);
             this.manageTagsToolStripMenuItem.Text = "Manage Tags";
             this.manageTagsToolStripMenuItem.Click += new System.EventHandler(this.manageTagsToolStripMenuItem_Click);
             // 
             // roomTagsToolStripMenuItem
             // 
             this.roomTagsToolStripMenuItem.Name = "roomTagsToolStripMenuItem";
-            this.roomTagsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.roomTagsToolStripMenuItem.Size = new System.Drawing.Size(199, 28);
             this.roomTagsToolStripMenuItem.Text = "Room Tags";
             this.roomTagsToolStripMenuItem.Click += new System.EventHandler(this.roomTagsToolStripMenuItem_Click);
             // 
@@ -178,20 +183,20 @@ namespace ABC_Institute
             this.addLocationsToolStripMenuItem,
             this.manageLocationsToolStripMenuItem});
             this.locationsToolStripMenuItem.Name = "locationsToolStripMenuItem";
-            this.locationsToolStripMenuItem.Size = new System.Drawing.Size(90, 24);
+            this.locationsToolStripMenuItem.Size = new System.Drawing.Size(104, 27);
             this.locationsToolStripMenuItem.Text = "Locations ";
             // 
             // addLocationsToolStripMenuItem
             // 
             this.addLocationsToolStripMenuItem.Name = "addLocationsToolStripMenuItem";
-            this.addLocationsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.addLocationsToolStripMenuItem.Size = new System.Drawing.Size(238, 28);
             this.addLocationsToolStripMenuItem.Text = "Add Locations";
             this.addLocationsToolStripMenuItem.Click += new System.EventHandler(this.addLocationsToolStripMenuItem_Click);
             // 
             // manageLocationsToolStripMenuItem
             // 
             this.manageLocationsToolStripMenuItem.Name = "manageLocationsToolStripMenuItem";
-            this.manageLocationsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.manageLocationsToolStripMenuItem.Size = new System.Drawing.Size(238, 28);
             this.manageLocationsToolStripMenuItem.Text = "Manage Locations";
             this.manageLocationsToolStripMenuItem.Click += new System.EventHandler(this.manageLocationsToolStripMenuItem_Click);
             // 
@@ -202,27 +207,27 @@ namespace ABC_Institute
             this.manageSessionsToolStripMenuItem,
             this.advancedSessionsToolStripMenuItem});
             this.sessionsToolStripMenuItem.Name = "sessionsToolStripMenuItem";
-            this.sessionsToolStripMenuItem.Size = new System.Drawing.Size(78, 24);
+            this.sessionsToolStripMenuItem.Size = new System.Drawing.Size(89, 27);
             this.sessionsToolStripMenuItem.Text = "Sessions";
             // 
             // addSessionsToolStripMenuItem
             // 
             this.addSessionsToolStripMenuItem.Name = "addSessionsToolStripMenuItem";
-            this.addSessionsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.addSessionsToolStripMenuItem.Size = new System.Drawing.Size(243, 28);
             this.addSessionsToolStripMenuItem.Text = "Add Sessions";
             this.addSessionsToolStripMenuItem.Click += new System.EventHandler(this.addSessionsToolStripMenuItem_Click);
             // 
             // manageSessionsToolStripMenuItem
             // 
             this.manageSessionsToolStripMenuItem.Name = "manageSessionsToolStripMenuItem";
-            this.manageSessionsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.manageSessionsToolStripMenuItem.Size = new System.Drawing.Size(243, 28);
             this.manageSessionsToolStripMenuItem.Text = "Manage Sessions";
             this.manageSessionsToolStripMenuItem.Click += new System.EventHandler(this.manageSessionsToolStripMenuItem_Click);
             // 
             // advancedSessionsToolStripMenuItem
             // 
             this.advancedSessionsToolStripMenuItem.Name = "advancedSessionsToolStripMenuItem";
-            this.advancedSessionsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.advancedSessionsToolStripMenuItem.Size = new System.Drawing.Size(243, 28);
             this.advancedSessionsToolStripMenuItem.Text = "Advanced Sessions";
             this.advancedSessionsToolStripMenuItem.Click += new System.EventHandler(this.advancedSessionsToolStripMenuItem_Click);
             // 
@@ -231,22 +236,34 @@ namespace ABC_Institute
             this.workingDaysAndHoursToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addWorkingDayAndHoursToolStripMenuItem});
             this.workingDaysAndHoursToolStripMenuItem.Name = "workingDaysAndHoursToolStripMenuItem";
-            this.workingDaysAndHoursToolStripMenuItem.Size = new System.Drawing.Size(186, 24);
+            this.workingDaysAndHoursToolStripMenuItem.Size = new System.Drawing.Size(224, 27);
             this.workingDaysAndHoursToolStripMenuItem.Text = "Working Days and Hours";
             // 
             // addWorkingDayAndHoursToolStripMenuItem
             // 
             this.addWorkingDayAndHoursToolStripMenuItem.Name = "addWorkingDayAndHoursToolStripMenuItem";
-            this.addWorkingDayAndHoursToolStripMenuItem.Size = new System.Drawing.Size(313, 26);
+            this.addWorkingDayAndHoursToolStripMenuItem.Size = new System.Drawing.Size(333, 28);
             this.addWorkingDayAndHoursToolStripMenuItem.Text = "Add Working Days and Hours";
             this.addWorkingDayAndHoursToolStripMenuItem.Click += new System.EventHandler(this.addWorkingDayAndHoursToolStripMenuItem_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(310, 164);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(406, 144);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1104, 467);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -255,6 +272,7 @@ namespace ABC_Institute
             this.Text = "Menu";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -285,5 +303,6 @@ namespace ABC_Institute
         private System.Windows.Forms.ToolStripMenuItem advancedSessionsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem workingDaysAndHoursToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addWorkingDayAndHoursToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
