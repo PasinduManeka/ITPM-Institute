@@ -218,7 +218,9 @@
     <Compile Include="Statics.Designer.cs">
       <DependentUpon>Statics.cs</DependentUpon>
     </Compile>
-    <Compile Include="T_and_Sub.cs" />
+    <Compile Include="T_and_Sub.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="T_and_Sub.designer.cs">
       <DependentUpon>T_and_Sub.cs</DependentUpon>
     </Compile>
