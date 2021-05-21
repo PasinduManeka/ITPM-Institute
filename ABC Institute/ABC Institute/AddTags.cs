@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,7 @@ namespace ABC_Institute
         }
 
         Tags tg = new Tags();
+        SqlConnection conf;
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
@@ -27,9 +29,9 @@ namespace ABC_Institute
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
-            tg.subjectName = textSubjectName.Text;
-            tg.subjectCode = textSubjectCode.Text;
-            tg.tagCode = textTagCode.Text;
+            tg.subjectName = cmbSubjects.Text;
+            tg.subjectCode = cmbSubCode.Text;
+            tg.tagCode = cmbTagCode.Text;
             tg.rTag = comboRTag.Text;
 
             bool success = tg.Insert(tg);
@@ -55,12 +57,40 @@ namespace ABC_Institute
 
         private void buttonClear3_Click(object sender, EventArgs e)
         {
-            textSubjectName.Text = string.Empty;
-            textSubjectCode.Text = string.Empty;
-            textTagCode.Text = string.Empty;
+            cmbSubjects.Text = string.Empty;
+            cmbSubCode.Text = string.Empty;
+            cmbTagCode.Text = string.Empty;
             comboRTag.Text = string.Empty;
 
             
+        }
+
+        private void AddTags_Load(object sender, EventArgs e)
+        {
+            conf = ConnectionManager.GetConnection();
+            conf.Open();
+            SqlCommand cmd = new SqlCommand("select distinct Subject_Name from Subj_Details_Table", conf);
+
+            DataTable dtd1 = new DataTable();
+            SqlDataAdapter data1 = new SqlDataAdapter(cmd);
+            data1.Fill(dtd1);
+            foreach(DataRow dr1 in dtd1.Rows)
+            {
+                cmbSubjects.Items.Add(dr1["Subject_Name"].ToString());
+            }
+
+            //subject code
+            conf = ConnectionManager.GetConnection();
+            conf.Open();
+            SqlCommand cmd1 = new SqlCommand("select distinct Subject_Code from Subj_Details_Table",conf);
+
+            DataTable dt2 =new DataTable();
+            SqlDataAdapter dtd2 = new SqlDataAdapter(cmd1);
+            dtd2.Fill(dt2);
+            foreach(DataRow dr2 in dt2.Rows)
+            {
+                cmbSubCode.Items.Add(dr2["Subject_Code"].ToString());
+            }
         }
     }
 }

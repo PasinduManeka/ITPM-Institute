@@ -30,9 +30,6 @@ namespace ABC_Institute
         private void InitializeComponent()
         {
             this.buttonClear = new System.Windows.Forms.Button();
-            this.textSubjectCode = new System.Windows.Forms.TextBox();
-            this.textTagCode = new System.Windows.Forms.TextBox();
-            this.textSubjectName = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -46,6 +43,9 @@ namespace ABC_Institute
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.textBoxTagID = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.cmbUpdateCode = new System.Windows.Forms.ComboBox();
+            this.cmbUpdateTagCode = new System.Windows.Forms.ComboBox();
+            this.cmbUpdateSubjectName = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTags)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,27 +59,6 @@ namespace ABC_Institute
             this.buttonClear.Text = "Clear";
             this.buttonClear.UseVisualStyleBackColor = false;
             this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
-            // 
-            // textSubjectCode
-            // 
-            this.textSubjectCode.Location = new System.Drawing.Point(784, 108);
-            this.textSubjectCode.Name = "textSubjectCode";
-            this.textSubjectCode.Size = new System.Drawing.Size(196, 22);
-            this.textSubjectCode.TabIndex = 33;
-            // 
-            // textTagCode
-            // 
-            this.textTagCode.Location = new System.Drawing.Point(347, 214);
-            this.textTagCode.Name = "textTagCode";
-            this.textTagCode.Size = new System.Drawing.Size(196, 22);
-            this.textTagCode.TabIndex = 32;
-            // 
-            // textSubjectName
-            // 
-            this.textSubjectName.Location = new System.Drawing.Point(347, 162);
-            this.textSubjectName.Name = "textSubjectName";
-            this.textSubjectName.Size = new System.Drawing.Size(196, 22);
-            this.textSubjectName.TabIndex = 31;
             // 
             // label5
             // 
@@ -212,11 +191,42 @@ namespace ABC_Institute
             this.label6.TabIndex = 41;
             this.label6.Text = "ID";
             // 
-            // Form4
+            // cmbUpdateCode
+            // 
+            this.cmbUpdateCode.FormattingEnabled = true;
+            this.cmbUpdateCode.Location = new System.Drawing.Point(784, 108);
+            this.cmbUpdateCode.Name = "cmbUpdateCode";
+            this.cmbUpdateCode.Size = new System.Drawing.Size(196, 24);
+            this.cmbUpdateCode.TabIndex = 42;
+            // 
+            // cmbUpdateTagCode
+            // 
+            this.cmbUpdateTagCode.FormattingEnabled = true;
+            this.cmbUpdateTagCode.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3"});
+            this.cmbUpdateTagCode.Location = new System.Drawing.Point(347, 212);
+            this.cmbUpdateTagCode.Name = "cmbUpdateTagCode";
+            this.cmbUpdateTagCode.Size = new System.Drawing.Size(196, 24);
+            this.cmbUpdateTagCode.TabIndex = 43;
+            // 
+            // cmbUpdateSubjectName
+            // 
+            this.cmbUpdateSubjectName.FormattingEnabled = true;
+            this.cmbUpdateSubjectName.Location = new System.Drawing.Point(347, 161);
+            this.cmbUpdateSubjectName.Name = "cmbUpdateSubjectName";
+            this.cmbUpdateSubjectName.Size = new System.Drawing.Size(196, 24);
+            this.cmbUpdateSubjectName.TabIndex = 44;
+            // 
+            // ManageTags
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1198, 543);
+            this.Controls.Add(this.cmbUpdateSubjectName);
+            this.Controls.Add(this.cmbUpdateTagCode);
+            this.Controls.Add(this.cmbUpdateCode);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.textBoxTagID);
             this.Controls.Add(this.dataGridViewTags);
@@ -225,16 +235,13 @@ namespace ABC_Institute
             this.Controls.Add(this.textBoxSearch);
             this.Controls.Add(this.buttonUpdate);
             this.Controls.Add(this.buttonClear);
-            this.Controls.Add(this.textSubjectCode);
-            this.Controls.Add(this.textTagCode);
-            this.Controls.Add(this.textSubjectName);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.comboRTags);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form4";
+            this.Name = "ManageTags";
             this.Text = "Tags";
             this.Load += new System.EventHandler(this.Form4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTags)).EndInit();
@@ -245,9 +252,6 @@ namespace ABC_Institute
 
         #endregion
         private System.Windows.Forms.Button buttonClear;
-        private System.Windows.Forms.TextBox textSubjectCode;
-        private System.Windows.Forms.TextBox textTagCode;
-        private System.Windows.Forms.TextBox textSubjectName;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
@@ -261,5 +265,8 @@ namespace ABC_Institute
         private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.TextBox textBoxTagID;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox cmbUpdateCode;
+        private System.Windows.Forms.ComboBox cmbUpdateTagCode;
+        private System.Windows.Forms.ComboBox cmbUpdateSubjectName;
     }
 }

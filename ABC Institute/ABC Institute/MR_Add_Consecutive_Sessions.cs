@@ -51,7 +51,7 @@ namespace ABC_Institute
         private void comboBox2addSession_SelectedIndexChanged(object sender, EventArgs e)
         {
             //Step 1: DB connection
-            string myconnstring = ConfigurationManager.ConnectionStrings["connstrng"].ConnectionString;
+            string myconnstring = ConfigurationManager.ConnectionStrings["connection"].ConnectionString;
             SqlConnection conn = new SqlConnection(myconnstring);
             DataTable dt = new DataTable();
 

@@ -34,3 +34,12 @@ D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC I
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC Institute.csprojAssemblyReference.cache
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.AddLocation.resources
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.ManageLocations.resources
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.MR_Add_Consecutive_Sessions.resources
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.MR_Consecutive_Sessions.resources
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.MR_Group.resources
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.MR_Lecturer.resources
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.MR_Session.resources
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.MR_Subject.resources
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.MR_Tag.resources
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.Statics.resources
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.T_and_Sub.resources

@@ -84,11 +84,13 @@ namespace ABC_Institute
                 cmbOverlappingSessiion1.Items.Add(dr1["Session"].ToString());
                 cmbOverlappingSession2.Items.Add(dr1["Session"].ToString());
             }
+
+            
             
            
             
             
-            /*DataTable dtd2 = asd.selsctSesion();
+           /* DataTable dtd2 = asd.selsctSesion();
             foreach(DataRow dr1 in dtd2.Rows)
             {
                 cmbConsectuiveBox1.Items.Add(dr1["ms.Session"].ToString());

@@ -913,7 +913,7 @@ namespace ABC_Institute.Classes
             try
             {
                 //Step 2: Writing sql query
-                string sql = "SELECT * FROM Manage_Session_Table";
+                string sql = "SELECT * FROM Manage_Session_TableN";
                 //Creating cmd using sql and conn
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 //Creating SQL DataAdapter using cmd

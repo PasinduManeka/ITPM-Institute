@@ -49,6 +49,7 @@
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -190,6 +191,12 @@
     <Compile Include="SANA.Designer.cs">
       <DependentUpon>SANA.cs</DependentUpon>
     </Compile>
+    <Compile Include="Statics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statics.Designer.cs">
+      <DependentUpon>Statics.cs</DependentUpon>
+    </Compile>
     <Compile Include="T_and_Sub.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -270,6 +277,9 @@
     </Compile>
     <EmbeddedResource Include="SANA.resx">
       <DependentUpon>SANA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statics.resx">
+      <DependentUpon>Statics.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="T_and_Sub.resx">
       <DependentUpon>T_and_Sub.cs</DependentUpon>

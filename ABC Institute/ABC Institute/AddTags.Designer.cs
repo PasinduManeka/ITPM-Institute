@@ -35,11 +35,11 @@ namespace ABC_Institute
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.comboRTag = new System.Windows.Forms.ComboBox();
-            this.textSubjectName = new System.Windows.Forms.TextBox();
-            this.textTagCode = new System.Windows.Forms.TextBox();
-            this.textSubjectCode = new System.Windows.Forms.TextBox();
             this.buttonClear3 = new System.Windows.Forms.Button();
             this.buttonSave = new System.Windows.Forms.Button();
+            this.cmbSubjects = new System.Windows.Forms.ComboBox();
+            this.cmbSubCode = new System.Windows.Forms.ComboBox();
+            this.cmbTagCode = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label5
@@ -104,28 +104,6 @@ namespace ABC_Institute
             this.comboRTag.Size = new System.Drawing.Size(196, 24);
             this.comboRTag.TabIndex = 15;
             // 
-            // textSubjectName
-            // 
-            this.textSubjectName.Location = new System.Drawing.Point(251, 139);
-            this.textSubjectName.Name = "textSubjectName";
-            this.textSubjectName.Size = new System.Drawing.Size(196, 22);
-            this.textSubjectName.TabIndex = 20;
-            // 
-            // textTagCode
-            // 
-            this.textTagCode.Location = new System.Drawing.Point(251, 222);
-            this.textTagCode.Name = "textTagCode";
-            this.textTagCode.Size = new System.Drawing.Size(196, 22);
-            this.textTagCode.TabIndex = 21;
-            // 
-            // textSubjectCode
-            // 
-            this.textSubjectCode.Location = new System.Drawing.Point(700, 139);
-            this.textSubjectCode.Name = "textSubjectCode";
-            this.textSubjectCode.Size = new System.Drawing.Size(196, 22);
-            this.textSubjectCode.TabIndex = 22;
-            this.textSubjectCode.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
-            // 
             // buttonClear3
             // 
             this.buttonClear3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -148,16 +126,44 @@ namespace ABC_Institute
             this.buttonSave.UseVisualStyleBackColor = false;
             this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
+            // cmbSubjects
+            // 
+            this.cmbSubjects.FormattingEnabled = true;
+            this.cmbSubjects.Location = new System.Drawing.Point(251, 139);
+            this.cmbSubjects.Name = "cmbSubjects";
+            this.cmbSubjects.Size = new System.Drawing.Size(196, 24);
+            this.cmbSubjects.TabIndex = 25;
+            // 
+            // cmbSubCode
+            // 
+            this.cmbSubCode.FormattingEnabled = true;
+            this.cmbSubCode.Location = new System.Drawing.Point(700, 139);
+            this.cmbSubCode.Name = "cmbSubCode";
+            this.cmbSubCode.Size = new System.Drawing.Size(196, 24);
+            this.cmbSubCode.TabIndex = 26;
+            // 
+            // cmbTagCode
+            // 
+            this.cmbTagCode.FormattingEnabled = true;
+            this.cmbTagCode.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3"});
+            this.cmbTagCode.Location = new System.Drawing.Point(251, 220);
+            this.cmbTagCode.Name = "cmbTagCode";
+            this.cmbTagCode.Size = new System.Drawing.Size(196, 24);
+            this.cmbTagCode.TabIndex = 27;
+            // 
             // AddTags
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1006, 476);
+            this.Controls.Add(this.cmbTagCode);
+            this.Controls.Add(this.cmbSubCode);
+            this.Controls.Add(this.cmbSubjects);
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.buttonClear3);
-            this.Controls.Add(this.textSubjectCode);
-            this.Controls.Add(this.textTagCode);
-            this.Controls.Add(this.textSubjectName);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -166,6 +172,7 @@ namespace ABC_Institute
             this.Controls.Add(this.label1);
             this.Name = "AddTags";
             this.Text = "Tags";
+            this.Load += new System.EventHandler(this.AddTags_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,10 +186,10 @@ namespace ABC_Institute
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboRTag;
-        private System.Windows.Forms.TextBox textSubjectName;
-        private System.Windows.Forms.TextBox textTagCode;
-        private System.Windows.Forms.TextBox textSubjectCode;
         private System.Windows.Forms.Button buttonClear3;
         private System.Windows.Forms.Button buttonSave;
+        private System.Windows.Forms.ComboBox cmbSubjects;
+        private System.Windows.Forms.ComboBox cmbSubCode;
+        private System.Windows.Forms.ComboBox cmbTagCode;
     }
 }

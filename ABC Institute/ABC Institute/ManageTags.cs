@@ -19,8 +19,40 @@ namespace ABC_Institute
         {
             InitializeComponent();
         }
+        ConnectionManager conf;
+
         Tags tg = new Tags();
         static string connString = ConfigurationManager.ConnectionStrings["connection"].ConnectionString;
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+            DataTable dt = tg.select();
+            dataGridViewTags.DataSource = dt;
+
+            SqlConnection con = new SqlConnection(connString);
+            SqlCommand cmd = new SqlCommand("select distinct Subject_Name from Subj_Details_Table", con);
+
+            DataTable dtd1 = new DataTable();
+            SqlDataAdapter data1 = new SqlDataAdapter(cmd);
+            data1.Fill(dtd1);
+            foreach (DataRow dr1 in dtd1.Rows)
+            {
+                cmbUpdateSubjectName.Items.Add(dr1["Subject_Name"].ToString());
+            }
+
+            SqlConnection con1 = new SqlConnection(connString);
+            SqlCommand cmd1 = new SqlCommand("select distinct Subject_Code from Subj_Details_Table", con1);
+
+            DataTable dtd2 = new DataTable();
+            SqlDataAdapter data2 = new SqlDataAdapter(cmd1);
+            data2.Fill(dtd2);
+            foreach(DataRow dr2 in dtd2.Rows)
+            {
+                cmbUpdateCode.Items.Add(dr2["Subject_Code"].ToString());
+            }
+        }
+
+
         private void buttonSearch_Click(object sender, EventArgs e)
         {
             //get text field value
@@ -40,9 +72,9 @@ namespace ABC_Institute
                     while (read.Read())
                     {
                         textBoxTagID.Text = (read["id"].ToString());
-                        textSubjectName.Text = (read["subjectName"].ToString());
-                        textTagCode.Text = (read["tagCode"].ToString());
-                        textSubjectCode.Text = (read["subjectCode"].ToString());
+                        cmbUpdateSubjectName.Text = (read["subjectName"].ToString());
+                        cmbUpdateTagCode.Text = (read["tagCode"].ToString());
+                        cmbUpdateCode.Text = (read["subjectCode"].ToString());
                         comboRTags.Text = (read["relatedTag"].ToString());
 
 
@@ -60,28 +92,24 @@ namespace ABC_Institute
 
         }
 
-        private void Form4_Load(object sender, EventArgs e)
-        {
-            DataTable dt = tg.select();
-            dataGridViewTags.DataSource = dt;
-        }
+       
 
         private void buttonClear_Click(object sender, EventArgs e)
         {
-            textSubjectName.Text = string.Empty;
-            textSubjectCode.Text = string.Empty;
-            textBoxSearch.Text = string.Empty;
+            cmbUpdateSubjectName.Text = string.Empty;
+            cmbUpdateTagCode.Text = string.Empty;
+            cmbUpdateCode.Text = string.Empty;
             textBoxTagID.Text = string.Empty;
-            textTagCode.Text = string.Empty;
+            comboRTags.Text = string.Empty;
 
         }
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
             tg.tagID = Convert.ToInt32( textBoxTagID.Text);
-            tg.subjectName = textSubjectName.Text;
-            tg.tagCode = textTagCode.Text;
-            tg.subjectCode = textSubjectCode.Text;
+            tg.subjectName = cmbUpdateSubjectName.Text;
+            tg.tagCode = cmbUpdateTagCode.Text;
+            tg.subjectCode = cmbUpdateCode.Text;
             tg.rTag = comboRTags.Text;
 
             bool success = tg.Update(tg);
@@ -125,9 +153,9 @@ namespace ABC_Institute
             int rowIndex = e.RowIndex;
 
             textBoxTagID.Text = dataGridViewTags.Rows[rowIndex].Cells[0].Value.ToString();
-            textSubjectName.Text = dataGridViewTags.Rows[rowIndex].Cells[1].Value.ToString();
-            textTagCode.Text = dataGridViewTags.Rows[rowIndex].Cells[2].Value.ToString();
-            textSubjectCode.Text = dataGridViewTags.Rows[rowIndex].Cells[3].Value.ToString();
+            cmbUpdateSubjectName.Text = dataGridViewTags.Rows[rowIndex].Cells[1].Value.ToString();
+            cmbUpdateTagCode.Text = dataGridViewTags.Rows[rowIndex].Cells[2].Value.ToString();
+            cmbUpdateCode.Text = dataGridViewTags.Rows[rowIndex].Cells[3].Value.ToString();
             comboRTags.Text = dataGridViewTags.Rows[rowIndex].Cells[4].Value.ToString();
         }
     }

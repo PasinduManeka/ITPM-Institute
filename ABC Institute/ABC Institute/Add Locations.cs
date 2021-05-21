@@ -118,8 +118,8 @@ namespace ABC_Institute
 
         private void button3_Click(object sender, EventArgs e)
         {
-            //Statistics s = new Statistics();
-            //s.Show();
+            Statics s = new Statics();
+            s.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -166,8 +166,8 @@ namespace ABC_Institute
 
         private void button9TnSubMR_Click(object sender, EventArgs e)
         {
-            //T_and_Sub ts = new T_and_Sub();
-            //ts.Show();
+            T_and_Sub ts = new T_and_Sub();
+            ts.Show();
         }
     }
 }
