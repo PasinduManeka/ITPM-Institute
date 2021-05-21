@@ -29,6 +29,12 @@ namespace ABC_Institute
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dataConsectuiveGridView1 = new System.Windows.Forms.DataGridView();
@@ -44,6 +50,11 @@ namespace ABC_Institute
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.dataGridParallelView1 = new System.Windows.Forms.DataGridView();
+            this.btnParallelDelete = new System.Windows.Forms.Button();
+            this.btnParallelUpdate = new System.Windows.Forms.Button();
+            this.btnParallelClear = new System.Windows.Forms.Button();
+            this.btnParallelSave = new System.Windows.Forms.Button();
             this.cmbParallelEndTime = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.cmbParallelStartTime = new System.Windows.Forms.ComboBox();
@@ -60,11 +71,6 @@ namespace ABC_Institute
             this.label8 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.btnParallelSave = new System.Windows.Forms.Button();
-            this.btnParallelClear = new System.Windows.Forms.Button();
-            this.btnParallelUpdate = new System.Windows.Forms.Button();
-            this.btnParallelDelete = new System.Windows.Forms.Button();
-            this.dataGridParallelView1 = new System.Windows.Forms.DataGridView();
             this.dataOverlappingGridView1 = new System.Windows.Forms.DataGridView();
             this.btnOverlappingDelete = new System.Windows.Forms.Button();
             this.tbnOverlappingUpdate = new System.Windows.Forms.Button();
@@ -85,12 +91,13 @@ namespace ABC_Institute
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
+            this.lblMsgDisplay = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataConsectuiveGridView1)).BeginInit();
             this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridParallelView1)).BeginInit();
+            this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataOverlappingGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -108,6 +115,7 @@ namespace ABC_Institute
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.lblMsgDisplay);
             this.tabPage1.Controls.Add(this.dataConsectuiveGridView1);
             this.tabPage1.Controls.Add(this.btnConsecutiveDelete);
             this.tabPage1.Controls.Add(this.btnConsecutiveClear);
@@ -131,7 +139,23 @@ namespace ABC_Institute
             // 
             // dataConsectuiveGridView1
             // 
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataConsectuiveGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
             this.dataConsectuiveGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataConsectuiveGridView1.DefaultCellStyle = dataGridViewCellStyle14;
             this.dataConsectuiveGridView1.Location = new System.Drawing.Point(532, 87);
             this.dataConsectuiveGridView1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dataConsectuiveGridView1.Name = "dataConsectuiveGridView1";
@@ -139,6 +163,7 @@ namespace ABC_Institute
             this.dataConsectuiveGridView1.RowTemplate.Height = 24;
             this.dataConsectuiveGridView1.Size = new System.Drawing.Size(564, 384);
             this.dataConsectuiveGridView1.TabIndex = 11;
+            this.dataConsectuiveGridView1.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataConsectuiveGridView1_RowHeaderMouseClick);
             // 
             // btnConsecutiveDelete
             // 
@@ -150,6 +175,7 @@ namespace ABC_Institute
             this.btnConsecutiveDelete.TabIndex = 10;
             this.btnConsecutiveDelete.Text = "Delete";
             this.btnConsecutiveDelete.UseVisualStyleBackColor = false;
+            this.btnConsecutiveDelete.Click += new System.EventHandler(this.btnConsecutiveDelete_Click);
             // 
             // btnConsecutiveClear
             // 
@@ -161,6 +187,7 @@ namespace ABC_Institute
             this.btnConsecutiveClear.TabIndex = 9;
             this.btnConsecutiveClear.Text = "Clear";
             this.btnConsecutiveClear.UseVisualStyleBackColor = false;
+            this.btnConsecutiveClear.Click += new System.EventHandler(this.btnConsecutiveClear_Click);
             // 
             // btnUpdateConsecutive
             // 
@@ -172,6 +199,7 @@ namespace ABC_Institute
             this.btnUpdateConsecutive.TabIndex = 8;
             this.btnUpdateConsecutive.Text = "Update";
             this.btnUpdateConsecutive.UseVisualStyleBackColor = false;
+            this.btnUpdateConsecutive.Click += new System.EventHandler(this.btnUpdateConsecutive_Click);
             // 
             // btnSaveConsecutive
             // 
@@ -183,6 +211,7 @@ namespace ABC_Institute
             this.btnSaveConsecutive.TabIndex = 7;
             this.btnSaveConsecutive.Text = "Save";
             this.btnSaveConsecutive.UseVisualStyleBackColor = false;
+            this.btnSaveConsecutive.Click += new System.EventHandler(this.btnSaveConsecutive_Click);
             // 
             // textBox1
             // 
@@ -199,7 +228,7 @@ namespace ABC_Institute
             this.cmbConsectuiveBox2.Location = new System.Drawing.Point(166, 209);
             this.cmbConsectuiveBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cmbConsectuiveBox2.Name = "cmbConsectuiveBox2";
-            this.cmbConsectuiveBox2.Size = new System.Drawing.Size(150, 24);
+            this.cmbConsectuiveBox2.Size = new System.Drawing.Size(237, 24);
             this.cmbConsectuiveBox2.TabIndex = 5;
             // 
             // cmbConsectuiveBox1
@@ -208,7 +237,7 @@ namespace ABC_Institute
             this.cmbConsectuiveBox1.Location = new System.Drawing.Point(166, 149);
             this.cmbConsectuiveBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cmbConsectuiveBox1.Name = "cmbConsectuiveBox1";
-            this.cmbConsectuiveBox1.Size = new System.Drawing.Size(150, 24);
+            this.cmbConsectuiveBox1.Size = new System.Drawing.Size(237, 24);
             this.cmbConsectuiveBox1.TabIndex = 4;
             // 
             // label4
@@ -248,9 +277,9 @@ namespace ABC_Institute
             this.label1.Location = new System.Drawing.Point(382, 20);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(233, 20);
+            this.label1.Size = new System.Drawing.Size(195, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Add Consecutive Sessions";
+            this.label1.Text = "Consecutive Sessions";
             // 
             // tabPage2
             // 
@@ -282,6 +311,78 @@ namespace ABC_Institute
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Parallel";
             this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
+            // 
+            // dataGridParallelView1
+            // 
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridParallelView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            this.dataGridParallelView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridParallelView1.DefaultCellStyle = dataGridViewCellStyle16;
+            this.dataGridParallelView1.Location = new System.Drawing.Point(58, 337);
+            this.dataGridParallelView1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.dataGridParallelView1.Name = "dataGridParallelView1";
+            this.dataGridParallelView1.RowHeadersWidth = 51;
+            this.dataGridParallelView1.RowTemplate.Height = 24;
+            this.dataGridParallelView1.Size = new System.Drawing.Size(985, 150);
+            this.dataGridParallelView1.TabIndex = 25;
+            // 
+            // btnParallelDelete
+            // 
+            this.btnParallelDelete.BackColor = System.Drawing.Color.Red;
+            this.btnParallelDelete.Location = new System.Drawing.Point(849, 276);
+            this.btnParallelDelete.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnParallelDelete.Name = "btnParallelDelete";
+            this.btnParallelDelete.Size = new System.Drawing.Size(154, 27);
+            this.btnParallelDelete.TabIndex = 24;
+            this.btnParallelDelete.Text = "Delete";
+            this.btnParallelDelete.UseVisualStyleBackColor = false;
+            // 
+            // btnParallelUpdate
+            // 
+            this.btnParallelUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnParallelUpdate.Location = new System.Drawing.Point(585, 276);
+            this.btnParallelUpdate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnParallelUpdate.Name = "btnParallelUpdate";
+            this.btnParallelUpdate.Size = new System.Drawing.Size(154, 27);
+            this.btnParallelUpdate.TabIndex = 23;
+            this.btnParallelUpdate.Text = "Update";
+            this.btnParallelUpdate.UseVisualStyleBackColor = false;
+            // 
+            // btnParallelClear
+            // 
+            this.btnParallelClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnParallelClear.Location = new System.Drawing.Point(328, 276);
+            this.btnParallelClear.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnParallelClear.Name = "btnParallelClear";
+            this.btnParallelClear.Size = new System.Drawing.Size(154, 27);
+            this.btnParallelClear.TabIndex = 22;
+            this.btnParallelClear.Text = "Clear";
+            this.btnParallelClear.UseVisualStyleBackColor = false;
+            // 
+            // btnParallelSave
+            // 
+            this.btnParallelSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnParallelSave.Location = new System.Drawing.Point(71, 276);
+            this.btnParallelSave.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnParallelSave.Name = "btnParallelSave";
+            this.btnParallelSave.Size = new System.Drawing.Size(154, 27);
+            this.btnParallelSave.TabIndex = 21;
+            this.btnParallelSave.Text = "Save";
+            this.btnParallelSave.UseVisualStyleBackColor = false;
             // 
             // cmbParallelEndTime
             // 
@@ -310,6 +411,7 @@ namespace ABC_Institute
             this.cmbParallelEndTime.Name = "cmbParallelEndTime";
             this.cmbParallelEndTime.Size = new System.Drawing.Size(184, 24);
             this.cmbParallelEndTime.TabIndex = 20;
+            this.cmbParallelEndTime.Text = "     -- Select --";
             // 
             // label12
             // 
@@ -347,6 +449,7 @@ namespace ABC_Institute
             this.cmbParallelStartTime.Name = "cmbParallelStartTime";
             this.cmbParallelStartTime.Size = new System.Drawing.Size(184, 24);
             this.cmbParallelStartTime.TabIndex = 18;
+            this.cmbParallelStartTime.Text = "     -- Select --";
             // 
             // label11
             // 
@@ -375,6 +478,7 @@ namespace ABC_Institute
             this.cmbParallelDay.Name = "cmbParallelDay";
             this.cmbParallelDay.Size = new System.Drawing.Size(184, 24);
             this.cmbParallelDay.TabIndex = 16;
+            this.cmbParallelDay.Text = "     -- Select --";
             // 
             // label10
             // 
@@ -400,6 +504,7 @@ namespace ABC_Institute
             this.cmbParallelDuration.Name = "cmbParallelDuration";
             this.cmbParallelDuration.Size = new System.Drawing.Size(150, 24);
             this.cmbParallelDuration.TabIndex = 14;
+            this.cmbParallelDuration.Text = "     -- Select --";
             // 
             // label9
             // 
@@ -428,6 +533,7 @@ namespace ABC_Institute
             this.cmbParallelSession2.Name = "cmbParallelSession2";
             this.cmbParallelSession2.Size = new System.Drawing.Size(150, 24);
             this.cmbParallelSession2.TabIndex = 11;
+            this.cmbParallelSession2.Text = "     -- Select --";
             // 
             // cmbParallelSession1
             // 
@@ -437,6 +543,7 @@ namespace ABC_Institute
             this.cmbParallelSession1.Name = "cmbParallelSession1";
             this.cmbParallelSession1.Size = new System.Drawing.Size(150, 24);
             this.cmbParallelSession1.TabIndex = 10;
+            this.cmbParallelSession1.Text = "     -- Select --";
             // 
             // label6
             // 
@@ -475,9 +582,9 @@ namespace ABC_Institute
             this.label5.Location = new System.Drawing.Point(418, 17);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(194, 20);
+            this.label5.Size = new System.Drawing.Size(156, 20);
             this.label5.TabIndex = 0;
-            this.label5.Text = "Add Parallel Sessions";
+            this.label5.Text = "Parallel Sessions";
             // 
             // tabPage3
             // 
@@ -511,64 +618,25 @@ namespace ABC_Institute
             this.tabPage3.UseVisualStyleBackColor = true;
             this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
             // 
-            // btnParallelSave
-            // 
-            this.btnParallelSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnParallelSave.Location = new System.Drawing.Point(71, 276);
-            this.btnParallelSave.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnParallelSave.Name = "btnParallelSave";
-            this.btnParallelSave.Size = new System.Drawing.Size(154, 27);
-            this.btnParallelSave.TabIndex = 21;
-            this.btnParallelSave.Text = "Save";
-            this.btnParallelSave.UseVisualStyleBackColor = false;
-            // 
-            // btnParallelClear
-            // 
-            this.btnParallelClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnParallelClear.Location = new System.Drawing.Point(328, 276);
-            this.btnParallelClear.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnParallelClear.Name = "btnParallelClear";
-            this.btnParallelClear.Size = new System.Drawing.Size(154, 27);
-            this.btnParallelClear.TabIndex = 22;
-            this.btnParallelClear.Text = "Clear";
-            this.btnParallelClear.UseVisualStyleBackColor = false;
-            // 
-            // btnParallelUpdate
-            // 
-            this.btnParallelUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnParallelUpdate.Location = new System.Drawing.Point(585, 276);
-            this.btnParallelUpdate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnParallelUpdate.Name = "btnParallelUpdate";
-            this.btnParallelUpdate.Size = new System.Drawing.Size(154, 27);
-            this.btnParallelUpdate.TabIndex = 23;
-            this.btnParallelUpdate.Text = "Update";
-            this.btnParallelUpdate.UseVisualStyleBackColor = false;
-            // 
-            // btnParallelDelete
-            // 
-            this.btnParallelDelete.BackColor = System.Drawing.Color.Red;
-            this.btnParallelDelete.Location = new System.Drawing.Point(849, 276);
-            this.btnParallelDelete.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnParallelDelete.Name = "btnParallelDelete";
-            this.btnParallelDelete.Size = new System.Drawing.Size(154, 27);
-            this.btnParallelDelete.TabIndex = 24;
-            this.btnParallelDelete.Text = "Delete";
-            this.btnParallelDelete.UseVisualStyleBackColor = false;
-            // 
-            // dataGridParallelView1
-            // 
-            this.dataGridParallelView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridParallelView1.Location = new System.Drawing.Point(58, 337);
-            this.dataGridParallelView1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.dataGridParallelView1.Name = "dataGridParallelView1";
-            this.dataGridParallelView1.RowHeadersWidth = 51;
-            this.dataGridParallelView1.RowTemplate.Height = 24;
-            this.dataGridParallelView1.Size = new System.Drawing.Size(985, 150);
-            this.dataGridParallelView1.TabIndex = 25;
-            // 
             // dataOverlappingGridView1
             // 
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataOverlappingGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.dataOverlappingGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataOverlappingGridView1.DefaultCellStyle = dataGridViewCellStyle18;
             this.dataOverlappingGridView1.Location = new System.Drawing.Point(65, 338);
             this.dataOverlappingGridView1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dataOverlappingGridView1.Name = "dataOverlappingGridView1";
@@ -648,6 +716,7 @@ namespace ABC_Institute
             this.cmbOverlappingEndTime.Name = "cmbOverlappingEndTime";
             this.cmbOverlappingEndTime.Size = new System.Drawing.Size(184, 24);
             this.cmbOverlappingEndTime.TabIndex = 40;
+            this.cmbOverlappingEndTime.Text = "     -- Select --";
             // 
             // label13
             // 
@@ -685,6 +754,7 @@ namespace ABC_Institute
             this.cmbOverlappingStartDate.Name = "cmbOverlappingStartDate";
             this.cmbOverlappingStartDate.Size = new System.Drawing.Size(184, 24);
             this.cmbOverlappingStartDate.TabIndex = 38;
+            this.cmbOverlappingStartDate.Text = "     -- Select --";
             // 
             // label14
             // 
@@ -712,6 +782,7 @@ namespace ABC_Institute
             this.cmbOverlappingDay.Name = "cmbOverlappingDay";
             this.cmbOverlappingDay.Size = new System.Drawing.Size(184, 24);
             this.cmbOverlappingDay.TabIndex = 36;
+            this.cmbOverlappingDay.Text = "     -- Select --";
             // 
             // label15
             // 
@@ -737,6 +808,7 @@ namespace ABC_Institute
             this.cmbOverlappingDuration.Name = "cmbOverlappingDuration";
             this.cmbOverlappingDuration.Size = new System.Drawing.Size(150, 24);
             this.cmbOverlappingDuration.TabIndex = 34;
+            this.cmbOverlappingDuration.Text = "     -- Select --";
             // 
             // label16
             // 
@@ -765,6 +837,7 @@ namespace ABC_Institute
             this.cmbOverlappingSession2.Name = "cmbOverlappingSession2";
             this.cmbOverlappingSession2.Size = new System.Drawing.Size(150, 24);
             this.cmbOverlappingSession2.TabIndex = 31;
+            this.cmbOverlappingSession2.Text = "     -- Select --";
             // 
             // cmbOverlappingSessiion1
             // 
@@ -774,6 +847,7 @@ namespace ABC_Institute
             this.cmbOverlappingSessiion1.Name = "cmbOverlappingSessiion1";
             this.cmbOverlappingSessiion1.Size = new System.Drawing.Size(150, 24);
             this.cmbOverlappingSessiion1.TabIndex = 30;
+            this.cmbOverlappingSessiion1.Text = "     -- Select --";
             // 
             // label17
             // 
@@ -816,6 +890,14 @@ namespace ABC_Institute
             this.label20.TabIndex = 26;
             this.label20.Text = "Overlapping Session";
             // 
+            // lblMsgDisplay
+            // 
+            this.lblMsgDisplay.AutoSize = true;
+            this.lblMsgDisplay.Location = new System.Drawing.Point(152, 462);
+            this.lblMsgDisplay.Name = "lblMsgDisplay";
+            this.lblMsgDisplay.Size = new System.Drawing.Size(0, 17);
+            this.lblMsgDisplay.TabIndex = 12;
+            // 
             // SANA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -833,9 +915,9 @@ namespace ABC_Institute
             ((System.ComponentModel.ISupportInitialize)(this.dataConsectuiveGridView1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridParallelView1)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridParallelView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataOverlappingGridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -899,5 +981,6 @@ namespace ABC_Institute
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label lblMsgDisplay;
     }
 }

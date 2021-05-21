@@ -14,21 +14,21 @@ D:\VisualStudio Workspace\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.Fo
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\bin\Debug\ABC Institute.exe.config
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\bin\Debug\ABC Institute.exe
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\bin\Debug\ABC Institute.pdb
-D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.Properties.Resources.resources
-D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC Institute.csproj.GenerateResource.cache
-D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC Institute.csproj.CoreCompileInputs.cache
-D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC Institute.exe
-D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC Institute.pdb
-D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.AddSession.resources
-D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.ManageSession.resources
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.AddLecturers.resources
-D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC Institute.csprojAssemblyReference.cache
-D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.ManageLecturers.resources
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.AddSession.resources
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.AddSubjects.resources
-D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.ManageSubjects.resources
-D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.View.resources
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.AddStudentGroups.resources
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.ManageStudentGroups.resources
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.AddTags.resources
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.ManageTags.resources
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.ManageLecturers.resources
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.ManageSession.resources
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.ManageSubjects.resources
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.Properties.Resources.resources
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.SANA.resources
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC_Institute.View.resources
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC Institute.csproj.GenerateResource.cache
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC Institute.csproj.CoreCompileInputs.cache
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC Institute.exe
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC Institute.pdb
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Debug\ABC Institute.csprojAssemblyReference.cache

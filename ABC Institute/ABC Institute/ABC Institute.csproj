@@ -78,6 +78,7 @@
     <Compile Include="AddSubjects.designer.cs">
       <DependentUpon>AddSubjects.cs</DependentUpon>
     </Compile>
+    <Compile Include="Classes\advancedSessions.cs" />
     <Compile Include="Classes\ConnectionManager.cs" />
     <Compile Include="Classes\GroupClass.cs" />
     <Compile Include="Classes\Lecturer.cs" />
