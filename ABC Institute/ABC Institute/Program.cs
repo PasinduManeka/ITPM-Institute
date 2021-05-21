@@ -16,7 +16,7 @@ namespace ABC_Institute
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SANA());
+            Application.Run(new AddStudentGroups());
         }
     }
 }

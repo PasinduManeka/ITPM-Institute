@@ -60,6 +60,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Add Locations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Locations.designer.cs">
+      <DependentUpon>Add Locations.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddLecturers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,7 @@
     <Compile Include="Classes\GroupClass.cs" />
     <Compile Include="Classes\Lecturer.cs" />
     <Compile Include="Classes\Session.cs" />
+    <Compile Include="Classes\SQL.cs" />
     <Compile Include="Classes\Subject.cs" />
     <Compile Include="Classes\Tags.cs" />
     <Compile Include="AddStudentGroups.cs">
@@ -90,6 +97,12 @@
     </Compile>
     <Compile Include="AddStudentGroups.Designer.cs">
       <DependentUpon>AddStudentGroups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageLocations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageLocations.designer.cs">
+      <DependentUpon>ManageLocations.cs</DependentUpon>
     </Compile>
     <Compile Include="ManageStudentGroups.cs">
       <SubType>Form</SubType>
@@ -127,6 +140,48 @@
     <Compile Include="ManageSubjects.designer.cs">
       <DependentUpon>ManageSubjects.cs</DependentUpon>
     </Compile>
+    <Compile Include="MR_Add_Consecutive_Sessions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MR_Add_Consecutive_Sessions.designer.cs">
+      <DependentUpon>MR_Add_Consecutive_Sessions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MR_Consecutive_Sessions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MR_Consecutive_Sessions.designer.cs">
+      <DependentUpon>MR_Consecutive_Sessions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MR_Group.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MR_Group.designer.cs">
+      <DependentUpon>MR_Group.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MR_Lecturer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MR_Lecturer.designer.cs">
+      <DependentUpon>MR_Lecturer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MR_Session.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MR_Session.designer.cs">
+      <DependentUpon>MR_Session.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MR_Subject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MR_Subject.designer.cs">
+      <DependentUpon>MR_Subject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MR_Tag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MR_Tag.designer.cs">
+      <DependentUpon>MR_Tag.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SANA.cs">
@@ -135,12 +190,21 @@
     <Compile Include="SANA.Designer.cs">
       <DependentUpon>SANA.cs</DependentUpon>
     </Compile>
+    <Compile Include="T_and_Sub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="T_and_Sub.designer.cs">
+      <DependentUpon>T_and_Sub.cs</DependentUpon>
+    </Compile>
     <Compile Include="View.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View.designer.cs">
       <DependentUpon>View.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Add Locations.resx">
+      <DependentUpon>Add Locations.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddLecturers.resx">
       <DependentUpon>AddLecturers.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,6 +216,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddStudentGroups.resx">
       <DependentUpon>AddStudentGroups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageLocations.resx">
+      <DependentUpon>ManageLocations.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManageStudentGroups.resx">
       <DependentUpon>ManageStudentGroups.cs</DependentUpon>
@@ -171,6 +238,27 @@
     <EmbeddedResource Include="ManageSubjects.resx">
       <DependentUpon>ManageSubjects.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MR_Add_Consecutive_Sessions.resx">
+      <DependentUpon>MR_Add_Consecutive_Sessions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MR_Consecutive_Sessions.resx">
+      <DependentUpon>MR_Consecutive_Sessions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MR_Group.resx">
+      <DependentUpon>MR_Group.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MR_Lecturer.resx">
+      <DependentUpon>MR_Lecturer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MR_Session.resx">
+      <DependentUpon>MR_Session.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MR_Subject.resx">
+      <DependentUpon>MR_Subject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MR_Tag.resx">
+      <DependentUpon>MR_Tag.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -182,6 +270,9 @@
     </Compile>
     <EmbeddedResource Include="SANA.resx">
       <DependentUpon>SANA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="T_and_Sub.resx">
+      <DependentUpon>T_and_Sub.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View.resx">
       <DependentUpon>View.cs</DependentUpon>
