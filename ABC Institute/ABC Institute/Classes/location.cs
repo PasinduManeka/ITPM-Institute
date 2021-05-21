@@ -22,7 +22,7 @@ namespace ABC_Institute.Classes
 
         public string Time { get; set; }
 
-        static string myconnstrng = ConfigurationManager.ConnectionStrings["connstrng"].ConnectionString;
+        static string myconnstrng = ConfigurationManager.ConnectionStrings["connection"].ConnectionString;
 
         //Selecting Data From the databse
         public DataTable Select()
