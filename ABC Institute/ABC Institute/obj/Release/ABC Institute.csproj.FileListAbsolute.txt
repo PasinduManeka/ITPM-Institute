@@ -33,3 +33,4 @@ D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Release\ABC
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Release\ABC_Institute.Statics.resources
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Release\ABC_Institute.T_and_Sub.resources
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Release\ABC_Institute.View.resources
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Release\ABC_Institute.Menu.resources

@@ -338,6 +338,7 @@ namespace ABC_Institute
             this.dataGridViewf3LM.Name = "dataGridViewf3LM";
             this.dataGridViewf3LM.RowHeadersWidth = 51;
             this.dataGridViewf3LM.RowTemplate.Height = 24;
+            this.dataGridViewf3LM.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewf3LM.Size = new System.Drawing.Size(802, 306);
             this.dataGridViewf3LM.TabIndex = 47;
             this.dataGridViewf3LM.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewf3LM_CellClick);
@@ -352,7 +353,7 @@ namespace ABC_Institute
             this.labeltopicL.TabIndex = 48;
             this.labeltopicL.Text = "The Lecturer Details Table";
             // 
-            // Form3
+            // ManageLecturers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -382,7 +383,7 @@ namespace ABC_Institute
             this.Controls.Add(this.f3label1);
             this.Controls.Add(this.btnf3Addlecturer);
             this.Controls.Add(this.pictureBox1f3);
-            this.Name = "Form3";
+            this.Name = "ManageLecturers";
             this.Text = "Manage Lecturers";
             this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1f3)).EndInit();

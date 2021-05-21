@@ -152,6 +152,8 @@ namespace ABC_Institute
             //Load Data on DataGridVeiw
             DataTable dt = l.Select();
             dataGridViewL.DataSource = dt;
+
+            
         }
     }
 }

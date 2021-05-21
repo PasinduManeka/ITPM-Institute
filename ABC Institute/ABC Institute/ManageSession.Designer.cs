@@ -91,6 +91,7 @@ namespace ABC_Institute
             this.f7dataGridView1MS.Name = "f7dataGridView1MS";
             this.f7dataGridView1MS.RowHeadersWidth = 51;
             this.f7dataGridView1MS.RowTemplate.Height = 24;
+            this.f7dataGridView1MS.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.f7dataGridView1MS.Size = new System.Drawing.Size(862, 305);
             this.f7dataGridView1MS.TabIndex = 2;
             this.f7dataGridView1MS.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.f7dataGridView1MS_CellClick);

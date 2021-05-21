@@ -29,18 +29,13 @@ namespace ABC_Institute
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.Consective = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBoxLID = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -52,57 +47,20 @@ namespace ABC_Institute
             this.comboBoxSubgroup = new System.Windows.Forms.ComboBox();
             this.comboBoxSesID = new System.Windows.Forms.ComboBox();
             this.comboBoxdates = new System.Windows.Forms.ComboBox();
+            this.textBoxLID = new System.Windows.Forms.TextBox();
             this.textBoxTime = new System.Windows.Forms.TextBox();
             this.buttonLAdd = new System.Windows.Forms.Button();
             this.buttonLupdate = new System.Windows.Forms.Button();
             this.buttonLDelete = new System.Windows.Forms.Button();
             this.buttonClear = new System.Windows.Forms.Button();
             this.dataGridViewL = new System.Windows.Forms.DataGridView();
-            this.tabControl1.SuspendLayout();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewL)).BeginInit();
+            this.tabControl1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.Consective);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Location = new System.Drawing.Point(18, 15);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1276, 611);
-            this.tabControl1.TabIndex = 0;
-            // 
-            // Consective
-            // 
-            this.Consective.Location = new System.Drawing.Point(4, 25);
-            this.Consective.Name = "Consective";
-            this.Consective.Padding = new System.Windows.Forms.Padding(3);
-            this.Consective.Size = new System.Drawing.Size(1268, 582);
-            this.Consective.TabIndex = 0;
-            this.Consective.Text = "Consective";
-            this.Consective.UseVisualStyleBackColor = true;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1268, 582);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Parallel";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1268, 582);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Non Overlapping";
-            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // tabPage4
             // 
@@ -113,6 +71,7 @@ namespace ABC_Institute
             this.tabPage4.Controls.Add(this.buttonLupdate);
             this.tabPage4.Controls.Add(this.buttonLAdd);
             this.tabPage4.Controls.Add(this.textBoxTime);
+            this.tabPage4.Controls.Add(this.textBoxLID);
             this.tabPage4.Controls.Add(this.comboBoxdates);
             this.tabPage4.Controls.Add(this.comboBoxSesID);
             this.tabPage4.Controls.Add(this.comboBoxSubgroup);
@@ -124,7 +83,6 @@ namespace ABC_Institute
             this.tabPage4.Controls.Add(this.label6);
             this.tabPage4.Controls.Add(this.label5);
             this.tabPage4.Controls.Add(this.label4);
-            this.tabPage4.Controls.Add(this.textBoxLID);
             this.tabPage4.Controls.Add(this.label3);
             this.tabPage4.Controls.Add(this.label2);
             this.tabPage4.Controls.Add(this.label1);
@@ -164,14 +122,6 @@ namespace ABC_Institute
             this.label3.Size = new System.Drawing.Size(136, 24);
             this.label3.TabIndex = 2;
             this.label3.Text = "Select Lecturer";
-            // 
-            // textBoxLID
-            // 
-            this.textBoxLID.Location = new System.Drawing.Point(81, 35);
-            this.textBoxLID.Name = "textBoxLID";
-            this.textBoxLID.ReadOnly = true;
-            this.textBoxLID.Size = new System.Drawing.Size(64, 22);
-            this.textBoxLID.TabIndex = 3;
             // 
             // label4
             // 
@@ -327,6 +277,14 @@ namespace ABC_Institute
             this.comboBoxdates.Size = new System.Drawing.Size(201, 28);
             this.comboBoxdates.TabIndex = 14;
             // 
+            // textBoxLID
+            // 
+            this.textBoxLID.Location = new System.Drawing.Point(81, 35);
+            this.textBoxLID.Name = "textBoxLID";
+            this.textBoxLID.ReadOnly = true;
+            this.textBoxLID.Size = new System.Drawing.Size(64, 22);
+            this.textBoxLID.TabIndex = 3;
+            // 
             // textBoxTime
             // 
             this.textBoxTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -381,38 +339,68 @@ namespace ABC_Institute
             // 
             // dataGridViewL
             // 
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewL.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewL.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewL.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewL.DefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewL.Location = new System.Drawing.Point(665, 76);
             this.dataGridViewL.Name = "dataGridViewL";
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewL.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewL.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridViewL.RowHeadersWidth = 51;
             this.dataGridViewL.RowTemplate.Height = 24;
             this.dataGridViewL.Size = new System.Drawing.Size(586, 456);
             this.dataGridViewL.TabIndex = 20;
             this.dataGridViewL.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewL_RowHeaderMouseClick);
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(1268, 582);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Non Overlapping";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1268, 582);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Parallel";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Location = new System.Drawing.Point(18, 15);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(1276, 611);
+            this.tabControl1.TabIndex = 0;
             // 
             // Form2
             // 
@@ -424,20 +412,15 @@ namespace ABC_Institute
             this.Name = "Form2";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
-            this.tabControl1.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewL)).EndInit();
+            this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage Consective;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.DataGridView dataGridViewL;
         private System.Windows.Forms.Button buttonClear;
@@ -445,6 +428,7 @@ namespace ABC_Institute
         private System.Windows.Forms.Button buttonLupdate;
         private System.Windows.Forms.Button buttonLAdd;
         private System.Windows.Forms.TextBox textBoxTime;
+        private System.Windows.Forms.TextBox textBoxLID;
         private System.Windows.Forms.ComboBox comboBoxdates;
         private System.Windows.Forms.ComboBox comboBoxSesID;
         private System.Windows.Forms.ComboBox comboBoxSubgroup;
@@ -456,9 +440,11 @@ namespace ABC_Institute
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBoxLID;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabControl tabControl1;
     }
 }
