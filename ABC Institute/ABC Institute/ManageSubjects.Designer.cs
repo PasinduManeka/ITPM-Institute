@@ -393,7 +393,10 @@ namespace ABC_Institute
             this.Controls.Add(this.label2f5SubjectCode);
             this.Controls.Add(this.label1f5SubjectName);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ManageSubjects";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Manage Subjects";
             this.Load += new System.EventHandler(this.Form5_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1f5)).EndInit();

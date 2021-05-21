@@ -44,7 +44,7 @@ namespace ABC_Institute
             // 
             this.buttonSubmitTag.BackColor = System.Drawing.Color.DodgerBlue;
             this.buttonSubmitTag.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSubmitTag.Font = new System.Drawing.Font("Montserrat", 10.8F);
+            this.buttonSubmitTag.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.buttonSubmitTag.ForeColor = System.Drawing.Color.White;
             this.buttonSubmitTag.Location = new System.Drawing.Point(645, 582);
             this.buttonSubmitTag.Name = "buttonSubmitTag";
@@ -57,7 +57,7 @@ namespace ABC_Institute
             // buttonClearTag
             // 
             this.buttonClearTag.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonClearTag.Font = new System.Drawing.Font("Montserrat", 10.8F);
+            this.buttonClearTag.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.buttonClearTag.ForeColor = System.Drawing.Color.DodgerBlue;
             this.buttonClearTag.Location = new System.Drawing.Point(356, 582);
             this.buttonClearTag.Name = "buttonClearTag";
@@ -70,30 +70,30 @@ namespace ABC_Institute
             // MR_Tag_selectedTag_lbl
             // 
             this.MR_Tag_selectedTag_lbl.AutoSize = true;
-            this.MR_Tag_selectedTag_lbl.Font = new System.Drawing.Font("Montserrat", 12F);
+            this.MR_Tag_selectedTag_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.MR_Tag_selectedTag_lbl.Location = new System.Drawing.Point(58, 396);
             this.MR_Tag_selectedTag_lbl.Name = "MR_Tag_selectedTag_lbl";
-            this.MR_Tag_selectedTag_lbl.Size = new System.Drawing.Size(148, 24);
+            this.MR_Tag_selectedTag_lbl.Size = new System.Drawing.Size(139, 25);
             this.MR_Tag_selectedTag_lbl.TabIndex = 15;
             this.MR_Tag_selectedTag_lbl.Text = "Selected Tags";
             // 
             // MR_Tag_selectRoom_lbl
             // 
             this.MR_Tag_selectRoom_lbl.AutoSize = true;
-            this.MR_Tag_selectRoom_lbl.Font = new System.Drawing.Font("Montserrat", 12F);
+            this.MR_Tag_selectRoom_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.MR_Tag_selectRoom_lbl.Location = new System.Drawing.Point(539, 166);
             this.MR_Tag_selectRoom_lbl.Name = "MR_Tag_selectRoom_lbl";
-            this.MR_Tag_selectRoom_lbl.Size = new System.Drawing.Size(138, 24);
+            this.MR_Tag_selectRoom_lbl.Size = new System.Drawing.Size(123, 25);
             this.MR_Tag_selectRoom_lbl.TabIndex = 14;
             this.MR_Tag_selectRoom_lbl.Text = "Select Room";
             // 
             // MR_Tag_selectTag_lbl
             // 
             this.MR_Tag_selectTag_lbl.AutoSize = true;
-            this.MR_Tag_selectTag_lbl.Font = new System.Drawing.Font("Montserrat", 12F);
+            this.MR_Tag_selectTag_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.MR_Tag_selectTag_lbl.Location = new System.Drawing.Point(58, 166);
             this.MR_Tag_selectTag_lbl.Name = "MR_Tag_selectTag_lbl";
-            this.MR_Tag_selectTag_lbl.Size = new System.Drawing.Size(113, 24);
+            this.MR_Tag_selectTag_lbl.Size = new System.Drawing.Size(107, 25);
             this.MR_Tag_selectTag_lbl.TabIndex = 13;
             this.MR_Tag_selectTag_lbl.Text = "Select Tag";
             // 
@@ -101,7 +101,7 @@ namespace ABC_Institute
             // 
             this.textBox1Tag.BackColor = System.Drawing.Color.White;
             this.textBox1Tag.Cursor = System.Windows.Forms.Cursors.Default;
-            this.textBox1Tag.Font = new System.Drawing.Font("Montserrat", 10.2F);
+            this.textBox1Tag.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
             this.textBox1Tag.Location = new System.Drawing.Point(260, 330);
             this.textBox1Tag.Multiline = true;
             this.textBox1Tag.Name = "textBox1Tag";
@@ -111,7 +111,7 @@ namespace ABC_Institute
             // 
             // comboBox2Tag
             // 
-            this.comboBox2Tag.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2Tag.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2Tag.FormattingEnabled = true;
             this.comboBox2Tag.Items.AddRange(new object[] {
             "Select here.."});
@@ -125,16 +125,16 @@ namespace ABC_Institute
             // MR_Tag_head_lbl
             // 
             this.MR_Tag_head_lbl.AutoSize = true;
-            this.MR_Tag_head_lbl.Font = new System.Drawing.Font("Montserrat", 19.8F);
+            this.MR_Tag_head_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F);
             this.MR_Tag_head_lbl.Location = new System.Drawing.Point(329, 61);
             this.MR_Tag_head_lbl.Name = "MR_Tag_head_lbl";
-            this.MR_Tag_head_lbl.Size = new System.Drawing.Size(370, 40);
+            this.MR_Tag_head_lbl.Size = new System.Drawing.Size(332, 38);
             this.MR_Tag_head_lbl.TabIndex = 10;
             this.MR_Tag_head_lbl.Text = "Manage Rooms - Tag";
             // 
             // comboBox1Tag
             // 
-            this.comboBox1Tag.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1Tag.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1Tag.FormattingEnabled = true;
             this.comboBox1Tag.Items.AddRange(new object[] {
             "Select here.."});
@@ -160,7 +160,10 @@ namespace ABC_Institute
             this.Controls.Add(this.comboBox2Tag);
             this.Controls.Add(this.MR_Tag_head_lbl);
             this.Controls.Add(this.comboBox1Tag);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "MR_Tag";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Manage Rooms - Tag";
             this.Load += new System.EventHandler(this.MR_Tag_Load);
             this.ResumeLayout(false);

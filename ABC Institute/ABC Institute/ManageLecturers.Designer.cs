@@ -383,7 +383,10 @@ namespace ABC_Institute
             this.Controls.Add(this.f3label1);
             this.Controls.Add(this.btnf3Addlecturer);
             this.Controls.Add(this.pictureBox1f3);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ManageLecturers";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Manage Lecturers";
             this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1f3)).EndInit();

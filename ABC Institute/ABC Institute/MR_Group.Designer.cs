@@ -44,7 +44,7 @@ namespace ABC_Institute
             // 
             this.button2SubmitGroup.BackColor = System.Drawing.Color.DodgerBlue;
             this.button2SubmitGroup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2SubmitGroup.Font = new System.Drawing.Font("Montserrat", 10.8F);
+            this.button2SubmitGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.button2SubmitGroup.ForeColor = System.Drawing.Color.White;
             this.button2SubmitGroup.Location = new System.Drawing.Point(643, 573);
             this.button2SubmitGroup.Name = "button2SubmitGroup";
@@ -57,7 +57,7 @@ namespace ABC_Institute
             // button1ClearGroup
             // 
             this.button1ClearGroup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1ClearGroup.Font = new System.Drawing.Font("Montserrat", 10.8F);
+            this.button1ClearGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.button1ClearGroup.ForeColor = System.Drawing.Color.DodgerBlue;
             this.button1ClearGroup.Location = new System.Drawing.Point(354, 573);
             this.button1ClearGroup.Name = "button1ClearGroup";
@@ -70,30 +70,30 @@ namespace ABC_Institute
             // label4SelectedGroup
             // 
             this.label4SelectedGroup.AutoSize = true;
-            this.label4SelectedGroup.Font = new System.Drawing.Font("Montserrat", 12F);
+            this.label4SelectedGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label4SelectedGroup.Location = new System.Drawing.Point(56, 387);
             this.label4SelectedGroup.Name = "label4SelectedGroup";
-            this.label4SelectedGroup.Size = new System.Drawing.Size(196, 24);
+            this.label4SelectedGroup.Size = new System.Drawing.Size(175, 25);
             this.label4SelectedGroup.TabIndex = 24;
             this.label4SelectedGroup.Text = "Selected Lecturers";
             // 
             // label3SelectRoomGroup
             // 
             this.label3SelectRoomGroup.AutoSize = true;
-            this.label3SelectRoomGroup.Font = new System.Drawing.Font("Montserrat", 12F);
+            this.label3SelectRoomGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label3SelectRoomGroup.Location = new System.Drawing.Point(537, 157);
             this.label3SelectRoomGroup.Name = "label3SelectRoomGroup";
-            this.label3SelectRoomGroup.Size = new System.Drawing.Size(138, 24);
+            this.label3SelectRoomGroup.Size = new System.Drawing.Size(123, 25);
             this.label3SelectRoomGroup.TabIndex = 23;
             this.label3SelectRoomGroup.Text = "Select Room";
             // 
             // labelSelectGroup
             // 
             this.labelSelectGroup.AutoSize = true;
-            this.labelSelectGroup.Font = new System.Drawing.Font("Montserrat", 12F);
+            this.labelSelectGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.labelSelectGroup.Location = new System.Drawing.Point(56, 144);
             this.labelSelectGroup.Name = "labelSelectGroup";
-            this.labelSelectGroup.Size = new System.Drawing.Size(170, 48);
+            this.labelSelectGroup.Size = new System.Drawing.Size(153, 50);
             this.labelSelectGroup.TabIndex = 22;
             this.labelSelectGroup.Text = "Select Group or \r\n    Sub-Group";
             // 
@@ -101,7 +101,7 @@ namespace ABC_Institute
             // 
             this.textBox1Group.BackColor = System.Drawing.Color.White;
             this.textBox1Group.Cursor = System.Windows.Forms.Cursors.Default;
-            this.textBox1Group.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1Group.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1Group.Location = new System.Drawing.Point(258, 321);
             this.textBox1Group.Multiline = true;
             this.textBox1Group.Name = "textBox1Group";
@@ -112,7 +112,7 @@ namespace ABC_Institute
             // 
             // comboBox2Group
             // 
-            this.comboBox2Group.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2Group.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2Group.FormattingEnabled = true;
             this.comboBox2Group.Items.AddRange(new object[] {
             "Select here.."});
@@ -126,16 +126,16 @@ namespace ABC_Institute
             // label_Head_MR_G
             // 
             this.label_Head_MR_G.AutoSize = true;
-            this.label_Head_MR_G.Font = new System.Drawing.Font("Montserrat", 19.8F);
+            this.label_Head_MR_G.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F);
             this.label_Head_MR_G.Location = new System.Drawing.Point(327, 52);
             this.label_Head_MR_G.Name = "label_Head_MR_G";
-            this.label_Head_MR_G.Size = new System.Drawing.Size(414, 40);
+            this.label_Head_MR_G.Size = new System.Drawing.Size(367, 38);
             this.label_Head_MR_G.TabIndex = 19;
             this.label_Head_MR_G.Text = "Manage Rooms - Group";
             // 
             // comboBox1Group
             // 
-            this.comboBox1Group.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1Group.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1Group.FormattingEnabled = true;
             this.comboBox1Group.Items.AddRange(new object[] {
             "Select here.."});
@@ -161,7 +161,10 @@ namespace ABC_Institute
             this.Controls.Add(this.comboBox2Group);
             this.Controls.Add(this.label_Head_MR_G);
             this.Controls.Add(this.comboBox1Group);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "MR_Group";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Manage Rooms - Group";
             this.Load += new System.EventHandler(this.MR_Group_Load);
             this.ResumeLayout(false);

@@ -44,7 +44,7 @@ namespace ABC_Institute
             // 
             this.button2SubmitLecturer.BackColor = System.Drawing.Color.DodgerBlue;
             this.button2SubmitLecturer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2SubmitLecturer.Font = new System.Drawing.Font("Montserrat", 10.8F);
+            this.button2SubmitLecturer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.button2SubmitLecturer.ForeColor = System.Drawing.Color.White;
             this.button2SubmitLecturer.Location = new System.Drawing.Point(650, 582);
             this.button2SubmitLecturer.Name = "button2SubmitLecturer";
@@ -57,7 +57,7 @@ namespace ABC_Institute
             // button1ClearLecturer
             // 
             this.button1ClearLecturer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1ClearLecturer.Font = new System.Drawing.Font("Montserrat", 10.8F);
+            this.button1ClearLecturer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.button1ClearLecturer.ForeColor = System.Drawing.Color.DodgerBlue;
             this.button1ClearLecturer.Location = new System.Drawing.Point(361, 582);
             this.button1ClearLecturer.Name = "button1ClearLecturer";
@@ -70,37 +70,37 @@ namespace ABC_Institute
             // label4SelectedLecturer
             // 
             this.label4SelectedLecturer.AutoSize = true;
-            this.label4SelectedLecturer.Font = new System.Drawing.Font("Montserrat", 12F);
+            this.label4SelectedLecturer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label4SelectedLecturer.Location = new System.Drawing.Point(63, 396);
             this.label4SelectedLecturer.Name = "label4SelectedLecturer";
-            this.label4SelectedLecturer.Size = new System.Drawing.Size(196, 24);
+            this.label4SelectedLecturer.Size = new System.Drawing.Size(175, 25);
             this.label4SelectedLecturer.TabIndex = 15;
             this.label4SelectedLecturer.Text = "Selected Lecturers";
             // 
             // label3SelectRoomLecturer
             // 
             this.label3SelectRoomLecturer.AutoSize = true;
-            this.label3SelectRoomLecturer.Font = new System.Drawing.Font("Montserrat", 12F);
+            this.label3SelectRoomLecturer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label3SelectRoomLecturer.Location = new System.Drawing.Point(561, 166);
             this.label3SelectRoomLecturer.Name = "label3SelectRoomLecturer";
-            this.label3SelectRoomLecturer.Size = new System.Drawing.Size(138, 24);
+            this.label3SelectRoomLecturer.Size = new System.Drawing.Size(123, 25);
             this.label3SelectRoomLecturer.TabIndex = 14;
             this.label3SelectRoomLecturer.Text = "Select Room";
             // 
             // labelSelectLecturer
             // 
             this.labelSelectLecturer.AutoSize = true;
-            this.labelSelectLecturer.Font = new System.Drawing.Font("Montserrat", 12F);
+            this.labelSelectLecturer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.labelSelectLecturer.Location = new System.Drawing.Point(63, 166);
             this.labelSelectLecturer.Name = "labelSelectLecturer";
-            this.labelSelectLecturer.Size = new System.Drawing.Size(161, 24);
+            this.labelSelectLecturer.Size = new System.Drawing.Size(143, 25);
             this.labelSelectLecturer.TabIndex = 13;
             this.labelSelectLecturer.Text = "Select Lecturer";
             // 
             // textBox1Lecturer
             // 
             this.textBox1Lecturer.BackColor = System.Drawing.Color.White;
-            this.textBox1Lecturer.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1Lecturer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1Lecturer.Location = new System.Drawing.Point(278, 330);
             this.textBox1Lecturer.Multiline = true;
             this.textBox1Lecturer.Name = "textBox1Lecturer";
@@ -112,7 +112,7 @@ namespace ABC_Institute
             // comboBox2Lecturer
             // 
             this.comboBox2Lecturer.BackColor = System.Drawing.Color.White;
-            this.comboBox2Lecturer.Font = new System.Drawing.Font("Montserrat", 7.8F);
+            this.comboBox2Lecturer.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.comboBox2Lecturer.FormattingEnabled = true;
             this.comboBox2Lecturer.Items.AddRange(new object[] {
             "Select here.."});
@@ -126,16 +126,16 @@ namespace ABC_Institute
             // label_Head_MR_L
             // 
             this.label_Head_MR_L.AutoSize = true;
-            this.label_Head_MR_L.Font = new System.Drawing.Font("Montserrat", 19.8F);
+            this.label_Head_MR_L.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F);
             this.label_Head_MR_L.Location = new System.Drawing.Point(334, 61);
             this.label_Head_MR_L.Name = "label_Head_MR_L";
-            this.label_Head_MR_L.Size = new System.Drawing.Size(450, 40);
+            this.label_Head_MR_L.Size = new System.Drawing.Size(396, 38);
             this.label_Head_MR_L.TabIndex = 10;
             this.label_Head_MR_L.Text = "Manage Rooms - Lecturer";
             // 
             // comboBox1Lecturer
             // 
-            this.comboBox1Lecturer.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1Lecturer.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1Lecturer.FormattingEnabled = true;
             this.comboBox1Lecturer.Items.AddRange(new object[] {
             "Select here.."});
@@ -161,7 +161,10 @@ namespace ABC_Institute
             this.Controls.Add(this.comboBox2Lecturer);
             this.Controls.Add(this.label_Head_MR_L);
             this.Controls.Add(this.comboBox1Lecturer);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "MR_Lecturer";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Manage Rooms - Lecturer";
             this.Load += new System.EventHandler(this.MR_Lecturer_Load);
             this.ResumeLayout(false);

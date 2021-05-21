@@ -344,7 +344,10 @@ namespace ABC_Institute
             this.Controls.Add(this.label2f4SubjectCode);
             this.Controls.Add(this.label1f4SubjectName);
             this.Controls.Add(this.pictureBox1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "AddSubjects";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Subjects";
             this.Load += new System.EventHandler(this.AddSubjects_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

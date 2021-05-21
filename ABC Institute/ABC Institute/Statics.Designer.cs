@@ -29,10 +29,10 @@ namespace ABC_Institute
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series15 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series16 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.richTextBoxStat_rLecturers = new System.Windows.Forms.RichTextBox();
             this.richTextBoxStat_rStudents = new System.Windows.Forms.RichTextBox();
             this.richTextBoxStat_rSubjects = new System.Windows.Forms.RichTextBox();
@@ -42,13 +42,13 @@ namespace ABC_Institute
             this.textBoxLatestGroupBoxStat = new System.Windows.Forms.TextBox();
             this.textBoxSubjectBoxStat = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.chartStat)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -104,24 +104,24 @@ namespace ABC_Institute
             // 
             // chartStat
             // 
-            chartArea8.Name = "ChartArea1";
-            this.chartStat.ChartAreas.Add(chartArea8);
-            legend8.Name = "Legend1";
-            this.chartStat.Legends.Add(legend8);
+            chartArea1.Name = "ChartArea1";
+            this.chartStat.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartStat.Legends.Add(legend1);
             this.chartStat.Location = new System.Drawing.Point(12, 303);
             this.chartStat.Name = "chartStat";
-            series15.ChartArea = "ChartArea1";
-            series15.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
-            series15.Legend = "Legend1";
-            series15.Name = "Lecture Hall";
-            series15.XValueMember = "Labs";
-            series15.YValueMembers = "LecHalls";
-            series16.ChartArea = "ChartArea1";
-            series16.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
-            series16.Legend = "Legend1";
-            series16.Name = "Laboratory";
-            this.chartStat.Series.Add(series15);
-            this.chartStat.Series.Add(series16);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series1.Legend = "Legend1";
+            series1.Name = "Lecture Hall";
+            series1.XValueMember = "Labs";
+            series1.YValueMembers = "LecHalls";
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series2.Legend = "Legend1";
+            series2.Name = "Laboratory";
+            this.chartStat.Series.Add(series1);
+            this.chartStat.Series.Add(series2);
             this.chartStat.Size = new System.Drawing.Size(536, 406);
             this.chartStat.TabIndex = 4;
             this.chartStat.Text = "chart1";
@@ -165,6 +165,24 @@ namespace ABC_Institute
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "What\'s New";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(43, 196);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(91, 17);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "Latest Group";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(43, 304);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(98, 17);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Latest Subject";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -180,7 +198,7 @@ namespace ABC_Institute
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(502, 27);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(153, 39);
+            this.label2.Size = new System.Drawing.Size(149, 38);
             this.label2.TabIndex = 9;
             this.label2.Text = "Statistics";
             // 
@@ -215,24 +233,6 @@ namespace ABC_Institute
             this.label5.TabIndex = 12;
             this.label5.Text = "Registered Subjects";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(43, 304);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(98, 17);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "Latest Subject";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(43, 196);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(91, 17);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "Latest Group";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -260,7 +260,10 @@ namespace ABC_Institute
             this.Controls.Add(this.richTextBoxStat_rSubjects);
             this.Controls.Add(this.richTextBoxStat_rStudents);
             this.Controls.Add(this.richTextBoxStat_rLecturers);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Statics";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Statics";
             this.Load += new System.EventHandler(this.Statics_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chartStat)).EndInit();

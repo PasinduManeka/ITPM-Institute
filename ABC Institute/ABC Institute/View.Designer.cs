@@ -178,7 +178,7 @@ namespace ABC_Institute
             this.f8button1Ok.UseVisualStyleBackColor = true;
             this.f8button1Ok.Click += new System.EventHandler(this.f8button1Ok_Click);
             // 
-            // Form8
+            // View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -199,7 +199,10 @@ namespace ABC_Institute
             this.Controls.Add(this.f8label3tag);
             this.Controls.Add(this.f8label2Slec);
             this.Controls.Add(this.f8label1);
-            this.Name = "Form8";
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "View";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form8";
             this.Load += new System.EventHandler(this.Form8_Load);
             this.ResumeLayout(false);

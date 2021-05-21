@@ -283,7 +283,7 @@ namespace ABC_Institute
             this.textID.Size = new System.Drawing.Size(184, 22);
             this.textID.TabIndex = 21;
             // 
-            // Form2
+            // ManageStudentGroups
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -310,7 +310,10 @@ namespace ABC_Institute
             this.Controls.Add(this.numericUpGNumber2);
             this.Controls.Add(this.textSearch);
             this.Controls.Add(this.label1);
-            this.Name = "Form2";
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "ManageStudentGroups";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Student Groups";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpGNumber2)).EndInit();

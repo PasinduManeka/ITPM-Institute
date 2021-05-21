@@ -248,7 +248,10 @@ namespace ABC_Institute
             this.Controls.Add(this.numericBatchNumber);
             this.Controls.Add(this.textGID);
             this.Controls.Add(this.buttonGID);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "AddStudentGroups";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Student Groups";
             this.Load += new System.EventHandler(this.AddStudentGroups_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericBatchNumber)).EndInit();

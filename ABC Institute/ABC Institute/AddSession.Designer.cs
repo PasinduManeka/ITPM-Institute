@@ -42,6 +42,9 @@ namespace ABC_Institute
             this.f6label2Lecname = new System.Windows.Forms.Label();
             this.f6label1step1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnsession = new System.Windows.Forms.Button();
+            this.F6textBox5Session = new System.Windows.Forms.TextBox();
+            this.label2Session = new System.Windows.Forms.Label();
             this.f6btnGo = new System.Windows.Forms.Button();
             this.f6comboBox4subjcode = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -57,9 +60,6 @@ namespace ABC_Institute
             this.f6label5selsubj = new System.Windows.Forms.Label();
             this.f6label5selGroup = new System.Windows.Forms.Label();
             this.f6label4step2 = new System.Windows.Forms.Label();
-            this.label2Session = new System.Windows.Forms.Label();
-            this.F6textBox5Session = new System.Windows.Forms.TextBox();
-            this.btnsession = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -222,6 +222,38 @@ namespace ABC_Institute
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Select Group and Subjects";
             // 
+            // btnsession
+            // 
+            this.btnsession.BackColor = System.Drawing.Color.Orange;
+            this.btnsession.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnsession.BackgroundImage")));
+            this.btnsession.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnsession.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsession.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnsession.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnsession.Location = new System.Drawing.Point(738, 364);
+            this.btnsession.Name = "btnsession";
+            this.btnsession.Size = new System.Drawing.Size(39, 31);
+            this.btnsession.TabIndex = 18;
+            this.btnsession.UseVisualStyleBackColor = false;
+            this.btnsession.Click += new System.EventHandler(this.btnsession_Click);
+            // 
+            // F6textBox5Session
+            // 
+            this.F6textBox5Session.Location = new System.Drawing.Point(216, 364);
+            this.F6textBox5Session.Name = "F6textBox5Session";
+            this.F6textBox5Session.Size = new System.Drawing.Size(502, 31);
+            this.F6textBox5Session.TabIndex = 17;
+            // 
+            // label2Session
+            // 
+            this.label2Session.AutoSize = true;
+            this.label2Session.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2Session.Location = new System.Drawing.Point(28, 364);
+            this.label2Session.Name = "label2Session";
+            this.label2Session.Size = new System.Drawing.Size(83, 25);
+            this.label2Session.TabIndex = 16;
+            this.label2Session.Text = "Session";
+            // 
             // f6btnGo
             // 
             this.f6btnGo.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -378,38 +410,6 @@ namespace ABC_Institute
             this.f6label4step2.TabIndex = 0;
             this.f6label4step2.Text = "Step 2";
             // 
-            // label2Session
-            // 
-            this.label2Session.AutoSize = true;
-            this.label2Session.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2Session.Location = new System.Drawing.Point(28, 364);
-            this.label2Session.Name = "label2Session";
-            this.label2Session.Size = new System.Drawing.Size(83, 25);
-            this.label2Session.TabIndex = 16;
-            this.label2Session.Text = "Session";
-            // 
-            // F6textBox5Session
-            // 
-            this.F6textBox5Session.Location = new System.Drawing.Point(216, 364);
-            this.F6textBox5Session.Name = "F6textBox5Session";
-            this.F6textBox5Session.Size = new System.Drawing.Size(502, 31);
-            this.F6textBox5Session.TabIndex = 17;
-            // 
-            // btnsession
-            // 
-            this.btnsession.BackColor = System.Drawing.Color.Orange;
-            this.btnsession.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnsession.BackgroundImage")));
-            this.btnsession.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnsession.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsession.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnsession.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnsession.Location = new System.Drawing.Point(738, 364);
-            this.btnsession.Name = "btnsession";
-            this.btnsession.Size = new System.Drawing.Size(39, 31);
-            this.btnsession.TabIndex = 18;
-            this.btnsession.UseVisualStyleBackColor = false;
-            this.btnsession.Click += new System.EventHandler(this.btnsession_Click);
-            // 
             // AddSession
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -417,7 +417,10 @@ namespace ABC_Institute
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(935, 589);
             this.Controls.Add(this.tabControl1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "AddSession";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Session";
             this.Load += new System.EventHandler(this.Form6_Load);
             this.tabControl1.ResumeLayout(false);

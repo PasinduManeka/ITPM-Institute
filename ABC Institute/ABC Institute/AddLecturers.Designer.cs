@@ -357,7 +357,10 @@ namespace ABC_Institute
             this.Controls.Add(this.f2label1EmpID);
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "AddLecturers";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Lecturers";
             this.Load += new System.EventHandler(this.AddLecturers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

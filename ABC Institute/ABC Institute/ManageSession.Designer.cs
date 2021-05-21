@@ -377,7 +377,10 @@ namespace ABC_Institute
             this.Controls.Add(this.f7dataGridView1MS);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.f7pictureBox1ms);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ManageSession";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Manage Session";
             this.Load += new System.EventHandler(this.Form7_Load);
             ((System.ComponentModel.ISupportInitialize)(this.f7pictureBox1ms)).EndInit();

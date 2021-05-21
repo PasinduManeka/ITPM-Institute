@@ -54,57 +54,57 @@ namespace ABC_Institute
             // labelManageLocations
             // 
             this.labelManageLocations.AutoSize = true;
-            this.labelManageLocations.Font = new System.Drawing.Font("Montserrat", 19.8F, System.Drawing.FontStyle.Bold);
+            this.labelManageLocations.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold);
             this.labelManageLocations.Location = new System.Drawing.Point(371, 20);
             this.labelManageLocations.Name = "labelManageLocations";
-            this.labelManageLocations.Size = new System.Drawing.Size(323, 40);
+            this.labelManageLocations.Size = new System.Drawing.Size(299, 38);
             this.labelManageLocations.TabIndex = 0;
             this.labelManageLocations.Text = "Manage Locations";
             // 
             // labelBuildingNameManageLocations
             // 
             this.labelBuildingNameManageLocations.AutoSize = true;
-            this.labelBuildingNameManageLocations.Font = new System.Drawing.Font("Montserrat", 12F);
+            this.labelBuildingNameManageLocations.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.labelBuildingNameManageLocations.Location = new System.Drawing.Point(102, 453);
             this.labelBuildingNameManageLocations.Name = "labelBuildingNameManageLocations";
-            this.labelBuildingNameManageLocations.Size = new System.Drawing.Size(157, 24);
+            this.labelBuildingNameManageLocations.Size = new System.Drawing.Size(138, 25);
             this.labelBuildingNameManageLocations.TabIndex = 1;
             this.labelBuildingNameManageLocations.Text = "Building Name";
             // 
             // labelCapacity
             // 
             this.labelCapacity.AutoSize = true;
-            this.labelCapacity.Font = new System.Drawing.Font("Montserrat", 12F);
+            this.labelCapacity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.labelCapacity.Location = new System.Drawing.Point(102, 644);
             this.labelCapacity.Name = "labelCapacity";
-            this.labelCapacity.Size = new System.Drawing.Size(98, 24);
+            this.labelCapacity.Size = new System.Drawing.Size(89, 25);
             this.labelCapacity.TabIndex = 6;
             this.labelCapacity.Text = "Capacity";
             // 
             // labelRoomType
             // 
             this.labelRoomType.AutoSize = true;
-            this.labelRoomType.Font = new System.Drawing.Font("Montserrat", 12F);
+            this.labelRoomType.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.labelRoomType.Location = new System.Drawing.Point(102, 583);
             this.labelRoomType.Name = "labelRoomType";
-            this.labelRoomType.Size = new System.Drawing.Size(123, 24);
+            this.labelRoomType.Size = new System.Drawing.Size(113, 25);
             this.labelRoomType.TabIndex = 7;
             this.labelRoomType.Text = "Room Type";
             // 
             // labelRoomName
             // 
             this.labelRoomName.AutoSize = true;
-            this.labelRoomName.Font = new System.Drawing.Font("Montserrat", 12F);
+            this.labelRoomName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.labelRoomName.Location = new System.Drawing.Point(102, 518);
             this.labelRoomName.Name = "labelRoomName";
-            this.labelRoomName.Size = new System.Drawing.Size(137, 24);
+            this.labelRoomName.Size = new System.Drawing.Size(120, 25);
             this.labelRoomName.TabIndex = 8;
             this.labelRoomName.Text = "Room Name";
             this.labelRoomName.Click += new System.EventHandler(this.label4_Click);
             // 
             // textBoxBuildingNameML
             // 
-            this.textBoxBuildingNameML.Font = new System.Drawing.Font("Montserrat", 12F);
+            this.textBoxBuildingNameML.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.textBoxBuildingNameML.Location = new System.Drawing.Point(329, 447);
             this.textBoxBuildingNameML.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxBuildingNameML.Multiline = true;
@@ -115,7 +115,7 @@ namespace ABC_Institute
             // 
             // textBoxCapacityML
             // 
-            this.textBoxCapacityML.Font = new System.Drawing.Font("Montserrat", 12F);
+            this.textBoxCapacityML.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.textBoxCapacityML.Location = new System.Drawing.Point(329, 638);
             this.textBoxCapacityML.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxCapacityML.Multiline = true;
@@ -125,7 +125,7 @@ namespace ABC_Institute
             // 
             // textBoxRoomNameML
             // 
-            this.textBoxRoomNameML.Font = new System.Drawing.Font("Montserrat", 12F);
+            this.textBoxRoomNameML.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.textBoxRoomNameML.Location = new System.Drawing.Point(329, 512);
             this.textBoxRoomNameML.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxRoomNameML.Multiline = true;
@@ -137,7 +137,7 @@ namespace ABC_Institute
             // 
             this.buttonMLupdate.BackColor = System.Drawing.Color.DodgerBlue;
             this.buttonMLupdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonMLupdate.Font = new System.Drawing.Font("Montserrat", 10.8F);
+            this.buttonMLupdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.buttonMLupdate.ForeColor = System.Drawing.Color.White;
             this.buttonMLupdate.Location = new System.Drawing.Point(836, 135);
             this.buttonMLupdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -152,7 +152,7 @@ namespace ABC_Institute
             // 
             this.buttonMLdelete.BackColor = System.Drawing.Color.Crimson;
             this.buttonMLdelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonMLdelete.Font = new System.Drawing.Font("Montserrat", 10.8F);
+            this.buttonMLdelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.buttonMLdelete.ForeColor = System.Drawing.Color.White;
             this.buttonMLdelete.Location = new System.Drawing.Point(836, 242);
             this.buttonMLdelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -168,7 +168,7 @@ namespace ABC_Institute
             this.buttonMLclear.BackColor = System.Drawing.Color.Transparent;
             this.buttonMLclear.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
             this.buttonMLclear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonMLclear.Font = new System.Drawing.Font("Montserrat", 10.8F);
+            this.buttonMLclear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.buttonMLclear.ForeColor = System.Drawing.Color.DodgerBlue;
             this.buttonMLclear.Location = new System.Drawing.Point(836, 347);
             this.buttonMLclear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -228,7 +228,7 @@ namespace ABC_Institute
             // 
             // searchML
             // 
-            this.searchML.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchML.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchML.ForeColor = System.Drawing.Color.DarkGray;
             this.searchML.Location = new System.Drawing.Point(515, 89);
             this.searchML.Multiline = true;
@@ -248,10 +248,10 @@ namespace ABC_Institute
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(266, 96);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(226, 20);
+            this.label1.Size = new System.Drawing.Size(195, 20);
             this.label1.TabIndex = 22;
             this.label1.Text = "Search with Room Name";
             // 
@@ -280,7 +280,10 @@ namespace ABC_Institute
             this.Controls.Add(this.labelManageLocations);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ManageLocations";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ManageLocations";
             this.Load += new System.EventHandler(this.ManageLocations_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
