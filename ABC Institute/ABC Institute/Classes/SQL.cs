@@ -724,7 +724,7 @@ namespace ABC_Institute.Classes
             try
             {
                 //Step 2: Writing sql query
-                string sql = "SELECT tagCode FROM tags order by tagCode DESC";
+                string sql = "SELECT relatedTag FROM tags order by relatedTag DESC";
                 //Creating cmd using sql and conn
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 //Creating SQL DataAdapter using cmd

@@ -23,7 +23,7 @@ namespace ABC_Institute
             DataTable dt = c.comboBoxTag();
             foreach (DataRow dr in dt.Rows)
             {
-                comboBox1Tag.Items.Add(dr["tagCode"].ToString());
+                comboBox1Tag.Items.Add(dr["relatedTag"].ToString());
             }
 
             DataTable dtr = c.comboBoxRoom();
@@ -38,12 +38,12 @@ namespace ABC_Institute
         private void comboBox1Tag_SelectedIndexChanged(object sender, EventArgs e)
         {
             //Step 1: DB connection
-            string myconnstring = ConfigurationManager.ConnectionStrings["connstrng"].ConnectionString;
+            string myconnstring = ConfigurationManager.ConnectionStrings["connection"].ConnectionString;
             SqlConnection conn = new SqlConnection(myconnstring);
             DataTable dt = new DataTable();
 
             //Step 2: Writing sql query
-            string sql = "SELECT DISTINCT tagCode FROM tags where tagCode='" + comboBox1Tag.SelectedItem.ToString() + "'";
+            string sql = "SELECT DISTINCT relatedTag FROM tags where relatedTag='" + comboBox1Tag.SelectedItem.ToString() + "'";
             //Creating cmd using sql and conn
             SqlCommand cmd = new SqlCommand(sql, conn);
             //Creating SQL DataAdapter using cmd
@@ -53,7 +53,7 @@ namespace ABC_Institute
             adapter.Fill(dt);
             foreach (DataRow dr in dt.Rows)
             {
-                textBox1Tag.AppendText("TagCode: " + dr["tagCode"].ToString() + "\r\n");
+                textBox1Tag.AppendText("TagCode: " + dr["relatedTag"].ToString() + "\r\n");
             }
         }
 
@@ -61,7 +61,7 @@ namespace ABC_Institute
         {
             //Step 1: DB connection
 
-            string myconnstring = ConfigurationManager.ConnectionStrings["connstrng"].ConnectionString;
+            string myconnstring = ConfigurationManager.ConnectionStrings["connection"].ConnectionString;
             SqlConnection conn = new SqlConnection(myconnstring);
             DataTable dt = new DataTable();
 

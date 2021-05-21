@@ -35,7 +35,7 @@ namespace ABC_Institute
         {
             //Step 1: DB connection
 
-            string myconnstring = ConfigurationManager.ConnectionStrings["connstrng"].ConnectionString;
+            string myconnstring = ConfigurationManager.ConnectionStrings["connection"].ConnectionString;
             SqlConnection conn = new SqlConnection(myconnstring);
             DataTable dt = new DataTable();
 
@@ -61,7 +61,7 @@ namespace ABC_Institute
         {
             //Step 1: DB connection
 
-            string myconnstring = ConfigurationManager.ConnectionStrings["connstrng"].ConnectionString;
+            string myconnstring = ConfigurationManager.ConnectionStrings["connection"].ConnectionString;
             SqlConnection conn = new SqlConnection(myconnstring);
             DataTable dt = new DataTable();
 

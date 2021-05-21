@@ -27,7 +27,7 @@ namespace ABC_Institute
             DataTable dt = c.comboBoxTag();
             foreach (DataRow dr in dt.Rows)
             {
-                comboBox1TagnSub.Items.Add(dr["Tag"].ToString());
+                comboBox1TagnSub.Items.Add(dr["relatedTag"].ToString());
             }
 
             DataTable dtr = c.comboBoxRoom();
@@ -64,7 +64,7 @@ namespace ABC_Institute
             
             foreach (DataRow dr in dt.Rows)
             {
-                textBox1TagnSub.AppendText("\t" + dr["Tag"].ToString() + "\t");
+                textBox1TagnSub.AppendText("\t" + dr["relatedTag"].ToString() + "\t");
             }
         }
 
