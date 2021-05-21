@@ -60,6 +60,14 @@ namespace ABC_Institute
             DataTable dtd = asd.selectConsecutive();
             dataConsectuiveGridView1.DataSource = dtd;
 
+            //parallel
+            DataTable dtd3 = asd.selectParallel();
+            dataGridParallelView1.DataSource = dtd3;
+
+            //overlap
+            DataTable dtd4 = asd.selectOverlap();
+            dataOverlappingGridView1.DataSource = dtd3;
+
             conf = ConnectionManager.GetConnection();
             conf.Open();
             SqlCommand cmd = new SqlCommand("select Session from Manage_Session_TableN", conf);
@@ -96,11 +104,8 @@ namespace ABC_Institute
 
         }
 
-        private void tabPage2_Click(object sender, EventArgs e)
-        {
-            cmbParallelSession1.SelectedText = "--Vslur--";
-        }
-
+       
+        //Consecutive
         private void btnSaveConsecutive_Click(object sender, EventArgs e)
         {
             asd.session1 = cmbConsectuiveBox1.Text;
@@ -158,6 +163,7 @@ namespace ABC_Institute
             dataConsectuiveGridView1.DataSource = dt;
         }
 
+        //to delete the values
         private void btnConsecutiveDelete_Click(object sender, EventArgs e)
         {
             asd.id = int.Parse(textBox1.Text);
@@ -174,5 +180,194 @@ namespace ABC_Institute
             DataTable dt = asd.selectConsecutive();
             dataConsectuiveGridView1.DataSource = dt;
         }
+
+        //to added parallel sessions
+        private void btnParallelSave_Click(object sender, EventArgs e)
+        {
+            asd.session1 = cmbParallelSession1.Text;
+            asd.session2 = cmbParallelSession2.Text;
+            asd.duration = cmbParallelDuration.Text;
+            asd.day = cmbParallelDay.Text;
+            asd.startTime = cmbParallelStartTime.Text;
+            asd.endTime = cmbParallelEndTime.Text;
+
+            bool success = asd.insertParallel(asd);
+
+            if (success == true)
+            {
+                MessageBox.Show("Successfully added the parallel sessions.");
+            }
+            else
+            {
+                MessageBox.Show("Try again.. Faild to added parallel sessions.");
+            }
+            
+            DataTable dt = asd.selectParallel();
+            dataGridParallelView1.DataSource = dt;
+        }
+
+        //parallel data table header click event
+        private void dataGridParallelView1_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            int rowIndex = e.RowIndex;
+            txtParallelID.Text = dataGridParallelView1.Rows[rowIndex].Cells[0].Value.ToString();
+            cmbParallelSession1.Text = dataGridParallelView1.Rows[rowIndex].Cells[1].Value.ToString();
+            cmbParallelSession2.Text = dataGridParallelView1.Rows[rowIndex].Cells[2].Value.ToString();
+            cmbParallelDuration.Text= dataGridParallelView1.Rows[rowIndex].Cells[3].Value.ToString();
+            cmbParallelDay.Text = dataGridParallelView1.Rows[rowIndex].Cells[4].Value.ToString();
+            cmbParallelStartTime.Text = dataGridParallelView1.Rows[rowIndex].Cells[5].Value.ToString();
+            cmbParallelEndTime.Text = dataGridParallelView1.Rows[rowIndex].Cells[6].Value.ToString();
+        }
+
+        //parallel clear button
+        private void btnParallelClear_Click(object sender, EventArgs e)
+        {
+            cmbParallelSession1.Text = string.Empty;
+            cmbParallelSession2.Text = string.Empty;
+            txtParallelID.Text = string.Empty;
+            cmbParallelDuration.Text = string.Empty;
+            cmbParallelDay.Text = string.Empty;
+            cmbParallelStartTime.Text = string.Empty;
+            cmbParallelEndTime.Text = string.Empty;
+
+        }
+
+        //update parallel
+        private void btnParallelUpdate_Click(object sender, EventArgs e)
+        {
+            //assign to setters
+            asd.id = int.Parse(txtParallelID.Text);
+            asd.session1 = cmbParallelSession1.Text;
+            asd.session2 = cmbParallelSession2.Text;
+            asd.duration = cmbParallelDuration.Text;
+            asd.day = cmbParallelDay.Text;
+            asd.startTime = cmbParallelStartTime.Text;
+            asd.endTime = cmbParallelEndTime.Text;
+
+            bool success = asd.updateParallel(asd);
+
+            if (success == true)
+            {
+                MessageBox.Show("Succesfully updated the parallel sesion.");
+            }
+            else
+            {
+                MessageBox.Show("Fails to update the parallel session.");
+            }
+            DataTable dt = asd.selectParallel();
+            dataGridParallelView1.DataSource = dt;
+
+        }
+
+        //delete parallel
+        private void btnParallelDelete_Click(object sender, EventArgs e)
+        {
+            asd.id = int.Parse(txtParallelID.Text);
+
+            bool success = asd.deleteParallel(asd);
+
+            if (success == true)
+            {
+                MessageBox.Show("Successfully deleted the parallel session.");
+            }else if (success == false)
+            {
+                MessageBox.Show("Faild to delete the parallel session.");
+            }
+            DataTable dt = asd.selectParallel();
+            dataGridParallelView1.DataSource = dt;
+        }
+
+
+
+
+        //Non Overlapping
+        private void dataOverlappingGridView1_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            int rowIndex = e.RowIndex;
+            txtOverlappingSession.Text = dataGridParallelView1.Rows[rowIndex].Cells[0].Value.ToString();
+            cmbOverlappingSessiion1.Text = dataGridParallelView1.Rows[rowIndex].Cells[1].Value.ToString();
+            cmbOverlappingSession2.Text = dataGridParallelView1.Rows[rowIndex].Cells[2].Value.ToString();
+            cmbOverlappingDuration.Text = dataGridParallelView1.Rows[rowIndex].Cells[3].Value.ToString();
+            cmbOverlappingDay.Text = dataGridParallelView1.Rows[rowIndex].Cells[4].Value.ToString();
+            cmbOverlappingStartDate.Text = dataGridParallelView1.Rows[rowIndex].Cells[5].Value.ToString();
+            cmbOverlappingEndTime.Text = dataGridParallelView1.Rows[rowIndex].Cells[6].Value.ToString();
+
+        }
+
+        private void btnOverlappingSave_Click(object sender, EventArgs e)
+        {
+            asd.session1 = cmbOverlappingSessiion1.Text;
+            asd.session2 = cmbOverlappingSession2.Text;
+            asd.duration = cmbOverlappingDuration.Text;
+            asd.day = cmbOverlappingDay.Text;
+            asd.startTime = cmbOverlappingStartDate.Text;
+            asd.endTime = cmbOverlappingEndTime.Text;
+
+            bool success = asd.insertOverlap(asd);
+            if (success == true)
+            {
+                MessageBox.Show("non Overlapping sessions added.");
+            }
+            else if (success == false)
+            {
+                MessageBox.Show("Faild to added non overlap session");
+            }
+        }
+
+        //overlap clear
+        private void btnOverlappingClear_Click(object sender, EventArgs e)
+        {
+            txtOverlappingSession.Text = string.Empty;
+            cmbOverlappingSessiion1.Text = string.Empty;
+            cmbOverlappingSession2.Text = string.Empty;
+            cmbOverlappingDuration.Text = string.Empty;
+            cmbOverlappingDay.Text = string.Empty;
+            cmbOverlappingStartDate.Text = string.Empty;
+            cmbOverlappingEndTime.Text = string.Empty;
+        }
+
+        //overlap update
+        private void tbnOverlappingUpdate_Click(object sender, EventArgs e)
+        {
+            asd.id = int.Parse(txtOverlappingSession.Text);
+            asd.session1 = cmbOverlappingSessiion1.Text;
+            asd.session2 = cmbOverlappingSession2.Text;
+            asd.duration = cmbOverlappingDuration.Text;
+            asd.day = cmbOverlappingDay.Text;
+            asd.startTime = cmbOverlappingStartDate.Text;
+            asd.endTime = cmbOverlappingEndTime.Text;
+
+            bool success = asd.updateOverlap(asd);
+            if (success == true)
+            {
+                MessageBox.Show("Non overlapping session updated successfully.");
+            }
+            else if (success == false)
+            {
+                MessageBox.Show("Faild to update the non overlap session.");
+            }
+
+        }
+        //overlap deleting
+
+
+        private void btnOverlappingDelete_Click(object sender, EventArgs e)
+        {
+            asd.id = int.Parse(txtOverlappingSession.Text);
+
+            bool success = asd.deleteoverlap(asd);
+            if (success == true)
+            {
+                MessageBox.Show("Successfully delete the none overlapping session.");
+            }
+            else if (success == false)
+            {
+                MessageBox.Show("Faild to delete the none overlapping session.");
+            }
+            
+        }
+
+        
+
     }
 }

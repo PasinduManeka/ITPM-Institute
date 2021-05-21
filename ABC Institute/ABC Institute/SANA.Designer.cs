@@ -29,14 +29,15 @@ namespace ABC_Institute
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.lblMsgDisplay = new System.Windows.Forms.Label();
             this.dataConsectuiveGridView1 = new System.Windows.Forms.DataGridView();
             this.btnConsecutiveDelete = new System.Windows.Forms.Button();
             this.btnConsecutiveClear = new System.Windows.Forms.Button();
@@ -91,7 +92,6 @@ namespace ABC_Institute
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.lblMsgDisplay = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataConsectuiveGridView1)).BeginInit();
@@ -110,7 +110,7 @@ namespace ABC_Institute
             this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1122, 536);
+            this.tabControl1.Size = new System.Drawing.Size(1078, 536);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -132,30 +132,38 @@ namespace ABC_Institute
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tabPage1.Size = new System.Drawing.Size(1114, 507);
+            this.tabPage1.Size = new System.Drawing.Size(1070, 507);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Consecutive";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // lblMsgDisplay
+            // 
+            this.lblMsgDisplay.AutoSize = true;
+            this.lblMsgDisplay.Location = new System.Drawing.Point(152, 462);
+            this.lblMsgDisplay.Name = "lblMsgDisplay";
+            this.lblMsgDisplay.Size = new System.Drawing.Size(0, 17);
+            this.lblMsgDisplay.TabIndex = 12;
+            // 
             // dataConsectuiveGridView1
             // 
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataConsectuiveGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle27.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle27.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle27.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataConsectuiveGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle27;
             this.dataConsectuiveGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataConsectuiveGridView1.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle28.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle28.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle28.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataConsectuiveGridView1.DefaultCellStyle = dataGridViewCellStyle28;
             this.dataConsectuiveGridView1.Location = new System.Drawing.Point(532, 87);
             this.dataConsectuiveGridView1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dataConsectuiveGridView1.Name = "dataConsectuiveGridView1";
@@ -307,82 +315,86 @@ namespace ABC_Institute
             this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tabPage2.Size = new System.Drawing.Size(1114, 507);
+            this.tabPage2.Size = new System.Drawing.Size(1070, 507);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Parallel";
             this.tabPage2.UseVisualStyleBackColor = true;
-            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
             // dataGridParallelView1
             // 
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridParallelView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle29.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle29.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridParallelView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle29;
             this.dataGridParallelView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridParallelView1.DefaultCellStyle = dataGridViewCellStyle16;
-            this.dataGridParallelView1.Location = new System.Drawing.Point(58, 337);
+            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle30.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle30.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle30.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridParallelView1.DefaultCellStyle = dataGridViewCellStyle30;
+            this.dataGridParallelView1.Location = new System.Drawing.Point(39, 337);
             this.dataGridParallelView1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dataGridParallelView1.Name = "dataGridParallelView1";
             this.dataGridParallelView1.RowHeadersWidth = 51;
             this.dataGridParallelView1.RowTemplate.Height = 24;
             this.dataGridParallelView1.Size = new System.Drawing.Size(985, 150);
             this.dataGridParallelView1.TabIndex = 25;
+            this.dataGridParallelView1.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridParallelView1_RowHeaderMouseClick);
             // 
             // btnParallelDelete
             // 
             this.btnParallelDelete.BackColor = System.Drawing.Color.Red;
-            this.btnParallelDelete.Location = new System.Drawing.Point(849, 276);
+            this.btnParallelDelete.Location = new System.Drawing.Point(830, 276);
             this.btnParallelDelete.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnParallelDelete.Name = "btnParallelDelete";
             this.btnParallelDelete.Size = new System.Drawing.Size(154, 27);
             this.btnParallelDelete.TabIndex = 24;
             this.btnParallelDelete.Text = "Delete";
             this.btnParallelDelete.UseVisualStyleBackColor = false;
+            this.btnParallelDelete.Click += new System.EventHandler(this.btnParallelDelete_Click);
             // 
             // btnParallelUpdate
             // 
             this.btnParallelUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnParallelUpdate.Location = new System.Drawing.Point(585, 276);
+            this.btnParallelUpdate.Location = new System.Drawing.Point(566, 276);
             this.btnParallelUpdate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnParallelUpdate.Name = "btnParallelUpdate";
             this.btnParallelUpdate.Size = new System.Drawing.Size(154, 27);
             this.btnParallelUpdate.TabIndex = 23;
             this.btnParallelUpdate.Text = "Update";
             this.btnParallelUpdate.UseVisualStyleBackColor = false;
+            this.btnParallelUpdate.Click += new System.EventHandler(this.btnParallelUpdate_Click);
             // 
             // btnParallelClear
             // 
             this.btnParallelClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnParallelClear.Location = new System.Drawing.Point(328, 276);
+            this.btnParallelClear.Location = new System.Drawing.Point(309, 276);
             this.btnParallelClear.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnParallelClear.Name = "btnParallelClear";
             this.btnParallelClear.Size = new System.Drawing.Size(154, 27);
             this.btnParallelClear.TabIndex = 22;
             this.btnParallelClear.Text = "Clear";
             this.btnParallelClear.UseVisualStyleBackColor = false;
+            this.btnParallelClear.Click += new System.EventHandler(this.btnParallelClear_Click);
             // 
             // btnParallelSave
             // 
             this.btnParallelSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnParallelSave.Location = new System.Drawing.Point(71, 276);
+            this.btnParallelSave.Location = new System.Drawing.Point(52, 276);
             this.btnParallelSave.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnParallelSave.Name = "btnParallelSave";
             this.btnParallelSave.Size = new System.Drawing.Size(154, 27);
             this.btnParallelSave.TabIndex = 21;
             this.btnParallelSave.Text = "Save";
             this.btnParallelSave.UseVisualStyleBackColor = false;
+            this.btnParallelSave.Click += new System.EventHandler(this.btnParallelSave_Click);
             // 
             // cmbParallelEndTime
             // 
@@ -406,7 +418,7 @@ namespace ABC_Institute
             "5.30 p.m",
             "6.00 p.m",
             "6.30 p.m "});
-            this.cmbParallelEndTime.Location = new System.Drawing.Point(770, 216);
+            this.cmbParallelEndTime.Location = new System.Drawing.Point(751, 216);
             this.cmbParallelEndTime.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cmbParallelEndTime.Name = "cmbParallelEndTime";
             this.cmbParallelEndTime.Size = new System.Drawing.Size(184, 24);
@@ -416,7 +428,7 @@ namespace ABC_Institute
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(636, 219);
+            this.label12.Location = new System.Drawing.Point(617, 219);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(68, 17);
@@ -444,7 +456,7 @@ namespace ABC_Institute
             "3.30 p.m",
             "4.00 p.m",
             "4.30 p.m "});
-            this.cmbParallelStartTime.Location = new System.Drawing.Point(770, 164);
+            this.cmbParallelStartTime.Location = new System.Drawing.Point(751, 164);
             this.cmbParallelStartTime.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cmbParallelStartTime.Name = "cmbParallelStartTime";
             this.cmbParallelStartTime.Size = new System.Drawing.Size(184, 24);
@@ -454,7 +466,7 @@ namespace ABC_Institute
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(636, 164);
+            this.label11.Location = new System.Drawing.Point(617, 164);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(73, 17);
@@ -473,7 +485,7 @@ namespace ABC_Institute
             "Friday",
             "Saturday",
             "Sunday"});
-            this.cmbParallelDay.Location = new System.Drawing.Point(770, 117);
+            this.cmbParallelDay.Location = new System.Drawing.Point(751, 117);
             this.cmbParallelDay.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cmbParallelDay.Name = "cmbParallelDay";
             this.cmbParallelDay.Size = new System.Drawing.Size(184, 24);
@@ -483,7 +495,7 @@ namespace ABC_Institute
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(636, 120);
+            this.label10.Location = new System.Drawing.Point(617, 120);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(33, 17);
@@ -499,7 +511,7 @@ namespace ABC_Institute
             "3 hours",
             "4 hours",
             "5 hours"});
-            this.cmbParallelDuration.Location = new System.Drawing.Point(232, 216);
+            this.cmbParallelDuration.Location = new System.Drawing.Point(213, 216);
             this.cmbParallelDuration.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cmbParallelDuration.Name = "cmbParallelDuration";
             this.cmbParallelDuration.Size = new System.Drawing.Size(150, 24);
@@ -509,7 +521,7 @@ namespace ABC_Institute
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(113, 219);
+            this.label9.Location = new System.Drawing.Point(94, 219);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(62, 17);
@@ -518,7 +530,7 @@ namespace ABC_Institute
             // 
             // txtParallelID
             // 
-            this.txtParallelID.Location = new System.Drawing.Point(232, 65);
+            this.txtParallelID.Location = new System.Drawing.Point(213, 65);
             this.txtParallelID.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtParallelID.Name = "txtParallelID";
             this.txtParallelID.ReadOnly = true;
@@ -528,7 +540,7 @@ namespace ABC_Institute
             // cmbParallelSession2
             // 
             this.cmbParallelSession2.FormattingEnabled = true;
-            this.cmbParallelSession2.Location = new System.Drawing.Point(232, 164);
+            this.cmbParallelSession2.Location = new System.Drawing.Point(213, 164);
             this.cmbParallelSession2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cmbParallelSession2.Name = "cmbParallelSession2";
             this.cmbParallelSession2.Size = new System.Drawing.Size(150, 24);
@@ -538,7 +550,7 @@ namespace ABC_Institute
             // cmbParallelSession1
             // 
             this.cmbParallelSession1.FormattingEnabled = true;
-            this.cmbParallelSession1.Location = new System.Drawing.Point(232, 117);
+            this.cmbParallelSession1.Location = new System.Drawing.Point(213, 117);
             this.cmbParallelSession1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cmbParallelSession1.Name = "cmbParallelSession1";
             this.cmbParallelSession1.Size = new System.Drawing.Size(150, 24);
@@ -548,7 +560,7 @@ namespace ABC_Institute
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(113, 167);
+            this.label6.Location = new System.Drawing.Point(94, 167);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(70, 17);
@@ -558,7 +570,7 @@ namespace ABC_Institute
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(113, 120);
+            this.label7.Location = new System.Drawing.Point(94, 120);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(70, 17);
@@ -568,7 +580,7 @@ namespace ABC_Institute
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(113, 71);
+            this.label8.Location = new System.Drawing.Point(94, 71);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(21, 17);
@@ -579,7 +591,7 @@ namespace ABC_Institute
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(418, 17);
+            this.label5.Location = new System.Drawing.Point(399, 17);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(156, 20);
@@ -612,7 +624,7 @@ namespace ABC_Institute
             this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tabPage3.Size = new System.Drawing.Size(1114, 507);
+            this.tabPage3.Size = new System.Drawing.Size(1070, 507);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Non Overlapping";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -620,74 +632,79 @@ namespace ABC_Institute
             // 
             // dataOverlappingGridView1
             // 
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataOverlappingGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle25.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataOverlappingGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle25;
             this.dataOverlappingGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataOverlappingGridView1.DefaultCellStyle = dataGridViewCellStyle18;
-            this.dataOverlappingGridView1.Location = new System.Drawing.Point(65, 338);
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle26.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle26.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataOverlappingGridView1.DefaultCellStyle = dataGridViewCellStyle26;
+            this.dataOverlappingGridView1.Location = new System.Drawing.Point(39, 331);
             this.dataOverlappingGridView1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dataOverlappingGridView1.Name = "dataOverlappingGridView1";
             this.dataOverlappingGridView1.RowHeadersWidth = 51;
             this.dataOverlappingGridView1.RowTemplate.Height = 24;
             this.dataOverlappingGridView1.Size = new System.Drawing.Size(985, 150);
             this.dataOverlappingGridView1.TabIndex = 45;
+            this.dataOverlappingGridView1.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataOverlappingGridView1_RowHeaderMouseClick);
             // 
             // btnOverlappingDelete
             // 
             this.btnOverlappingDelete.BackColor = System.Drawing.Color.Red;
-            this.btnOverlappingDelete.Location = new System.Drawing.Point(855, 272);
+            this.btnOverlappingDelete.Location = new System.Drawing.Point(842, 272);
             this.btnOverlappingDelete.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnOverlappingDelete.Name = "btnOverlappingDelete";
             this.btnOverlappingDelete.Size = new System.Drawing.Size(154, 36);
             this.btnOverlappingDelete.TabIndex = 44;
             this.btnOverlappingDelete.Text = "Delete";
             this.btnOverlappingDelete.UseVisualStyleBackColor = false;
+            this.btnOverlappingDelete.Click += new System.EventHandler(this.btnOverlappingDelete_Click);
             // 
             // tbnOverlappingUpdate
             // 
             this.tbnOverlappingUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.tbnOverlappingUpdate.Location = new System.Drawing.Point(592, 268);
+            this.tbnOverlappingUpdate.Location = new System.Drawing.Point(579, 268);
             this.tbnOverlappingUpdate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tbnOverlappingUpdate.Name = "tbnOverlappingUpdate";
             this.tbnOverlappingUpdate.Size = new System.Drawing.Size(154, 36);
             this.tbnOverlappingUpdate.TabIndex = 43;
             this.tbnOverlappingUpdate.Text = "Update";
             this.tbnOverlappingUpdate.UseVisualStyleBackColor = false;
+            this.tbnOverlappingUpdate.Click += new System.EventHandler(this.tbnOverlappingUpdate_Click);
             // 
             // btnOverlappingClear
             // 
             this.btnOverlappingClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnOverlappingClear.Location = new System.Drawing.Point(335, 268);
+            this.btnOverlappingClear.Location = new System.Drawing.Point(322, 268);
             this.btnOverlappingClear.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnOverlappingClear.Name = "btnOverlappingClear";
             this.btnOverlappingClear.Size = new System.Drawing.Size(154, 36);
             this.btnOverlappingClear.TabIndex = 42;
             this.btnOverlappingClear.Text = "Clear";
             this.btnOverlappingClear.UseVisualStyleBackColor = false;
+            this.btnOverlappingClear.Click += new System.EventHandler(this.btnOverlappingClear_Click);
             // 
             // btnOverlappingSave
             // 
             this.btnOverlappingSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnOverlappingSave.Location = new System.Drawing.Point(78, 268);
+            this.btnOverlappingSave.Location = new System.Drawing.Point(65, 268);
             this.btnOverlappingSave.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnOverlappingSave.Name = "btnOverlappingSave";
             this.btnOverlappingSave.Size = new System.Drawing.Size(154, 36);
             this.btnOverlappingSave.TabIndex = 41;
             this.btnOverlappingSave.Text = "Save";
             this.btnOverlappingSave.UseVisualStyleBackColor = false;
+            this.btnOverlappingSave.Click += new System.EventHandler(this.btnOverlappingSave_Click);
             // 
             // cmbOverlappingEndTime
             // 
@@ -711,7 +728,7 @@ namespace ABC_Institute
             "5.30 p.m",
             "6.00 p.m",
             "6.30 p.m "});
-            this.cmbOverlappingEndTime.Location = new System.Drawing.Point(777, 217);
+            this.cmbOverlappingEndTime.Location = new System.Drawing.Point(764, 217);
             this.cmbOverlappingEndTime.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cmbOverlappingEndTime.Name = "cmbOverlappingEndTime";
             this.cmbOverlappingEndTime.Size = new System.Drawing.Size(184, 24);
@@ -721,7 +738,7 @@ namespace ABC_Institute
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(644, 220);
+            this.label13.Location = new System.Drawing.Point(631, 220);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(68, 17);
@@ -749,7 +766,7 @@ namespace ABC_Institute
             "3.30 p.m",
             "4.00 p.m",
             "4.30 p.m "});
-            this.cmbOverlappingStartDate.Location = new System.Drawing.Point(777, 165);
+            this.cmbOverlappingStartDate.Location = new System.Drawing.Point(764, 165);
             this.cmbOverlappingStartDate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cmbOverlappingStartDate.Name = "cmbOverlappingStartDate";
             this.cmbOverlappingStartDate.Size = new System.Drawing.Size(184, 24);
@@ -759,7 +776,7 @@ namespace ABC_Institute
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(644, 165);
+            this.label14.Location = new System.Drawing.Point(631, 165);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(73, 17);
@@ -777,7 +794,7 @@ namespace ABC_Institute
             "Friday",
             "Saturday",
             "Sunday"});
-            this.cmbOverlappingDay.Location = new System.Drawing.Point(777, 118);
+            this.cmbOverlappingDay.Location = new System.Drawing.Point(764, 118);
             this.cmbOverlappingDay.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cmbOverlappingDay.Name = "cmbOverlappingDay";
             this.cmbOverlappingDay.Size = new System.Drawing.Size(184, 24);
@@ -787,7 +804,7 @@ namespace ABC_Institute
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(644, 121);
+            this.label15.Location = new System.Drawing.Point(631, 121);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(33, 17);
@@ -803,7 +820,7 @@ namespace ABC_Institute
             "3 hours",
             "4 hours",
             "5 hours"});
-            this.cmbOverlappingDuration.Location = new System.Drawing.Point(239, 217);
+            this.cmbOverlappingDuration.Location = new System.Drawing.Point(226, 217);
             this.cmbOverlappingDuration.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cmbOverlappingDuration.Name = "cmbOverlappingDuration";
             this.cmbOverlappingDuration.Size = new System.Drawing.Size(150, 24);
@@ -813,7 +830,7 @@ namespace ABC_Institute
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(120, 220);
+            this.label16.Location = new System.Drawing.Point(107, 220);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(62, 17);
@@ -822,7 +839,7 @@ namespace ABC_Institute
             // 
             // txtOverlappingSession
             // 
-            this.txtOverlappingSession.Location = new System.Drawing.Point(239, 66);
+            this.txtOverlappingSession.Location = new System.Drawing.Point(226, 66);
             this.txtOverlappingSession.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtOverlappingSession.Name = "txtOverlappingSession";
             this.txtOverlappingSession.ReadOnly = true;
@@ -832,7 +849,7 @@ namespace ABC_Institute
             // cmbOverlappingSession2
             // 
             this.cmbOverlappingSession2.FormattingEnabled = true;
-            this.cmbOverlappingSession2.Location = new System.Drawing.Point(239, 165);
+            this.cmbOverlappingSession2.Location = new System.Drawing.Point(226, 165);
             this.cmbOverlappingSession2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cmbOverlappingSession2.Name = "cmbOverlappingSession2";
             this.cmbOverlappingSession2.Size = new System.Drawing.Size(150, 24);
@@ -842,7 +859,7 @@ namespace ABC_Institute
             // cmbOverlappingSessiion1
             // 
             this.cmbOverlappingSessiion1.FormattingEnabled = true;
-            this.cmbOverlappingSessiion1.Location = new System.Drawing.Point(239, 118);
+            this.cmbOverlappingSessiion1.Location = new System.Drawing.Point(226, 118);
             this.cmbOverlappingSessiion1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cmbOverlappingSessiion1.Name = "cmbOverlappingSessiion1";
             this.cmbOverlappingSessiion1.Size = new System.Drawing.Size(150, 24);
@@ -852,7 +869,7 @@ namespace ABC_Institute
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(120, 168);
+            this.label17.Location = new System.Drawing.Point(107, 168);
             this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(70, 17);
@@ -862,7 +879,7 @@ namespace ABC_Institute
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(120, 121);
+            this.label18.Location = new System.Drawing.Point(107, 121);
             this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(70, 17);
@@ -872,7 +889,7 @@ namespace ABC_Institute
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(120, 72);
+            this.label19.Location = new System.Drawing.Point(107, 72);
             this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(21, 17);
@@ -883,26 +900,18 @@ namespace ABC_Institute
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(425, 18);
+            this.label20.Location = new System.Drawing.Point(412, 18);
             this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(182, 20);
             this.label20.TabIndex = 26;
             this.label20.Text = "Overlapping Session";
             // 
-            // lblMsgDisplay
-            // 
-            this.lblMsgDisplay.AutoSize = true;
-            this.lblMsgDisplay.Location = new System.Drawing.Point(152, 462);
-            this.lblMsgDisplay.Name = "lblMsgDisplay";
-            this.lblMsgDisplay.Size = new System.Drawing.Size(0, 17);
-            this.lblMsgDisplay.TabIndex = 12;
-            // 
             // SANA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1148, 561);
+            this.ClientSize = new System.Drawing.Size(1108, 561);
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
