@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ABC Institute.exe" version="1.0.0.4" publicKeyToken="119a6e7056e97962" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="TTM.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ABC Institute" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="ABC Institute.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ABC Institute.exe" size="1717712">
+      <assemblyIdentity name="ABC Institute" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>vyMrF+S66ceP8E1geT5tOLNPgGa0Gs+4vh4Siz4wkHY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="ABC Institute.exe.config" size="465">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>plY3mvuZuMYjy82RaPoj+3CawituFqz5PmF1y9/jMQ8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Group24DB.mdf" size="8388608" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ItX54/22uBWEtCh7GUBgGf7mBeRFOzEplMnXCLa2cfs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Group24DB_log.ldf" size="8388608" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>8GKqZuzlcbLE8ZQ5lV3XmodgYKj8O/f6q2PaEYz26xE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="TTM.ico" size="93062">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dqKw4GrnRW4lDu7KJZTpZewdSHmDsX6k3qgwbWi6ivw=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=LAPTOP-LC58C8ST\HP" issuerKeyHash="57b78d732aa1071f21d67a4b303827056a1a5a79" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>9SG/3KeR0d6RkYN4dh7xMA2LOVwUy9PLrGjgA5nBQgU=</DigestValue></Reference></SignedInfo><SignatureValue>zcMyi38wjH7Weuah17EY2eR6S7CZ+wS+W8wBTgu7r1iYTmgnTmF/k9v9ZW7fSBHDD8EEvzJYiRwFbyDB99eAf+TkXsKojSFnQ2ZgMNYbmG9/nAv19fLAMgmQ2miPWXKH/kbftaPO+Rh+zngzV3BEmhl1HPXwexdlvlCwlSLpuHo=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>zmN1BFlf5xEPDn6CPuUQmoriti1NmWTqouWk9lNS/H8bEmodxyeBxCr+VUxOlIk5dtOPwhIaSZ6IHVZU9jYktwKBMsiew8tjIn5dFYTsjT2qUuRk7zyM2xQrmMwrgv3DC974TOVGOUu10TEYJA1QEhAMEq1QEFJcCJbWWrAJlgU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="0542c19903e068accbd3cb145c398b0d30f11e7678839191ded191a7dcbf21f5" Description="" Url=""><as:assemblyIdentity name="ABC Institute.exe" version="1.0.0.4" publicKeyToken="119a6e7056e97962" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=LAPTOP-LC58C8ST\HP</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>ckM27AdawSOjaXw4ZV0bPwEyPavlUrKraYjkA7752Lg=</DigestValue></Reference></SignedInfo><SignatureValue>Qemmr1nDsAmBObeMCW7RxVPvw1bu/NYkRDLBVqgaIWDYC6SaUr6GFX7EWFb8zMJU+rBRAlcHPx2IjUMLVpIYQynzE666Ng+BaaWpoi1FbDG+agaB318CmoDhxBx0SUnL2ODhPm+7+3vLELHJZRpTiJhxXw3v7UCKxNTg3/JBruo=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>zmN1BFlf5xEPDn6CPuUQmoriti1NmWTqouWk9lNS/H8bEmodxyeBxCr+VUxOlIk5dtOPwhIaSZ6IHVZU9jYktwKBMsiew8tjIn5dFYTsjT2qUuRk7zyM2xQrmMwrgv3DC974TOVGOUu10TEYJA1QEhAMEq1QEFJcCJbWWrAJlgU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB4TCCAUqgAwIBAgIQEI5sLGhj/ZdLn+N+k6hSvTANBgkqhkiG9w0BAQsFADAvMS0wKwYDVQQDHiQATABBAFAAVABPAFAALQBMAEMANQA4AEMAOABTAFQAXABIAFAwHhcNMjEwNTIxMTg0NDMxWhcNMjIwNTIyMDA0NDMxWjAvMS0wKwYDVQQDHiQATABBAFAAVABPAFAALQBMAEMANQA4AEMAOABTAFQAXABIAFAwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAM5jdQRZX+cRDw5+gj7lEJqK4rYtTZlk6qLlpPZTUvx/GxJqHccngcQq/lVMTpSJOXbTj8ISGkmeiB1WVPY2JLcCgTLInsPLYyJ+XRWE7I09qlLkZO88jNsUK5jMK4L9wwve+EzlRjlLtdExGCQNUBIQDBKtUBBSXAiW1lqwCZYFAgMBAAEwDQYJKoZIhvcNAQELBQADgYEANmFMJIG2s4lMysqeYRefkFfNUl30O+Xea0DnRo1MoOrNmmZHuTLB4og5q9QUjZTcr1MPkZ+ws3r1RmFvkjSHA7e9nVyAsg/QnNaoiM7vGZ00dQx8vs5Pow6TO/QNcDkfAN4VJMUD6Ec9Ccws7r5PrsQm7f8ya/aEQLz1YAUGuNY=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

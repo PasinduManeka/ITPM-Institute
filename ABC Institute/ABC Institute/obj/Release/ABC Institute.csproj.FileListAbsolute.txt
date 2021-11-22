@@ -9,7 +9,6 @@ D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Release\ABC
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Release\ABC Institute.csproj.CoreCompileInputs.cache
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Release\ABC Institute.exe
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Release\ABC Institute.pdb
-D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Release\ABC Institute.csprojAssemblyReference.cache
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Release\ABC_Institute.AddLocation.resources
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Release\ABC_Institute.AddLecturers.resources
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Release\ABC_Institute.AddSession.resources
@@ -34,3 +33,4 @@ D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Release\ABC
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Release\ABC_Institute.T_and_Sub.resources
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Release\ABC_Institute.View.resources
 D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\obj\Release\ABC_Institute.Menu.resources
+D:\VisualStudio Workspace\New folder\ABC Institute\ABC Institute\bin\Release\Data\timetable.mdf
